@@ -1,0 +1,75 @@
+$white: #fff;
+$black: #000;
+$primary: #fff037;
+$dark: #575756;
+$active-color: #2a2a2a;
+
+$body-color: $dark;
+
+$link-color: $dark;
+$link-hover-color: $active-color;
+$link-decoration: none;
+
+$component-active-color: $white;
+$component-active-bg: $black;
+
+$font-family-base: 'Montserrat', Helvetica, Arial, sans-serif !important;
+
+$font-size-sm: 0.8rem;
+
+$font-weight-bold: 700;
+$font-weight-bolder: 900;
+
+$line-height-sm: 0.843;
+$line-height-lg: 2.781;
+$line-height-xl: 5;
+
+$h1-font-size: 4.5rem;
+$h2-font-size: 2.5rem;
+$headings-font-weight: $font-weight-bolder;
+$headings-line-height: $line-height-lg;
+
+$input-btn-padding-y: 1.25rem;
+$input-btn-font-size: 1.125rem;
+$input-btn-line-height: 0.75;
+
+$input-btn-focus-color: $active-color;
+
+$input-btn-padding-y-sm: 1.1rem;
+
+$input-btn-padding-y-lg: $input-btn-padding-y;
+$input-btn-font-size-lg: $input-btn-font-size;
+$input-btn-font-size-sm: $font-size-sm;
+
+$input-btn-border-width: 0;
+
+$btn-font-weight: $font-weight-bolder;
+
+$btn-link-hover-color: $white;
+$btn-font-size-sm: $input-btn-font-size-sm;
+
+$navbar-light-color: #010101;
+$navbar-light-hover-color: $dark;
+$navbar-light-active-color: #010101;
+
+$nav-link-padding-y: 0;
+$nav-link-font-size: 1.125rem;
+$nav-link-font-weight: $font-weight-bold;
+
+$navbar-padding-y: 0;
+$navbar-padding-x: 0;
+
+$dropdown-border-width: 0;
+$dropdown-border-radius: .25rem 0 .25rem .25rem;
+$dropdown-link-color: $white;
+
+$dropdown-dark-color: $white;
+$dropdown-dark-bg: $active-color;
+$dropdown-dark-link-active-color: $white;
+$dropdown-dark-link-active-bg: $active-color;
+$dropdown-dark-link-hover-color: $white;
+$dropdown-dark-link-hover-bg: $dark;
+
+$card-border-width: 0;
+
+

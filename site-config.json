@@ -1,0 +1,28 @@
+{
+	"title": "Recrea't",
+	"titleTemplate": "%s · Recrea't",
+	"description": "Disseny gràfic i comunicació",
+	"siteUrl": "https://recreat.cat",
+	"image": "/images/icon.png",
+	"color": "#fff",
+	"author": {
+		"name": "Recrea't"
+	},
+	"organization": {
+		"name": "Recrea't",
+		"url": "https://recreat.cat",
+		"logo": "/images/icon.png",
+		"email": "recreat.info@gmail.com",
+		"phone": {
+			"number": 123456789,
+			"title": ""
+		},
+		"address": ""
+	},
+	"social": {
+		"twitter": "",
+		"fbAppID": "",
+		"instagram": "",
+		"pinterest": ""
+	}
+}
