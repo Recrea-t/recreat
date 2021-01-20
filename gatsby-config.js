@@ -5,17 +5,22 @@ console.log(config)
 module.exports = {
 	siteMetadata: config,
 	plugins: [
-		"gatsby-plugin-sass",
-		"gatsby-plugin-fontawesome-css",
+		{
+			resolve: `gatsby-plugin-gdpr-cookies`,
+			options: {
+				googleAnalytics: {
+					trackingId: process.env.GA_TRACKING_ID,
+					cookieName: 'gatsby-gdpr-google-analytics',
+					anonymize: true,
+				},
+				environments: ['production', 'development'],
+			},
+		},
+		"@chakra-ui/gatsby-plugin",
 		"gatsby-plugin-anchor-links",
-		//{
-		//resolve: "gatsby-plugin-google-analytics",
-		//options: {
-		//trackingId: "",
-		//},
-		//},
 		"gatsby-plugin-sharp",
 		"gatsby-transformer-sharp",
+		"gatsby-plugin-robots-txt",
 		"gatsby-plugin-react-helmet",
 		"gatsby-plugin-sitemap",
 		{
@@ -25,7 +30,7 @@ module.exports = {
 				short_name: `Recrea't`,
 				start_url: `/`,
 				background_color: `#fff`,
-				theme_color: `#fff`,
+				theme_color: `#E8864B`,
 				display: `minimal-ui`,
 				icon: "static/images/icon.png",
 				icon_options: {
@@ -89,13 +94,6 @@ module.exports = {
 			resolve: "gatsby-plugin-webpack-bundle-analyser-v2",
 			options: {
 				devMode: false,
-			},
-		},
-		{
-			resolve: 'gatsby-plugin-purgecss', // purges all unused/unreferenced css rules
-			options: {
-				develop: true, // Activates purging in npm run develop
-				purgeOnly: ['node_modules/bootstrap']
 			},
 		},
 	],

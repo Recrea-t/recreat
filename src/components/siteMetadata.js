@@ -14,6 +14,7 @@ const useSiteMetadata = () => {
 						color
 						author {
 							name
+							url
 						}
 						organization {
 							name
@@ -30,6 +31,7 @@ const useSiteMetadata = () => {
 							twitter
 							fbAppID
 							instagram
+							github
 						}
           }
         }

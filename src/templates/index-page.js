@@ -1,36 +1,76 @@
-import "@fontsource/montserrat"
-import "@fontsource/montserrat/900.css"
-
 import React from "react"
-import {graphql} from 'gatsby'
+import {Link as GatsbyLink, graphql} from 'gatsby'
 import PropTypes from 'prop-types'
-import {Container, Row, Col} from "react-bootstrap"
 
-import Layout from "../components/layout"
-import animation from "../images/home.gif"
+import {SimpleGrid, Box, Text, Link, Heading, Image, VStack} from '@chakra-ui/react'
 
-export const IndexPageTemplate = ({frontmatter}) => {
+import Layout from "../components/Layout"
+import Hero from "../components/sections/Hero"
+import Contact from "../components/sections/Contact"
+
+const ServiceItem = (props) => {
+	const {service} = props
 	return (
-		<Container>
-			<img src={animation} alt={frontmatter.description} />
-		</Container >
+		<VStack
+			p={4}
+			bg="cultured.500"
+			minW="310px"
+			minH="450px"
+			spacing={4}
+			textAlign="center"
+			justifyContent="space-between"
+		>
+			<Image boxSize="70px" src={service.imatge.publicURL} alt={service.nom} />
+			<Heading fontWeight="normal" textTransform="uppercase" fontSize="lg">{service.nom}</Heading>
+			<Text fontFamily="Playfair Display" fontSize="xl">{service.descripcio}</Text>
+			<Text
+				display="block"
+				justifySelf="stretch"
+				color="mangoTango.500"
+				textTransform="uppercase"
+				fontWeight="bold">
+				<Link to={`/serveis#${service.id}`} title={service.nom} as={GatsbyLink}>Veure'n més</Link>
+			</Text>
+		</VStack>
 	)
 }
-
-IndexPageTemplate.propTypes = {}
-
-const IndexPage = ({data}) => {
-	const {frontmatter} = data.markdownRemark
+const IndexPage = (props) => {
+	const {frontmatter} = props.data.markdownRemark
+	const services = frontmatter.serveis
 
 	return (
-		<Layout title={frontmatter.title} description={frontmatter.description}>
-			<IndexPageTemplate frontmatter={frontmatter} />
+		<Layout
+			title={frontmatter.title}
+			description={frontmatter.description}>
+			<Hero {...props} />
+
+			<Box
+				maxW="1200px"
+				mb={8}
+				mx="auto">
+				<Heading
+					mb={8}
+					textAlign="center"
+					fontSize="4xl"
+					fontWeight="normal"
+					color="dimGray.500"
+					textTransform="uppercase">Serveis</Heading>
+				<SimpleGrid
+					columns={{sm: 1, md: 2, lg: 3}}
+					spacing={16}>
+					{services.map((item, index) =>
+						<ServiceItem key={index} service={item} />)}
+				</SimpleGrid>
+			</Box>
+
+			<Contact />
 		</Layout>
 	)
 }
 
 IndexPage.propTypes = {
 	data: PropTypes.shape({
+		html: PropTypes.object,
 		markdownRemark: PropTypes.shape({
 			frontmatter: PropTypes.object,
 		}),
@@ -40,12 +80,23 @@ IndexPage.propTypes = {
 export default IndexPage
 
 export const query = graphql`
-  query IndexPageTemplateQuery {
-		markdownRemark(frontmatter: {templateKey: {eq: "index-page" } }) {
+	query IndexPageTemplateQuery($id: String) {
+		markdownRemark(id: {eq: $id}) {
+			id
+			html
 			frontmatter {
 				title
         description
+				serveis {
+					id
+					nom
+					descripcio
+					imatge {
+						publicURL
+					}
+				}
 			}
     }
   }
 `
+

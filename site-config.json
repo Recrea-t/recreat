@@ -3,10 +3,11 @@
 	"titleTemplate": "%s · Recrea't",
 	"description": "Disseny gràfic i comunicació",
 	"siteUrl": "https://recreat.cat",
-	"image": "/images/icon.png",
-	"color": "#fff",
+	"image": "/images/Logo.svg",
+	"color": "#E8864B",
 	"author": {
-		"name": "Recrea't"
+		"name": "Recrea't",
+		"url": "https://recreat.cat"
 	},
 	"organization": {
 		"name": "Recrea't",
@@ -14,15 +15,15 @@
 		"logo": "/images/icon.png",
 		"email": "recreat.info@gmail.com",
 		"phone": {
-			"number": 123456789,
-			"title": ""
+			"number": 34646429298,
+			"title": "646 429 298"
 		},
-		"address": ""
+		"address": "Carrer Major XX<br/>1a planta</br>25580 Esterri d'Àneu"
 	},
 	"social": {
 		"twitter": "",
 		"fbAppID": "",
 		"instagram": "",
-		"pinterest": ""
+		"github": "Recrea-t"
 	}
 }
