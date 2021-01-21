@@ -28,10 +28,21 @@ const useSiteMetadata = () => {
 							address
 						}
 						social {
-							twitter
-							fbAppID
-							instagram
-							github
+							twitter {
+								username
+								title
+								baseUrl
+							}
+							facebook {
+								username
+								title
+								baseUrl
+							}
+							instagram {
+								username
+								title
+								baseUrl
+							}
 						}
           }
         }

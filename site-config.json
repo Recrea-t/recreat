@@ -21,9 +21,20 @@
 		"address": "Carrer Major XX<br/>1a planta</br>25580 Esterri d'Àneu"
 	},
 	"social": {
-		"twitter": "",
-		"fbAppID": "",
-		"instagram": "",
-		"github": "Recrea-t"
+		"instagram": {
+			"username": "",
+			"title": "Segueix-nos a Instagram",
+			"baseUrl": "https://www.instagram.com/"
+		},
+		"facebook": {
+			"username": "",
+			"title": "Segueix-nos a Facebook",
+			"baseUrl": "https://www.facebook.com/"
+		},
+		"twitter": {
+			"username": "",
+			"title": "Segueix-nos a Twitter",
+			"baseUrl": "https://www.twitter.com/"
+		}
 	}
 }

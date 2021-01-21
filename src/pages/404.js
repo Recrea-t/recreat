@@ -10,7 +10,7 @@ const NotFoundPage = ({ location, data }) => {
 
     return (
         <Layout title={title} description={description}>
-            <Container>
+            <Container variant="with-border">
                 <Heading>{title}</Heading>
                 <Text>{description}</Text>
             </Container>

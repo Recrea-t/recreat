@@ -14,7 +14,7 @@ const MenuItems = (props) => {
 			display="block"
 			{...rest}
 		>
-			<Link to={to} title={children} as={GatsbyLink}>{children}</Link>
+			<Link to={to} title={children} as={GatsbyLink} variant="nav-link">{children}</Link>
 		</Text>
 	)
 }
@@ -63,8 +63,6 @@ const Header = (props) => {
 						justify={["center", "space-between", "flex-end", "flex-end"]}
 						direction={["column", "row", "row", "row"]}
 						pt={[4, 4, 0, 0]}
-						fontWeight={{md: "bold"}}
-						textTransform="uppercase"
 					>
 						<MenuItems to="/qui-som">Qui Som</MenuItems>
 						<MenuItems to="/serveis">Serveis</MenuItems>

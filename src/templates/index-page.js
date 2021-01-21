@@ -2,7 +2,7 @@ import React from "react"
 import {Link as GatsbyLink, graphql} from 'gatsby'
 import PropTypes from 'prop-types'
 
-import {SimpleGrid, Box, Text, Link, Heading, Image, VStack} from '@chakra-ui/react'
+import {SimpleGrid, Container, Text, Link, Heading, Image, VStack} from '@chakra-ui/react'
 
 import Layout from "../components/Layout"
 import Hero from "../components/sections/Hero"
@@ -23,13 +23,8 @@ const ServiceItem = (props) => {
 			<Image boxSize="70px" src={service.imatge.publicURL} alt={service.nom} />
 			<Heading fontWeight="normal" textTransform="uppercase" fontSize="lg">{service.nom}</Heading>
 			<Text fontFamily="Playfair Display" fontSize="xl">{service.descripcio}</Text>
-			<Text
-				display="block"
-				justifySelf="stretch"
-				color="mangoTango.500"
-				textTransform="uppercase"
-				fontWeight="bold">
-				<Link to={`/serveis#${service.id}`} title={service.nom} as={GatsbyLink}>Veure'n més</Link>
+			<Text display="block" color="mangoTango.500">
+				<Link to={`/serveis#${service.id}`} title={service.nom} as={GatsbyLink} variant="btn">Veure'n més</Link>
 			</Text>
 		</VStack>
 	)
@@ -44,24 +39,15 @@ const IndexPage = (props) => {
 			description={frontmatter.description}>
 			<Hero {...props} />
 
-			<Box
-				maxW="1200px"
-				mb={8}
-				mx="auto">
-				<Heading
-					mb={8}
-					textAlign="center"
-					fontSize="4xl"
-					fontWeight="normal"
-					color="dimGray.500"
-					textTransform="uppercase">Serveis</Heading>
+			<Container mb={8}>
+				<Heading variant="in-index" color="dimGray.500">Serveis</Heading>
 				<SimpleGrid
 					columns={{sm: 1, md: 2, lg: 3}}
 					spacing={16}>
 					{services.map((item, index) =>
 						<ServiceItem key={index} service={item} />)}
 				</SimpleGrid>
-			</Box>
+			</Container>
 
 			<Contact />
 		</Layout>
