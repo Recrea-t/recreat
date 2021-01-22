@@ -1,8 +1,9 @@
 import React from "react"
 import { Link as GatsbyLink, graphql } from 'gatsby'
 import PropTypes from 'prop-types'
+import { useInView } from 'react-intersection-observer'
 
-import { SimpleGrid, Container, Text, Heading, Image, VStack, Button } from '@chakra-ui/react'
+import { SimpleGrid, Container, Text, Heading, Image, VStack, Button, SlideFade } from '@chakra-ui/react'
 
 import Layout from "../components/Layout"
 import Hero from "../components/sections/Hero"
@@ -10,21 +11,28 @@ import Contact from "../components/sections/Contact"
 
 const ServiceItem = (props) => {
     const { service } = props
+    const { ref, inView, entry } = useInView({
+        /* Optional options */
+        threshold: 0,
+    });
     return (
-        <VStack
-            p={4}
-            bg="cultured.500"
-            minW="310px"
-            minH="450px"
-            spacing={4}
-            textAlign="center"
-            justifyContent="space-between"
-        >
-            <Image boxSize="70px" src={service.imatge.publicURL} alt={service.nom} />
-            <Heading fontWeight="normal" textTransform="uppercase" fontSize="lg">{service.nom}</Heading>
-            <Text fontFamily="Playfair Display" fontSize="xl">{service.descripcio}</Text>
-            <Button to={`/serveis/#${service.id}`} title={service.nom} as={GatsbyLink} variant="custom-link" colorScheme="mangoTango" >Veure'n més</Button>
-        </VStack>
+        <SlideFade in={inView} offsetY="200px" reverse={false} >
+            <VStack
+                ref={ref}
+                p={4}
+                bg="cultured.500"
+                minW="310px"
+                minH="450px"
+                spacing={4}
+                textAlign="center"
+                justifyContent="space-between"
+            >
+                <Image boxSize="70px" src={service.imatge.publicURL} alt={service.nom} />
+                <Heading fontWeight="normal" textTransform="uppercase" fontSize="lg">{service.nom}</Heading>
+                <Text fontFamily="Playfair Display" fontSize="xl">{service.descripcio}</Text>
+                <Button to={`/serveis/#${service.id}`} title={service.nom} as={GatsbyLink} variant="custom-link" colorScheme="mangoTango" >Veure'n més</Button>
+            </VStack>
+        </SlideFade>
     )
 }
 const IndexPage = (props) => {
