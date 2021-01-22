@@ -2,7 +2,7 @@ import React from "react"
 import {Link as GatsbyLink, graphql} from 'gatsby'
 import PropTypes from 'prop-types'
 
-import {SimpleGrid, Container, Text, Link, Heading, Image, VStack} from '@chakra-ui/react'
+import {SimpleGrid, Container, Text, Heading, Image, VStack, Button} from '@chakra-ui/react'
 
 import Layout from "../components/Layout"
 import Hero from "../components/sections/Hero"
@@ -23,9 +23,7 @@ const ServiceItem = (props) => {
 			<Image boxSize="70px" src={service.imatge.publicURL} alt={service.nom} />
 			<Heading fontWeight="normal" textTransform="uppercase" fontSize="lg">{service.nom}</Heading>
 			<Text fontFamily="Playfair Display" fontSize="xl">{service.descripcio}</Text>
-			<Text display="block" color="mangoTango.500">
-				<Link to={`/serveis#${service.id}`} title={service.nom} as={GatsbyLink} variant="btn">Veure'n més</Link>
-			</Text>
+			<Button to={`/serveis#${service.id}`} title={service.nom} as={GatsbyLink} variant="custom-link" colorScheme="mangoTango" >Veure'n més</Button>
 		</VStack>
 	)
 }
