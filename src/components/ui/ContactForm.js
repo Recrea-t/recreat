@@ -26,7 +26,6 @@ const ContactForm = () => {
 				conditions: false
 			}}
 			onSubmit={(values, actions) => {
-				alert(JSON.stringify(values, null, 2));
 				fetch("/", {
 					method: "POST",
 					headers: {"Content-Type": "application/x-www-form-urlencoded"},
@@ -34,12 +33,8 @@ const ContactForm = () => {
 						"form-name": "contacte-web", ...values
 					})
 				})
-					.then(() => {
-						actions.resetForm()
-					})
-					.catch(() => {
-						alert('Error');
-					})
+					.then(() => actions.resetForm())
+					.catch(error => alert(error))
 					.finally(() => actions.setSubmitting(false))
 			}}
 			validate={values => {
@@ -51,7 +46,9 @@ const ContactForm = () => {
 			}}
 		>
 			{(props) => (
-				<Form data-netlify="true">
+				<Form name="contacte-web" data-netlify="true" data-netlify-honeypot="bot-field">
+					<Field type="hidden" name="form-name" />
+					<Field type="hidden" name="bot-field" />
 
 					<VStack spacing={4} >
 						<Field name="name">
