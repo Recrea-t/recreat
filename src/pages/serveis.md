@@ -26,7 +26,7 @@ serveis:
         url: "www.fallesisil.cat"
         imatge1: ../images/PC_Web_Falles.png
         imatge2: ../images/Mockup_Web_Falles.png
-      - nom: "Els Cremalls"
+      - nom: "Bar Els Cremalls"
         any: "2020"
         url: "elscremalls.paperform.co"
         imatge1: ../images/PC_Web_Cremalls.png
@@ -34,8 +34,8 @@ serveis:
       - nom: "Marc Bruna Fuster"
         any: "2021"
         url: "marcbrunafuster.cat"
-        imatge1: ../images/PC_Web_Marc-03.png
-        imatge2: ../images/Mockup_Web_Marc-02.png
+        imatge1: ../images/PC_Web_Marc.png
+        imatge2: ../images/Mockup_Web_Marc.png
   - id: "disseny-web"
     nom: "DISSENY WEB"
     descripcio: "Qui no és a internet no existeix. Una pàgina web corporativa ben ideada és
@@ -64,8 +64,8 @@ serveis:
       - nom: "Marc Bruna Fuster"
         any: "2021"
         url: "marcbrunafuster.cat"
-        imatge1: ../images/PC_Web_Marc-03.png
-        imatge2: ../images/Mockup_Web_Marc-02.png
+        imatge1: ../images/PC_Web_Marc.png
+        imatge2: ../images/Mockup_Web_Marc.png
   - id: "xarxes-socials"
     nom: "XARXES SOCIALS"
     descripcio: "Actualment les xarxes socials s'han convertit en un espai virtual en el que
