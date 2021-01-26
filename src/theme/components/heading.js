@@ -18,6 +18,12 @@ export default {
 			fontSize: "1rem",
 			fontWeight: "normal",
 		},
+		"in-modal": {
+			fontSize: "1rem",
+			fontWeight: "normal",
+			textTransform: "none",
+			mb: "0",
+		},
 	},
 }
 

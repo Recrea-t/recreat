@@ -20,6 +20,22 @@ serveis:
       - "Felicitacions, invitacions, targetons"
       - "Retolació de vehicles"
       - "Senyalística"
+    exemples:
+      - nom: "Associació Cultural Fallaires d'Isil"
+        any: "2017"
+        url: "www.fallesisil.cat"
+        imatge1: ../images/PC_Web_Falles.png
+        imatge2: ../images/Mockup_Web_Falles.png
+      - nom: "Els Cremalls"
+        any: "2020"
+        url: "elscremalls.paperform.co"
+        imatge1: ../images/PC_Web_Cremalls.png
+        imatge2: ../images/Mockup_Web_Cremalls.png
+      - nom: "Marc Bruna Fuster"
+        any: "2021"
+        url: "marcbrunafuster.cat"
+        imatge1: ../images/PC_Web_Marc-03.png
+        imatge2: ../images/Mockup_Web_Marc-02.png
   - id: "disseny-web"
     nom: "DISSENY WEB"
     descripcio: "Qui no és a internet no existeix. Una pàgina web corporativa ben ideada és
@@ -34,6 +50,22 @@ serveis:
       - "Redacció de continguts"
       - "Allotjament"
       - "Gestió de domini i web mail"
+    exemples:
+      - nom: "Associació Cultural Fallaires d'Isil"
+        any: "2017"
+        url: "www.fallesisil.cat"
+        imatge1: ../images/PC_Web_Falles.png
+        imatge2: ../images/Mockup_Web_Falles.png
+      - nom: "Els Cremalls"
+        any: "2020"
+        url: "elscremalls.paperform.co"
+        imatge1: ../images/PC_Web_Cremalls.png
+        imatge2: ../images/Mockup_Web_Cremalls.png
+      - nom: "Marc Bruna Fuster"
+        any: "2021"
+        url: "marcbrunafuster.cat"
+        imatge1: ../images/PC_Web_Marc-03.png
+        imatge2: ../images/Mockup_Web_Marc-02.png
   - id: "xarxes-socials"
     nom: "XARXES SOCIALS"
     descripcio: "Actualment les xarxes socials s'han convertit en un espai virtual en el que

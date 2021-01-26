@@ -12,6 +12,7 @@ function variantCustomLink(props) {
 		_hover: {
 			textDecoration: "none",
 			color: mode(`${c}.600`, `${c}.300`)(props),
+			bg: "transparent",
 			_disabled: {
 				color: color,
 				textDecoration: "none",

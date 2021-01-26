@@ -1,14 +1,77 @@
 import React from "react"
 import {graphql} from 'gatsby'
 import PropTypes from 'prop-types'
+import {motion} from 'framer-motion'
 
 import {Grid, VStack, Container, Text, Heading, Image, Wrap, WrapItem, GridItem, SimpleGrid} from '@chakra-ui/react'
+import {
+	Modal,
+	ModalOverlay,
+	ModalContent,
+	ModalBody,
+	ModalCloseButton,
+	useDisclosure,
+	Box,
+	Link,
+} from "@chakra-ui/react"
 
 import Layout from "../components/Layout"
 
-const ServiceItem = (props) => {
-	const isXarxesSocials = props.id === "xarxes-socials"
+const MotionImage = motion.custom(Image)
 
+const ServiceModal = (props) => {
+	const {isOpen, onClose, service, example, finalRef} = props
+	const initialRef = React.useRef()
+
+	if (!example) {
+		return null
+	}
+
+	return (
+		<Modal
+			isOpen={isOpen}
+			onClose={onClose}
+			initialFocusRef={initialRef}
+			finalFocusRef={finalRef}
+			scrollBehavior="outside"
+			motionPreset="slideInBottom"
+			isCentered
+		>
+			<ModalContent bg="cultured.500">
+				<ModalCloseButton colorScheme="dimGrey" variant="custom-link" _focus={{outline: 0}} />
+				<ModalBody>
+					<VStack textAlign="center" spacing={1} ref={initialRef} >
+						<Heading variant="in-modal" fontWeight="semibold" >{service}</Heading>
+						<Heading as="h6" variant="in-modal">{example.nom}</Heading>
+						<Heading as="h6" variant="in-modal">{example.any}</Heading>
+						<Link variant="in-modal" href={`http://${example.url}`} title={example.nom} target="_blank" rel="noopener" isExternal>{example.url}</Link>
+						<MotionImage
+							transition={{duration: 0.3}}
+							w="full"
+							objectFit="contain"
+							alt={example.nom}
+							{...example.imatge2.childImageSharp.fluid} />
+					</VStack>
+				</ModalBody>
+			</ModalContent>
+		</Modal>
+	)
+}
+
+const ServiceItem = (props) => {
+	const {isOpen, onOpen, onClose} = useDisclosure()
+	const [exampleSelected, setExampleSelected] = React.useState(null)
+	const [finalRef, setFinalRef] = React.useState(null)
+	const ref = React.useRef()
+
+	const handleClick = (example, ref) => {
+		setExampleSelected(example)
+		setFinalRef(ref)
+		onOpen()
+	}
+
+	const isDissenyWeb = props.id === "disseny-web"
+	const isXarxesSocials = props.id === "xarxes-socials"
 
 	return (
 		<>
@@ -53,16 +116,29 @@ const ServiceItem = (props) => {
 							</Wrap>
 						</VStack>
 						:
-						<SimpleGrid columns={[1, null, 3]} spacing={4}>
-							<Image w="full" objectFit="contain" src={props.imatge} fallbackSrc="https://via.placeholder.com/311x233" />
-							<Image w="full" objectFit="contain" src={props.imatge} fallbackSrc="https://via.placeholder.com/311x233" />
-							<Image w="full" objectFit="contain" src={props.imatge} fallbackSrc="https://via.placeholder.com/311x233" />
-							<Image w="full" objectFit="contain" src={props.imatge} fallbackSrc="https://via.placeholder.com/311x233" />
-							<Image w="full" objectFit="contain" src={props.imatge} fallbackSrc="https://via.placeholder.com/311x233" />
-							<Image w="full" objectFit="contain" src={props.imatge} fallbackSrc="https://via.placeholder.com/311x233" />
+						<SimpleGrid columns={[1, null, 3]} spacing={4} ref={ref}>
+							{props.exemples.map((example, index) =>
+								<Box
+									key={index}
+									cursor="pointer"
+									overflow="hidden"
+									boxShadow={isDissenyWeb ? "xs" : "md"}
+									onClick={() => handleClick(example, ref)}
+								>
+									<MotionImage
+										transition={{duration: 0.3}}
+										whileHover={isDissenyWeb ? {opacity: 0.7} : {scale: 1.1}}
+										w="full"
+										objectFit="contain"
+										alt={example.nom}
+										bg="white"
+										{...example.imatge1.childImageSharp.fluid} />
+								</Box>
+							)}
 						</SimpleGrid>
 					}
 				</GridItem>
+				<ServiceModal onClose={onClose} isOpen={isOpen} service={props.nom} example={exampleSelected} finalRef={finalRef} />
 			</Grid>
 		</>
 	)
@@ -106,6 +182,25 @@ export const query = graphql`
 					nom
 					descripcio
 					detall
+					exemples {
+						nom
+						any
+						url
+						imatge1 {
+							childImageSharp {
+								fluid {
+									...GatsbyImageSharpFluid
+								}
+							}
+						}
+						imatge2 {
+							childImageSharp {
+								fluid {
+									...GatsbyImageSharpFluid
+								}
+							}
+						}
+					}
 					passes {
 						text
 						imatge {

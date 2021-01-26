@@ -7,5 +7,9 @@ export default {
 			fontWeight: {md: "bold"},
 			textTransform: "uppercase",
 		},
+		"in-modal": {
+			fontWeight: "bold",
+			color: "mangoTango.500"
+		},
 	},
 }

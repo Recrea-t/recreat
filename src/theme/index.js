@@ -13,16 +13,17 @@ import Button from "./components/button"
 import Link from "./components/link"
 
 const overrides = {
-    styles,
-    colors,
-    shadows,
-    ...typography,
-    components: {
-        Container,
-        Heading,
-        Button,
-        Link,
-    }
+	styles,
+	colors,
+	shadows,
+	...typography,
+	components: {
+		Container,
+		Heading,
+		Button,
+		CloseButton: {...Button},
+		Link,
+	}
 }
 
 export default overrides
