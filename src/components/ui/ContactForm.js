@@ -54,7 +54,7 @@ const ContactForm = () => {
 						<Field name="name">
 							{({field, form}) => (
 								<FormControl isRequired>
-									<Input {...field} id="name" type="text" variant="flushed" focusBorderColor="dimGrey" placeholder="nom" _placeholder={placeholderStyles} />
+									<Input {...field} id="name" type="text" variant="flushed" focusBorderColor="dimGray.500" placeholder="nom" _placeholder={placeholderStyles} />
 								</FormControl>
 							)}
 						</Field>
@@ -62,7 +62,7 @@ const ContactForm = () => {
 						<Field name="email">
 							{({field, form}) => (
 								<FormControl isRequired>
-									<Input {...field} id="email" type="email" variant="flushed" focusBorderColor="dimGrey" placeholder="correu electrònic" _placeholder={placeholderStyles} />
+									<Input {...field} id="email" type="email" variant="flushed" focusBorderColor="dimGray.500" placeholder="correu electrònic" _placeholder={placeholderStyles} />
 								</FormControl>
 							)}
 						</Field>
@@ -70,7 +70,7 @@ const ContactForm = () => {
 						<Field name="message">
 							{({field, form}) => (
 								<FormControl isRequired>
-									<Textarea {...field} id="message" variant="flushed" h={40} focusBorderColor="dimGrey" placeholder="missatge" _placeholder={placeholderStyles} />
+									<Textarea {...field} id="message" variant="flushed" h={40} focusBorderColor="dimGray.500" placeholder="missatge" _placeholder={placeholderStyles} resize="none" />
 								</FormControl>
 							)}
 						</Field>
@@ -78,7 +78,7 @@ const ContactForm = () => {
 						<Field name="conditions">
 							{({field, form}) => (
 								<FormControl isRequired isInvalid={form.errors.conditions && form.touched.conditions}>
-									<Checkbox {...field} id="conditions" size="sm" colorScheme="dimGrey" >
+									<Checkbox {...field} id="conditions" size="sm" colorScheme="dimGray" >
 										He llegit i accepto la <Link to="politica-de-privacitat" title="Política de privacitat" as={GatsbyLink} >política de privacitat</Link> i accepto el tractament de les meves dades personals per a l'enviament d'informació que respongui a la consulta que he plantejat.
 				  </Checkbox>
 									<FormErrorMessage>{form.errors.conditions}</FormErrorMessage>
