@@ -10,17 +10,10 @@ import {useLocation} from "@reach/router"
 import useSiteMetadata from './siteMetadata'
 
 import CookieConsent from "react-cookie-consent";
-import {initializeAndTrack} from 'gatsby-plugin-gdpr-cookies'
+import {initializeAndTrack} from '../utils/gdpr'
 
 import {Flex, HStack, Icon, Text, Link} from "@chakra-ui/react"
 import {FaCookieBite} from "@react-icons/all-files/fa/FaCookieBite"
-
-import {
-	Alert,
-	AlertIcon,
-	AlertTitle,
-	AlertDescription,
-} from "@chakra-ui/react"
 
 import Header from "./sections/Header"
 import Footer from "./sections/Footer"
@@ -59,7 +52,7 @@ const TemplateWrapper = (props) => {
 				onAccept={() => {initializeAndTrack(location)}}
 				enableDeclineButton
 				declineButtonText="&times;"
-				cookieName="gatsby-gdpr-google-analytics"
+				cookieName="gdpr-metricool"
 				style={{backgroundColor: "#9A9AA0", marginBottom: "3rem"}}
 				buttonWrapperClasses="cookie-consent-buttons"
 				buttonClasses="accept-btn"

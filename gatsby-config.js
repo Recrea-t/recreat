@@ -3,19 +3,11 @@ const config = require('./site-config.json')
 console.log(config)
 
 module.exports = {
+	flags: {
+		DEV_SSR: true
+	},
 	siteMetadata: config,
 	plugins: [
-		{
-			resolve: `gatsby-plugin-gdpr-cookies`,
-			options: {
-				googleAnalytics: {
-					trackingId: process.env.GA_TRACKING_ID,
-					cookieName: 'gatsby-gdpr-google-analytics',
-					anonymize: true,
-				},
-				environments: ['production', 'development'],
-			},
-		},
 		"@chakra-ui/gatsby-plugin",
 		"gatsby-plugin-anchor-links",
 		"gatsby-plugin-sharp",
