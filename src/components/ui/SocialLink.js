@@ -9,6 +9,9 @@ const SocialLink = (props) => {
 			title={item.title}
 			target="_blank"
 			rel="noopener"
+			_hover={{
+				color: "white.600",
+			}}
 		>
 			<Icon as={icon} h={8} w={8} />
 		</Link >

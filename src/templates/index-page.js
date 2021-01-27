@@ -20,13 +20,13 @@ const ServiceItem = (props) => {
 				bg="cultured.500"
 				minW="310px"
 				minH="450px"
-				spacing={4}
+				spacing={1}
 				textAlign="center"
 				justifyContent="space-between"
 			>
-				<Image boxSize="70px" src={service.imatge.publicURL} alt={service.nom} />
+				<Image boxSize="70px" mt={4} src={service.imatge.publicURL} alt={service.nom} />
 				<Heading fontWeight="normal" textTransform="uppercase" fontSize="lg">{service.nom}</Heading>
-				<Text fontFamily="Playfair Display" fontSize="xl">{service.descripcio}</Text>
+				<Text fontFamily="Playfair Display" fontSize="2xl">{service.descripcio}</Text>
 				<Button to={`/serveis/#${service.id}`} title={service.nom} as={GatsbyLink} variant="custom-link" colorScheme="mangoTango" >Veure'n més</Button>
 			</VStack>
 		</Fade>
