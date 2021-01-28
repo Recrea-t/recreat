@@ -1,8 +1,9 @@
 import React from "react"
 import {Link as GatsbyLink, graphql} from 'gatsby'
 import PropTypes from 'prop-types'
+import {useInView} from 'react-intersection-observer'
 
-import {SimpleGrid, Container, Text, Link, Heading, Image, VStack} from '@chakra-ui/react'
+import {SimpleGrid, Container, Text, Heading, Image, VStack, Button, Fade} from '@chakra-ui/react'
 
 import Layout from "../components/Layout"
 import Hero from "../components/sections/Hero"
@@ -10,23 +11,25 @@ import Contact from "../components/sections/Contact"
 
 const ServiceItem = (props) => {
 	const {service} = props
+	const {ref, inView} = useInView({triggerOnce: true});
+
 	return (
-		<VStack
-			p={4}
-			bg="cultured.500"
-			minW="310px"
-			minH="450px"
-			spacing={4}
-			textAlign="center"
-			justifyContent="space-between"
-		>
-			<Image boxSize="70px" src={service.imatge.publicURL} alt={service.nom} />
-			<Heading fontWeight="normal" textTransform="uppercase" fontSize="lg">{service.nom}</Heading>
-			<Text fontFamily="Playfair Display" fontSize="xl">{service.descripcio}</Text>
-			<Text display="block" color="mangoTango.500">
-				<Link to={`/serveis#${service.id}`} title={service.nom} as={GatsbyLink} variant="btn">Veure'n més</Link>
-			</Text>
-		</VStack>
+		<Fade ref={ref} in={inView}>
+			<VStack
+				p={4}
+				bg="cultured.500"
+				minW="310px"
+				minH="450px"
+				spacing={1}
+				textAlign="center"
+				justifyContent="space-between"
+			>
+				<Image boxSize="70px" mt={4} src={service.imatge.publicURL} alt={service.nom} />
+				<Heading fontWeight="normal" textTransform="uppercase" fontSize="lg">{service.nom}</Heading>
+				<Text fontFamily="Playfair Display" fontSize="2xl">{service.descripcio}</Text>
+				<Button to={`/serveis/#${service.id}`} title={service.nom} as={GatsbyLink} variant="custom-link" colorScheme="mangoTango" >Veure'n més</Button>
+			</VStack>
+		</Fade>
 	)
 }
 const IndexPage = (props) => {

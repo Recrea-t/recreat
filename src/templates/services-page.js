@@ -1,14 +1,79 @@
 import React from "react"
 import {graphql} from 'gatsby'
 import PropTypes from 'prop-types'
+import {motion} from 'framer-motion'
 
 import {Grid, VStack, Container, Text, Heading, Image, Wrap, WrapItem, GridItem, SimpleGrid} from '@chakra-ui/react'
+import {
+	Modal,
+	ModalContent,
+	ModalBody,
+	ModalCloseButton,
+	useDisclosure,
+	Box,
+	Link,
+} from "@chakra-ui/react"
 
 import Layout from "../components/Layout"
 
-const ServiceItem = (props) => {
-	const isXarxesSocials = props.id === "xarxes-socials"
+const MotionImage = motion.custom(Image)
 
+const ServiceModal = (props) => {
+	const {isOpen, onClose, service, example, finalRef} = props
+	const initialRef = React.useRef()
+
+	if (!example) {
+		return null
+	}
+
+	return (
+		<Modal
+			isOpen={isOpen}
+			onClose={onClose}
+			initialFocusRef={initialRef}
+			finalFocusRef={finalRef}
+			scrollBehavior="inside"
+			motionPreset="slideInBottom"
+			isCentered
+		>
+			<ModalContent bg="cultured.500">
+				<ModalCloseButton colorScheme="dimGray" variant="custom-link" _focus={{outline: 0}} />
+				<ModalBody>
+					<VStack textAlign="center" spacing={1} ref={initialRef} >
+						<Heading variant="in-modal" fontWeight="semibold" >{service}</Heading>
+						<Heading as="h6" variant="in-modal">{example.nom}</Heading>
+						<Heading as="h6" variant="in-modal">{example.any}</Heading>
+						<Link variant="in-modal" href={`http://${example.url}`} title={example.nom} target="_blank" rel="noopener" isExternal>{example.url}</Link>
+						{example.imatges.map((item, index) =>
+							<MotionImage
+								key={index}
+								transition={{duration: 0.3}}
+								w="full"
+								objectFit="contain"
+								alt={example.nom}
+								{...item.childImageSharp.fluid} />
+						)}
+					</VStack>
+				</ModalBody>
+			</ModalContent>
+		</Modal>
+	)
+}
+
+const ServiceItem = (props) => {
+	const {isOpen, onOpen, onClose} = useDisclosure()
+	const [exampleSelected, setExampleSelected] = React.useState(null)
+	const [finalRef, setFinalRef] = React.useState(null)
+	const ref = React.useRef()
+
+	const handleClick = (example, ref) => {
+		setExampleSelected(example)
+		setFinalRef(ref)
+		onOpen()
+	}
+
+	const isDissenyWeb = props.id === "disseny-web"
+	const isXarxesSocials = props.id === "xarxes-socials"
 
 	return (
 		<>
@@ -53,16 +118,41 @@ const ServiceItem = (props) => {
 							</Wrap>
 						</VStack>
 						:
-						<SimpleGrid columns={[1, null, 3]} spacing={4}>
-							<Image w="full" objectFit="contain" src={props.imatge} fallbackSrc="https://via.placeholder.com/311x233" />
-							<Image w="full" objectFit="contain" src={props.imatge} fallbackSrc="https://via.placeholder.com/311x233" />
-							<Image w="full" objectFit="contain" src={props.imatge} fallbackSrc="https://via.placeholder.com/311x233" />
-							<Image w="full" objectFit="contain" src={props.imatge} fallbackSrc="https://via.placeholder.com/311x233" />
-							<Image w="full" objectFit="contain" src={props.imatge} fallbackSrc="https://via.placeholder.com/311x233" />
-							<Image w="full" objectFit="contain" src={props.imatge} fallbackSrc="https://via.placeholder.com/311x233" />
+						<SimpleGrid columns={[1, null, 3]} spacing={4} ref={ref}>
+							{props.exemples.map((example, index) =>
+								<Box
+									key={index}
+									pos="relative"
+									_before={{
+										content: "''",
+										display: "block",
+										pt: "75%",
+									}}
+									cursor="pointer"
+									overflow="hidden"
+									boxShadow={isDissenyWeb ? "xs" : "md"}
+									onClick={() => handleClick(example, ref)}
+								>
+									<MotionImage
+										transition={{duration: 0.3}}
+										whileHover={isDissenyWeb ? {opacity: 0.7} : {scale: 1.1}}
+										h="full"
+										w="full"
+										objectFit={isDissenyWeb ? "contain" : "cover"}
+										objectPosition="center"
+										pos="absolute"
+										top={0}
+										left={0}
+										bottom={0}
+										alt={example.nom}
+										bg="white"
+										{...example.imatges[0].childImageSharp.fluid} />
+								</Box>
+							)}
 						</SimpleGrid>
 					}
 				</GridItem>
+				<ServiceModal onClose={onClose} isOpen={isOpen} service={props.nom} example={exampleSelected} finalRef={finalRef} />
 			</Grid>
 		</>
 	)
@@ -95,8 +185,8 @@ export default ServicesPage
 
 export const query = graphql`
 	query ServicesPageTemplateQuery($id: String) {
-					markdownRemark(id: {eq: $id}) {
-					id
+		markdownRemark(id: {eq: $id}) {
+			id
 			html
 			frontmatter {
 					title
@@ -106,6 +196,19 @@ export const query = graphql`
 					nom
 					descripcio
 					detall
+					exemples {
+						nom
+						descripcio
+						any
+						url
+						imatges {
+							childImageSharp {
+								fluid(maxWidth: 400) {
+									...GatsbyImageSharpFluid
+								}
+							}
+						}
+					}
 					passes {
 						text
 						imatge {

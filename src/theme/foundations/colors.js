@@ -1,4 +1,4 @@
-const colors = {
+export default {
 	mangoTango: {
 		100: "#F8DAC9",
 		200: "#F3C2A5",
@@ -33,6 +33,3 @@ const colors = {
 		900: "#414345",
 	},
 }
-
-export default colors
-

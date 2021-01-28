@@ -20,6 +20,51 @@ serveis:
       - "Felicitacions, invitacions, targetons"
       - "Retolació de vehicles"
       - "Senyalística"
+    exemples:
+      - nom: "Bar Els Cremalls"
+        descripcio: "Papereria promocional"
+        any: "2020"
+        imatges:
+          - /images/01_CartellCremalls.jpg
+          - /images/01_CartellFlyer.jpg
+      - nom: "Restaurant El Nabiu"
+        descripcio: "Redisseny identitat corporativa"
+        any: "2019"
+        imatges:
+          - /images/02_Nabiu.jpg
+      - nom: "Consorci de Turisme de les Valls d'Àneu"
+        descripcio: "Roll up"
+        any: "2019"
+        imatges:
+          - /images/03_RollUp_VallsAneu_2019.jpg
+      - nom: "Formatgeria de Gavàs"
+        descripcio: "Identitat corporativa"
+        any: "2019"
+        imatges:
+          - /images/04_LogoGavasenca.png
+          - /images/04_ETQ_Gavasenca.jpg
+          - /images/04_TargetesGavasenca.jpg
+      - nom: "Formatgeria Girola"
+        descripcio: "Disseny de producte"
+        any: "2016-2019"
+        imatges:
+          - /images/05_ETQ_Girola2016.jpg
+          - /images/05_ETQ_Girola2019.jpg
+      - nom: "Consorci de Turisme de les Valls d'Àneu"
+        descripcio: "Mapa desplegable"
+        any: "2015-2018"
+        imatges:
+          - /images/06_MapaNeu.jpg
+          - /images/06_MapaNeuCara.jpg
+          - /images/06_MapaNeuDors.jpg
+      - nom: "Plataforma Salvem Salau"
+        descripcio: "Identitat corporativa"
+        any: "2018"
+        imatges:
+          - /images/07_LogoSalau.jpg
+          - /images/07_papereriaSalau.jpg
+          - /images/07_cartellNoMinaSalau.jpg
+          - /images/07_cartellGenericSalau.jpg
   - id: "disseny-web"
     nom: "DISSENY WEB"
     descripcio: "Qui no és a internet no existeix. Una pàgina web corporativa ben ideada és
@@ -34,6 +79,25 @@ serveis:
       - "Redacció de continguts"
       - "Allotjament"
       - "Gestió de domini i web mail"
+    exemples:
+      - nom: "Associació Cultural Fallaires d'Isil"
+        any: "2017"
+        url: "www.fallesisil.cat"
+        imatges:
+          - ../images/PC_Web_Falles.png
+          - ../images/Mockup_Web_Falles.png
+      - nom: "Els Cremalls"
+        any: "2020"
+        url: "elscremalls.paperform.co"
+        imatges:
+          - ../images/PC_Web_Cremalls.png
+          - ../images/Mockup_Web_Cremalls.png
+      - nom: "Marc Bruna Fuster"
+        any: "2021"
+        url: "marcbrunafuster.cat"
+        imatges:
+          - ../images/PC_Web_Marc.png
+          - ../images/Mockup_Web_Marc.png
   - id: "xarxes-socials"
     nom: "XARXES SOCIALS"
     descripcio: "Actualment les xarxes socials s'han convertit en un espai virtual en el que

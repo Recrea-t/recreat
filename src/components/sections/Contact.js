@@ -30,7 +30,10 @@ const Contact = () => {
                 <Flex
                     align={["center", "center", "center", "center"]}
                     justify={["center", "space-between", "flex-end", "flex-end"]}
-                    direction={["column", "row", "row", "row"]}>
+                    direction={["column", "row", "row", "row"]}
+                    alignItems="start"
+                    alignItems={["center", "start", "start", "start"]}
+                >
 
                     <VStack spacing={4} mr={{ base: 0, md: "4rem" }} alignItems="flex-start">
                         <Box>

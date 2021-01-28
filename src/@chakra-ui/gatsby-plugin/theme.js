@@ -3,5 +3,5 @@ import overrides from '/src/theme'
 
 const customTheme = extendTheme(overrides)
 
-console.log(customTheme)
+//console.log(customTheme)
 export default customTheme

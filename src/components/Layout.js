@@ -10,12 +10,11 @@ import {useLocation} from "@reach/router"
 import useSiteMetadata from './siteMetadata'
 
 import CookieConsent from "react-cookie-consent";
-import {initializeAndTrack} from 'gatsby-plugin-gdpr-cookies'
+import {initializeAndTrack} from '../utils/gdpr'
 
-import {Icon} from "@chakra-ui/react"
+import {Flex, HStack, Icon, Text, Link} from "@chakra-ui/react"
 import {FaCookieBite} from "@react-icons/all-files/fa/FaCookieBite"
 
-import {Flex} from "@chakra-ui/react"
 import Header from "./sections/Header"
 import Footer from "./sections/Footer"
 import SEO from './SEO/seo'
@@ -47,28 +46,27 @@ const TemplateWrapper = (props) => {
 				</Flex>
 				<Footer title={defaultTitle} />
 			</Flex>
-			{/*
-            <CookieConsent
-                location="bottom"
-                buttonText="Acceptar"
-                onAccept={() => { initializeAndTrack(location) }}
-                enableDeclineButton
-                declineButtonText=""
-                cookieName="gatsby-gdpr-google-analytics"
-                disableStyles={true}
-                containerClasses="cookie-consent fixed-bottom alert alert-dark alert-dismissible fade show text-sm d-flex flex-row justify-content-between"
-                buttonWrapperClasses="buttons"
-                buttonClasses="btn btn-sm btn-primary"
-                declineButtonClasses="btn-close"
-                expires={150}>
-                <p>
-                    <Icon as={FaCookieBite} />
-					Utilitzem galetes per millorar la informació i optimitzar l'experiència de l'usuari de manera contínua.
-					Per a més informació, consulteu la <a href="/politica-de-galetes" target="_blank" title="Política de cookies" className="alert-link"> política de galetes</a>.
-				</p>
-            </CookieConsent>
-						*/}
-		</React.Fragment>
+			<CookieConsent
+				location="bottom"
+				buttonText="Acceptar"
+				onAccept={() => {initializeAndTrack(location)}}
+				enableDeclineButton
+				declineButtonText="&times;"
+				cookieName="gdpr-metricool"
+				style={{backgroundColor: "#9A9AA0", marginBottom: "3rem"}}
+				buttonWrapperClasses="cookie-consent-buttons"
+				buttonClasses="accept-btn"
+				declineButtonClasses="decline-btn"
+				expires={150}>
+				<HStack spacing={2} color="dimGray.500">
+					<Icon as={FaCookieBite} h={8} w={8} />
+					<Text>
+						Utilitzem galetes per millorar la informació i optimitzar l'experiència de l'usuari de manera contínua.
+					Per a més informació, consulteu la <Link href="/politica-de-galetes" target="_blank" title="Política de cookies" fontWeight="semibold" > política de galetes</Link>.
+				</Text>
+				</HStack>
+			</CookieConsent>
+		</React.Fragment >
 	)
 }
 
