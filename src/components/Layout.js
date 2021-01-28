@@ -41,7 +41,7 @@ const TemplateWrapper = (props) => {
 				h="100vh"
 			>
 				<Header />
-				<Flex as="main" pos="relative" w="full" mt={28} direction="column">
+				<Flex as="main" pos="relative" w="full" mt={24} direction="column">
 					{props.children}
 				</Flex>
 				<Footer title={defaultTitle} />

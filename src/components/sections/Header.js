@@ -28,6 +28,8 @@ const Header = (props) => {
 			w="full"
 			zIndex="1"
 			bg="white"
+			borderBottom="1px"
+			borderBottomColor="mangoTango.500"
 		>
 			<Flex
 				maxW="1200px"

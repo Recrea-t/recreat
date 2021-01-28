@@ -5,8 +5,8 @@ export default {
 	variants: {
 		"with-border": {
 			py: "2rem",
-			borderTop: "1px",
-			borderTopColor: "mangoTango.500",
+			//borderTop: "1px",
+			//borderTopColor: "mangoTango.500",
 		},
 	},
 }
