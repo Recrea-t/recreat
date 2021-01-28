@@ -2,9 +2,12 @@ import React from "react"
 import {Link as GatsbyLink} from 'gatsby'
 
 import {VStack, Link, FormControl, FormErrorMessage, Input, Textarea, Checkbox, Button} from '@chakra-ui/react'
+import {useToast} from "@chakra-ui/react"
 import {Formik, Form, Field} from 'formik'
 
 const ContactForm = () => {
+	const toast = useToast()
+
 	const placeholderStyles = {
 		color: "white",
 		fontWeight: "hairline",
@@ -33,7 +36,17 @@ const ContactForm = () => {
 						"form-name": "contacte-web", ...values
 					})
 				})
-					.then(() => actions.resetForm())
+					.then(() => {
+						actions.resetForm()
+						toast({
+							title: "Missatge enviat.",
+							description: "Aviat et respondrem.",
+							status: "success",
+							duration: 9000,
+							isClosable: true,
+						})
+					}
+					)
 					.catch(error => alert(error))
 					.finally(() => actions.setSubmitting(false))
 			}}
