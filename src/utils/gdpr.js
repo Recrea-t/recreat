@@ -13,11 +13,13 @@ export const initMetricool = () => {
 const checkIfMetricoolIsInitilized = () => !!window.MetricoolInitialized
 
 export const trackVisit = (location) => {
-	if (!checkIfMetricoolIsInitilized()) initMetricool();
+	if (process.env.NODE_ENV === 'production') {
+		if (!checkIfMetricoolIsInitilized()) initMetricool();
 
-	if (cookies.get(cookieName) === `true`) {
-		window.beTracker.t({hash: `${process.env.METRICOOL_ID}`})
-		console.log('tracking metricool');
+		if (cookies.get(cookieName) === `true`) {
+			window.beTracker.t({hash: `${process.env.METRICOOL_ID}`})
+			console.log('tracking metricool');
+		}
 	}
 }
 
