@@ -28,6 +28,7 @@ const PersonItem = (props) => {
 					}}
 				>
 					<MotionImage
+						shadow="md"
 						transition={{duration: 0.3}}
 						h="full"
 						w="full"
