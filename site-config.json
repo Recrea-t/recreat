@@ -22,19 +22,19 @@
 	},
 	"social": {
 		"instagram": {
-			"username": "",
+			"username": "Recreat_Disseny_Comunicacio",
 			"title": "Segueix-nos a Instagram",
 			"baseUrl": "https://www.instagram.com/"
 		},
 		"facebook": {
-			"username": "",
+			"username": "RecreatDissenyComunicacio",
 			"title": "Segueix-nos a Facebook",
 			"baseUrl": "https://www.facebook.com/"
 		},
-		"twitter": {
-			"username": "",
+		"linkedin": {
+			"username": "marta-bruna-b5847733",
 			"title": "Segueix-nos a Twitter",
-			"baseUrl": "https://www.twitter.com/"
+			"baseUrl": "https://www.linkedin.com/in/"
 		}
 	}
 }

@@ -28,7 +28,7 @@ const useSiteMetadata = () => {
 							address
 						}
 						social {
-							twitter {
+							linkedin {
 								username
 								title
 								baseUrl
