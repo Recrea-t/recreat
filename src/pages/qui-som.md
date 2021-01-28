@@ -7,6 +7,7 @@ description: "Som un petit estudi pirinenc de disseny gràfic i comunicació que
 persones:
   - nom: "Marta Bruna"
     subtitol: "Esterri d'Àneu - 1985"
+    imatge: /images/Marta_bruna.jpg
     descripcio: "Després d'uns anys estudiant i treballant fora, el 2011 vaig
       tornar al Pallars. Des d’aleshores, i fins al 2019, vaig combinar el
       disseny gràfic com a  freelance amb l'hostaleria i la restauració. A

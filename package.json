@@ -18,6 +18,7 @@
 		"@fontsource/playfair-display": "^4.1.0",
 		"@react-icons/all-files": "^4.1.0",
 		"axios": "^0.21.1",
+		"cross-env": "^7.0.3",
 		"formik": "^2.2.6",
 		"framer-motion": "^3.2.1",
 		"gatsby": "^2.30.3",
@@ -50,7 +51,7 @@
 	"scripts": {
 		"clean": "gatsby clean",
 		"start": "npm run develop",
-		"build": "npm run clean && gatsby build",
+		"build": "",
 		"develop": "npm run clean && gatsby develop",
 		"format": "prettier --trailing-comma es5 --no-semi --single-quote --write \"{gatsby-*.js,src/**/*.js}\"",
 		"forestry:preview": "gatsby develop -p 8080 -H 0.0.0.0",

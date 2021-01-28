@@ -6,7 +6,6 @@ import {motion} from 'framer-motion'
 import {Grid, VStack, Container, Text, Heading, Image, Wrap, WrapItem, GridItem, SimpleGrid} from '@chakra-ui/react'
 import {
 	Modal,
-	ModalOverlay,
 	ModalContent,
 	ModalBody,
 	ModalCloseButton,
@@ -33,7 +32,7 @@ const ServiceModal = (props) => {
 			onClose={onClose}
 			initialFocusRef={initialRef}
 			finalFocusRef={finalRef}
-			scrollBehavior="outside"
+			scrollBehavior="inside"
 			motionPreset="slideInBottom"
 			isCentered
 		>
@@ -45,12 +44,15 @@ const ServiceModal = (props) => {
 						<Heading as="h6" variant="in-modal">{example.nom}</Heading>
 						<Heading as="h6" variant="in-modal">{example.any}</Heading>
 						<Link variant="in-modal" href={`http://${example.url}`} title={example.nom} target="_blank" rel="noopener" isExternal>{example.url}</Link>
-						<MotionImage
-							transition={{duration: 0.3}}
-							w="full"
-							objectFit="contain"
-							alt={example.nom}
-							{...example.imatge2.childImageSharp.fluid} />
+						{example.imatges.map((item, index) =>
+							<MotionImage
+								key={index}
+								transition={{duration: 0.3}}
+								w="full"
+								objectFit="contain"
+								alt={example.nom}
+								{...item.childImageSharp.fluid} />
+						)}
 					</VStack>
 				</ModalBody>
 			</ModalContent>
@@ -120,6 +122,12 @@ const ServiceItem = (props) => {
 							{props.exemples.map((example, index) =>
 								<Box
 									key={index}
+									pos="relative"
+									_before={{
+										content: "''",
+										display: "block",
+										pt: "75%",
+									}}
 									cursor="pointer"
 									overflow="hidden"
 									boxShadow={isDissenyWeb ? "xs" : "md"}
@@ -128,11 +136,17 @@ const ServiceItem = (props) => {
 									<MotionImage
 										transition={{duration: 0.3}}
 										whileHover={isDissenyWeb ? {opacity: 0.7} : {scale: 1.1}}
+										h="full"
 										w="full"
-										objectFit="contain"
+										objectFit={isDissenyWeb ? "contain" : "cover"}
+										objectPosition="center"
+										pos="absolute"
+										top={0}
+										left={0}
+										bottom={0}
 										alt={example.nom}
 										bg="white"
-										{...example.imatge1.childImageSharp.fluid} />
+										{...example.imatges[0].childImageSharp.fluid} />
 								</Box>
 							)}
 						</SimpleGrid>
@@ -184,18 +198,12 @@ export const query = graphql`
 					detall
 					exemples {
 						nom
+						descripcio
 						any
 						url
-						imatge1 {
+						imatges {
 							childImageSharp {
-								fluid {
-									...GatsbyImageSharpFluid
-								}
-							}
-						}
-						imatge2 {
-							childImageSharp {
-								fluid {
+								fluid(maxWidth: 400) {
 									...GatsbyImageSharpFluid
 								}
 							}
