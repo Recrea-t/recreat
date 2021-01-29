@@ -12,7 +12,7 @@ import useSiteMetadata from './siteMetadata'
 import CookieConsent from "react-cookie-consent";
 import {initializeAndTrack} from '../utils/gdpr'
 
-import {Flex, HStack, Icon, Text, Link} from "@chakra-ui/react"
+import {Flex, Icon, Text, Link} from "@chakra-ui/react"
 import {FaCookieBite} from "@react-icons/all-files/fa/FaCookieBite"
 
 import Header from "./sections/Header"
@@ -52,19 +52,17 @@ const TemplateWrapper = (props) => {
 				onAccept={() => {initializeAndTrack(location)}}
 				enableDeclineButton
 				declineButtonText="&times;"
-				cookieName="gdpr-metricool"
 				style={{backgroundColor: "#9A9AA0", marginBottom: "3rem"}}
 				buttonWrapperClasses="cookie-consent-buttons"
 				buttonClasses="accept-btn"
 				declineButtonClasses="decline-btn"
+				cookieName="gdpr-metricool"
 				expires={150}>
-				<HStack spacing={2} color="dimGray.500">
-					<Icon as={FaCookieBite} h={8} w={8} />
-					<Text>
+				<Text color="dimGray.500">
+					<Icon as={FaCookieBite} h={4} w={4} mr={2} />
 						Utilitzem galetes per millorar la informació i optimitzar l'experiència de l'usuari de manera contínua.
 					Per a més informació, consulteu la <Link href="/politica-de-galetes" target="_blank" title="Política de cookies" fontWeight="semibold" > política de galetes</Link>.
 				</Text>
-				</HStack>
 			</CookieConsent>
 		</React.Fragment >
 	)

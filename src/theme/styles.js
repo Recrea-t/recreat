@@ -9,22 +9,29 @@ const styles = {
 		".cookie-consent-buttons": {
 			display: "flex",
 			flexDirection: "column",
-			alignSelf: "end",
+			justifyItems: "flex-end",
 			alignItems: "flex-end",
+			width: "100%",
+			height: "100%",
 
 			button: {
-				background: "transparent !important",
 				textTransform: "uppercase",
-				margin: "0 !important",
-				padding: "0 .5rem !important",
+				color: "#efeff0 !important",
+				background: "transparent !important",
+				_hover: {
+					color: "#D6D6D9 !important",
+				}
 			},
 			".accept-btn": {
 				fontWeight: "bold",
-				color: "white !important",
 			},
 			".decline-btn": {
-				fontSize: "2rem",
-				color: "dimGray.500 !important",
+				position: "absolute",
+				top: "0",
+				right: "0",
+				fontSize: "2.5rem",
+				margin: "0 !important",
+				padding: "0 .5rem !important",
 			}
 		}
 	}
