@@ -79,7 +79,13 @@ module.exports = {
 				],
 			},
 		},
-		"gatsby-plugin-netlify-cms",
+		{
+			resolve: "gatsby-plugin-netlify-cms",
+			options: {
+				htmlTitle: "Gestor de contingut",
+				htmlFavicon: "/images/icon.png"
+			},
+		},
 		{
 			resolve: "gatsby-plugin-webpack-bundle-analyser-v2",
 			options: {

@@ -1,5 +1,7 @@
 backend:
   name: git-gateway
+  repo: recrea-t/recreat
+  branch: main
 
 media_folder: static/images
 public_folder: /images
