@@ -83,7 +83,7 @@ module.exports = {
 			resolve: "gatsby-plugin-netlify-cms",
 			options: {
 				htmlTitle: "Gestor de contingut",
-				htmlFavicon: "/images/icon.png"
+				htmlFavicon: "static/images/icon.png"
 			},
 		},
 		{
