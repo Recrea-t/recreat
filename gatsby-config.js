@@ -80,9 +80,15 @@ module.exports = {
 			},
 		},
 		{
+			resolve: `gatsby-plugin-metricool`,
+			options: {
+				metricoolId: process.env.METRICOOL_ID,
+			},
+		},
+		{
 			resolve: "gatsby-plugin-netlify-cms",
 			options: {
-				htmlTitle: "Gestor de contingut",
+				htmlTitle: config.title,
 				htmlFavicon: "static/images/icon.png"
 			},
 		},

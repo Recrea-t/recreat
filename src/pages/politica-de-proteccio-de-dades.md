@@ -27,17 +27,9 @@ Per interès legítim:
 
 #### Com recollim les vostres dades personals i quines són?
 
-###### Informació que ens faciliteu mitjançant  el formulari web
 La nostra bústia de contacte, en el moment de la recollida, hi indica la informació bàsica sobre protecció de dades, especialment la seva finalitat.
 
 Les dades personals que ens faciliteu mitjançant aquest formulari són: el vostre nom i l'adreça de correu electrònic.
-
-###### Informació que recollim de les vostres visites als nostres webs
-Pel simple fet de navegar pels nostres webs, recollim estadístiques globals anònimes.
-
-Aquesta informació la utilitzem per millorar la informació i optimitzar l'experiència de l'usuari de manera contínua i l'obtenim mitjançant les galetes que es desen en els vostres navegadors.
-
-Per a més informació, consulteu la *[política de galetes](/politica-de-galetes)*.
 
 #### Durant quant de temps conservarem les vostres dades?
 Només emmagatzemem la vostra informació personal en la mesura que la necessitem, a fi de poder utilitzar-la segons la finalitat per a la qual va ser recollida, i segons la base jurídica del seu tractament, de conformitat amb la llei aplicable.

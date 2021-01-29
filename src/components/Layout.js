@@ -6,14 +6,9 @@ import "@fontsource/montserrat/700.css" // Bold
 import "@fontsource/playfair-display"
 
 import React from 'react'
-import {useLocation} from "@reach/router"
 import useSiteMetadata from './siteMetadata'
 
-import CookieConsent from "react-cookie-consent";
-import {initializeAndTrack} from '../utils/gdpr'
-
-import {Flex, Icon, Text, Link} from "@chakra-ui/react"
-import {FaCookieBite} from "@react-icons/all-files/fa/FaCookieBite"
+import {Flex} from "@chakra-ui/react"
 
 import Header from "./sections/Header"
 import Footer from "./sections/Footer"
@@ -28,7 +23,6 @@ const TemplateWrapper = (props) => {
 		datePublished,
 	} = props
 
-	const location = useLocation()
 	const {defaultTitle} = useSiteMetadata()
 
 	return (
@@ -46,24 +40,6 @@ const TemplateWrapper = (props) => {
 				</Flex>
 				<Footer title={defaultTitle} />
 			</Flex>
-			<CookieConsent
-				location="bottom"
-				buttonText="Acceptar"
-				onAccept={() => {initializeAndTrack(location)}}
-				enableDeclineButton
-				declineButtonText="&times;"
-				style={{backgroundColor: "#9A9AA0", marginBottom: "3rem"}}
-				buttonWrapperClasses="cookie-consent-buttons"
-				buttonClasses="accept-btn"
-				declineButtonClasses="decline-btn"
-				cookieName="gdpr-metricool"
-				expires={150}>
-				<Text color="dimGray.500">
-					<Icon as={FaCookieBite} h={4} w={4} mr={2} />
-						Utilitzem galetes per millorar la informació i optimitzar l'experiència de l'usuari de manera contínua.
-					Per a més informació, consulteu la <Link href="/politica-de-galetes" target="_blank" title="Política de cookies" fontWeight="semibold" > política de galetes</Link>.
-				</Text>
-			</CookieConsent>
 		</React.Fragment >
 	)
 }
