@@ -6,6 +6,11 @@ backend:
 media_folder: static/images
 public_folder: /images
 
+site_url: https://www.recreat.cat
+display_url: https://www.recreat.cat
+logo_url: https://www.recreat.cat/images/logo.svg
+locale: "ca"
+
 collections:
   - name: "pages"
     label: "Pàgines"
