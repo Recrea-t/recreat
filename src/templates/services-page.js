@@ -33,7 +33,6 @@ const ServiceModal = (props) => {
 			initialFocusRef={initialRef}
 			finalFocusRef={finalRef}
 			scrollBehavior="inside"
-			motionPreset="slideInBottom"
 			isCentered
 		>
 			<ModalContent bg="cultured.500">
@@ -146,7 +145,7 @@ const ServiceItem = (props) => {
 										bottom={0}
 										alt={example.nom}
 										bg="white"
-										{...example.imatges[0].childImageSharp.fluid} />
+										{...example.thumbnail.childImageSharp.fluid} />
 								</Box>
 							)}
 						</SimpleGrid>
@@ -201,6 +200,13 @@ export const query = graphql`
 						descripcio
 						any
 						url
+						thumbnail {
+							childImageSharp {
+								fluid(maxWidth: 400) {
+									...GatsbyImageSharpFluid
+								}
+							}
+						}
 						imatges {
 							childImageSharp {
 								fluid(maxWidth: 400) {
