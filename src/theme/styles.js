@@ -6,6 +6,11 @@ const styles = {
 		body: {
 			color: "dimGray.500",
 		},
+		".markdown": {
+			li: {
+				margin: "0 !important",
+			},
+		},
 		".cookie-consent-buttons": {
 			display: "flex",
 			flexDirection: "column",

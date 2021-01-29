@@ -4,7 +4,7 @@ title: Política de galetes
 description: ''
 
 ---
-### Política de galetes
+## Política de galetes
 
 #### Què són les galetes?
 

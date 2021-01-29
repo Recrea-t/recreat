@@ -4,14 +4,24 @@ import PropTypes from 'prop-types'
 
 import { Container } from '@chakra-ui/react'
 
+import ReactMarkdown from 'react-markdown'
+import ChakraUIRenderer from 'chakra-ui-markdown-renderer';
+
 import Layout from "../components/Layout"
 
 const GeneralPage = ({ data }) => {
-    const { frontmatter, html } = data.markdownRemark
+
+    const { frontmatter, rawMarkdownBody } = data.markdownRemark
 
     return (
         <Layout title={frontmatter.title} description={frontmatter.description}>
-            <Container variant="with-border" dangerouslySetInnerHTML={{ __html: html }}></Container>
+            <Container className="markdown" variant="with-border">
+                <ReactMarkdown
+                    renderers={ChakraUIRenderer()}
+                    source={rawMarkdownBody}
+                    escapeHtml={false}
+                />
+            </Container>
         </Layout>
     )
 }
@@ -19,6 +29,7 @@ const GeneralPage = ({ data }) => {
 GeneralPage.propTypes = {
     data: PropTypes.shape({
         html: PropTypes.object,
+        rawMarkdownBody: PropTypes.object,
         markdownRemark: PropTypes.shape({
             frontmatter: PropTypes.object,
         }),
@@ -32,6 +43,7 @@ export const query = graphql`
 		markdownRemark(id: {eq: $id}) {
 			id
 			html
+			rawMarkdownBody
 			frontmatter {
 				title
         description

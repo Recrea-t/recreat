@@ -92,7 +92,7 @@ const ContactForm = () => {
 							{({field, form}) => (
 								<FormControl isRequired isInvalid={form.errors.conditions && form.touched.conditions}>
 									<Checkbox {...field} id="conditions" size="sm" colorScheme="dimGray" >
-										He llegit i accepto la <Link to="politica-de-privacitat" title="Política de privacitat" as={GatsbyLink} >política de privacitat</Link> i accepto el tractament de les meves dades personals per a l'enviament d'informació que respongui a la consulta que he plantejat.
+										He llegit i accepto la <Link fontWeight="semibold" to="politica-de-proteccio-de-dades" title="Política de protecció de dades personals" as={GatsbyLink} >política de protecció de dades</Link> i accepto el tractament de les meves dades personals per a l'enviament d'informació que respongui a la consulta que he plantejat.
 				  </Checkbox>
 									<FormErrorMessage>{form.errors.conditions}</FormErrorMessage>
 								</FormControl>
