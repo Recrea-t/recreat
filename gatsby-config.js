@@ -88,8 +88,9 @@ module.exports = {
 		{
 			resolve: "gatsby-plugin-netlify-cms",
 			options: {
-				htmlTitle: config.title,
-				htmlFavicon: "static/images/icon.png"
+				htmlTitle: "Gestor de continguts · Recrea't",
+				htmlFavicon: "static/images/icon.png",
+				modulePath: `${__dirname}/src/cms/cms.js`
 			},
 		},
 		{

@@ -19,7 +19,29 @@ collections:
         label: "Pàgina d'inici"
         name: "index"
         fields:
-          - {label: "Template Key", name: "templateKey", widget: "hidden"}
-          - {label: "Títol de la pàgina (SEO)", name: "title", widget: "string"}
-          - {label: "Descripció de la pàgina (SEO)", name: "description", widget: "string"}
-          - {label: "Serveis", name: "serveis", widget: "list", fields: [{label: "Id", name: "id", widget: "hidden"}, {label: "Nom", name: "nom", widget: "string"}, {label: "Descripció", name: "descripcio", widget: "string"}, {label: "Imatge", name: "imatge", widget: "image"}]}
+          - {
+            label: "Template Key",
+            name: "templateKey",
+            widget: "hidden",
+            default: "index-page"
+            }
+          - {
+            label: "Títol de la pàgina (SEO)",
+            name: "title",
+            widget: "string"
+            }
+          - {
+            label: "Descripció de la pàgina (SEO)",
+            name: "description",
+            widget: "string"
+            }
+          - {
+            label: "Serveis",
+            name: "serveis",
+            widget: "list",
+            fields: [
+              {label: "Id", name: "id", widget: "hidden"},
+              {label: "Nom", name: "nom", widget: "string"},
+              {label: "Descripció", name: "descripcio", widget: "string"},
+              {label: "Imatge", name: "imatge", widget: "image"}
+            ]}
