@@ -1,6 +1,6 @@
 import React from "react"
 import {Box, Flex, Collapse} from "@chakra-ui/react"
-import {CloseIcon, HamburgerIcon} from "@chakra-ui/icons"
+import {HamburgerIcon} from "@chakra-ui/icons"
 
 const ToggleMenu = (props) => {
 	const {show, toggleMenu, children} = props
@@ -12,7 +12,8 @@ const ToggleMenu = (props) => {
 				onClick={toggleMenu}
 				aria-label="Toggle navigation"
 			>
-				{show ? <CloseIcon w={8} h={8} /> : <HamburgerIcon w={8} h={8} />}
+				{/* show ? <CloseIcon w={8} h={8} /> : <HamburgerIcon w={8} h={8} />*/}
+				<HamburgerIcon w={8} h={8} />
 			</Box>
 
 			<Box display={show ? "block" : "none"} flexBasis="100%">

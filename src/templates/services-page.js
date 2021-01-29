@@ -3,9 +3,12 @@ import {graphql} from 'gatsby'
 import PropTypes from 'prop-types'
 import {motion} from 'framer-motion'
 
+import ReactMarkdown from "react-markdown";
+
 import {Grid, VStack, Container, Text, Heading, Image, Wrap, WrapItem, GridItem, SimpleGrid} from '@chakra-ui/react'
 import {
 	Modal,
+	ModalOverlay,
 	ModalContent,
 	ModalBody,
 	ModalCloseButton,
@@ -35,11 +38,12 @@ const ServiceModal = (props) => {
 			scrollBehavior="inside"
 			isCentered
 		>
+			<ModalOverlay />
 			<ModalContent bg="cultured.500">
 				<ModalCloseButton colorScheme="dimGray" variant="custom-link" _focus={{outline: 0}} />
 				<ModalBody>
 					<VStack textAlign="center" spacing={1} ref={initialRef} >
-						<Heading variant="in-modal" fontWeight="semibold" >{service}</Heading>
+						<Heading variant="in-modal" fontWeight="semibold" textTransform="uppercase" >{example.descripcio || service}</Heading>
 						<Heading as="h6" variant="in-modal">{example.nom}</Heading>
 						<Heading as="h6" variant="in-modal">{example.any}</Heading>
 						<Link variant="in-modal" href={`http://${example.url}`} title={example.nom} target="_blank" rel="noopener" isExternal>{example.url}</Link>
@@ -84,14 +88,14 @@ const ServiceItem = (props) => {
 				mb={8}
 			>
 				<GridItem colSpan={isXarxesSocials ? 3 : 2}>
-					<Text mb={4} dangerouslySetInnerHTML={{__html: props.descripcio}} />
+					<Box mb={4}>
+						<ReactMarkdown source={props.descripcio} />
+					</Box>
 
 					{!isXarxesSocials &&
-						<Wrap direction="column" fontFamily="Playfair Display">
-							{props.detall.map((item, index) =>
-								<WrapItem key={index}><Text w="full" textAlign="center" >{item}</Text></WrapItem>
-							)}
-						</Wrap>
+						<Box className="service-detail" bg="cultured.500" textAlign="center" fontFamily="Playfair Display">
+							<ReactMarkdown source={props.detall} />
+						</Box>
 					}
 				</GridItem>
 

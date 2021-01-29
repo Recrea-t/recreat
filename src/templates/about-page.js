@@ -4,6 +4,8 @@ import PropTypes from 'prop-types'
 
 import {Grid, Container, Text, Heading, Wrap, WrapItem, GridItem, Image} from '@chakra-ui/react'
 
+import ReactMarkdown from "react-markdown";
+
 import Layout from "../components/Layout"
 
 import {motion} from "framer-motion"
@@ -41,7 +43,7 @@ const PersonItem = (props) => {
 				</GridItem>
 
 				<GridItem >
-					<Text>{props.descripcio}</Text>
+					<ReactMarkdown source={props.descripcio} />
 				</GridItem>
 
 				<GridItem colSpan={{md: 2}} bg="cultured.500" textAlign="center" fontSize="xl">

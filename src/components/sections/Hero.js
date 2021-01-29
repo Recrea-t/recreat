@@ -19,7 +19,7 @@ const Hero = (props) => {
 						as="h1"
 						fontFamily="Playfair Display"
 						fontSize={{base: "2xl", md: "6xl"}}
-					>"{frontmatter.description}"</Text>
+					>{frontmatter.description}</Text>
 					<Button
 						as={GatsbyLink}
 						to="/qui-som"

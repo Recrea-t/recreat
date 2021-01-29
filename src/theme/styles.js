@@ -11,6 +11,11 @@ const styles = {
 				margin: "0 !important",
 			},
 		},
+		".service-detail": {
+			li: {
+				listStyle: "none",
+			},
+		},
 		".cookie-consent-buttons": {
 			display: "flex",
 			flexDirection: "column",

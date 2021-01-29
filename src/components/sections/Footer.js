@@ -15,7 +15,7 @@ const Footer = (props) => {
 			{...props}
 		>
 			<Box>
-				<HStack spacing={2} divider={<StackDivider />}>
+				<HStack spacing={2} divider={<StackDivider />} fontSize="xs" >
 					<Text>&copy; {new Date().getFullYear()} {props.title}</Text>
 					<Link
 						to="/politica-de-proteccio-de-dades"
@@ -23,7 +23,7 @@ const Footer = (props) => {
 						as={GatsbyLink}>Política de protecció de dades</Link>
 				</HStack>
 			</Box>
-		</Flex>
+		</Flex >
 	)
 }
 
