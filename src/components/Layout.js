@@ -32,7 +32,6 @@ const TemplateWrapper = (props) => {
 				direction="column"
 				align="center"
 				justify="space-between"
-				h="100vh"
 			>
 				<Header />
 				<Flex as="main" pos="relative" w="full" mt={24} direction="column">
