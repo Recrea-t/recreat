@@ -19,13 +19,12 @@ const Contact = () => {
 
 	return (
 		<Box
-			id="contacte"
 			w="full"
 			py={4}
 			bg="mangoTango.500"
 			color="white">
 			<Container>
-				<Heading variant="in-index">Contacte</Heading>
+				<Heading variant="in-index" id="contacte" >Contacte</Heading>
 
 				<Flex
 					align={["center", "center", "center", "center"]}

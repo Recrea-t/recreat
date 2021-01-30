@@ -5,6 +5,14 @@ export default {
 		fontSize: "2xl",
 		fontWeight: "semibold",
 		textTransform: "uppercase",
+		_before: {
+			display: "block",
+			content: "''",
+			marginTop: "-7rem",
+			height: "7rem",
+			visibility: "hidden",
+			pointerEvents: "none",
+		},
 	},
 	variants: {
 		"in-index": {
