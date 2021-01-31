@@ -48,7 +48,7 @@ const PersonItem = (props) => {
 
 				<GridItem colSpan={{md: 2}} bg="cultured.500" textAlign="center" fontSize="xl">
 					<Text textTransform="uppercase">Formació reglada</Text>
-					<Wrap direction="column" fontFamily="Playfair Display" fontSize={{md: "2xl"}}>
+					<Wrap direction="column" fontFamily="Playfair Display" >
 						{props.formacio.map((item, index) =>
 							<WrapItem key={index}><Text>{item}</Text></WrapItem>
 						)}

@@ -11,12 +11,15 @@ const Header = (props) => {
 	const [show, setShow] = React.useState(false)
 	const toggleMenu = () => setShow(!show)
 
-	const menuItems =
-		<>
-			<NavLink to="/qui-som">Qui Som</NavLink>
-			<NavLink to="/serveis">Serveis</NavLink>
-			<NavLink to="/#contacte" isLast>Contacte</NavLink>
-		</>
+	const MenuItems = ({onClick}) => {
+		return (
+			<>
+				<NavLink to="/qui-som/" onClick={onClick}>Qui Som</NavLink>
+				<NavLink to="/serveis/" onClick={onClick}>Serveis</NavLink>
+				<NavLink to="/#contacte" onClick={onClick} isLast>Contacte</NavLink>
+			</>
+		)
+	}
 
 	return (
 		<Box
@@ -49,7 +52,7 @@ const Header = (props) => {
 
 				{isSmallDevice ?
 					<ToggleMenu show={show} toggleMenu={toggleMenu}>
-						{menuItems}
+						<MenuItems onClick={toggleMenu} />
 					</ToggleMenu>
 					:
 					<Flex
@@ -57,7 +60,7 @@ const Header = (props) => {
 						direction="row"
 						justify={{md: "space-between", lg: "flex-end"}}
 					>
-						{menuItems}
+						<MenuItems />
 					</Flex>
 				}
 			</Flex>
