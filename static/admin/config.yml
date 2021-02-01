@@ -1,4 +1,5 @@
 backend:
+  #name: test-repo
   name: git-gateway
   repo: recrea-t/recreat
   branch: main
@@ -33,7 +34,7 @@ collections:
           - {
             label: "Descripció de la pàgina (SEO)",
             name: "description",
-            widget: "string"
+            widget: "text"
             }
           - {
             label: "Serveis",
@@ -42,6 +43,78 @@ collections:
             fields: [
               {label: "Id", name: "id", widget: "hidden"},
               {label: "Nom", name: "nom", widget: "string"},
-              {label: "Descripció", name: "descripcio", widget: "string"},
+              {label: "Descripció", name: "descripcio", widget: "text"},
               {label: "Imatge", name: "imatge", widget: "image"}
+            ]}
+      - file: "src/pages/qui-som.md"
+        label: "Qui som"
+        name: "qui-som"
+        fields:
+          - {
+            label: "Template Key",
+            name: "templateKey",
+            widget: "hidden",
+            default: "about-page"
+            }
+          - {
+            label: "Títol de la pàgina (SEO)",
+            name: "title",
+            widget: "string"
+            }
+          - {
+            label: "Descripció de la pàgina (SEO)",
+            name: "description",
+            widget: "text"
+            }
+          - {
+            label: "Persones",
+            name: "persones",
+            widget: "list",
+            fields: [
+              {label: "Nom", name: "nom", widget: "string"},
+              {label: "Subtítol", name: "subtitol", widget: "string"},
+              {label: "Descripció", name: "descripcio", widget: "markdown"},
+              {label: "Imatge", name: "imatge", widget: "image"},
+              {label: "Formació", name: "formacio", widget: "list", field: {label: "Item", name: "item", widget: "string"}}
+            ]}
+      - file: "src/pages/serveis.md"
+        label: "Serveis"
+        name: "serveis"
+        fields:
+          - {
+            label: "Template Key",
+            name: "templateKey",
+            widget: "hidden",
+            default: "services-page"
+            }
+          - {
+            label: "Títol de la pàgina (SEO)",
+            name: "title",
+            widget: "string"
+            }
+          - {
+            label: "Descripció de la pàgina (SEO)",
+            name: "description",
+            widget: "text"
+            }
+          - {
+            label: "Serveis",
+            name: "serveis",
+            widget: "list",
+            fields: [
+              {label: "Id", name: "id", widget: "hidden"},
+              {label: "Nom", name: "nom", widget: "string"},
+              {label: "Descripció", name: "descripcio", widget: "markdown"},
+              {label: "Detall", name: "detall", required: false, widget: "markdown"},
+              {label: "Exemples", name: "exemples", required: false, widget: "list", fields: [
+                {label: "Nom", name: "nom", widget: "string"},
+                {label: "Any", name: "any", widget: "string"},
+                {label: "Descripció", name: "descripcio", widget: "string"},
+                {label: "Thumbnail", name: "thumbnail", widget: "image"},
+                {label: "Imatges", name: "imatges", widget: "list", field: {label: "Item", name: "item", widget: image}}
+              ]},
+              {label: "Passes", name: "passes", required: false, widget: "list", fields: [
+                {label: "Text", name: "text", widget: "string"},
+                {label: "Imatge", name: "imatge", widget: "image"}
+              ]}
             ]}
