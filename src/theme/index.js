@@ -1,30 +1,29 @@
 // Global style overrides
-import styles from "./styles"
+import styles from "./styles";
 
 // Foundational style overrides
-import colors from "./foundations/colors"
-import shadows from "./foundations/shadows"
-import typography from "./foundations/typography"
+import colors from "./foundations/colors";
+import shadows from "./foundations/shadows";
+import typography from "./foundations/typography";
 
 // Component style overrides
-import Container from "./components/container"
-import Heading from "./components/heading"
-import Button from "./components/button"
-import Link from "./components/link"
+import Container from "./components/container";
+import Heading from "./components/heading";
+import Button from "./components/button";
+import Link from "./components/link";
 
 const overrides = {
-	styles,
-	colors,
-	shadows,
-	...typography,
-	components: {
-		Container,
-		Heading,
-		Button,
-		CloseButton: {...Button},
-		Link,
-	}
-}
+  styles,
+  colors,
+  shadows,
+  ...typography,
+  components: {
+    Container,
+    Heading,
+    Button,
+    CloseButton: { ...Button },
+    Link,
+  },
+};
 
-export default overrides
-
+export default overrides;

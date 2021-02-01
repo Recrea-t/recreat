@@ -1,13 +1,10 @@
 export default {
-	baseStyle: {
-		maxW: "1200px",
-	},
-	variants: {
-		"with-border": {
-			py: "2rem",
-			//borderTop: "1px",
-			//borderTopColor: "mangoTango.500",
-		},
-	},
-}
-
+  baseStyle: {
+    maxW: "1200px",
+  },
+  variants: {
+    "with-top-padding": {
+      py: "2rem",
+    },
+  },
+};
