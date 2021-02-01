@@ -75,7 +75,7 @@ collections:
               {label: "Subtítol", name: "subtitol", widget: "string"},
               {label: "Descripció", name: "descripcio", widget: "markdown"},
               {label: "Imatge", name: "imatge", widget: "image"},
-              {label: "Formació", name: "formacio", widget: "list", field: {label: "Item", name: "item", widget: "string"}}
+              {label: "Formació", name: "formacio", widget: "list", field: {label: "Línia", name: "item", widget: "string"}}
             ]}
       - file: "src/pages/serveis.md"
         label: "Serveis"
@@ -109,9 +109,9 @@ collections:
               {label: "Exemples", name: "exemples", required: false, widget: "list", fields: [
                 {label: "Nom", name: "nom", widget: "string"},
                 {label: "Any", name: "any", widget: "string"},
-                {label: "Descripció", name: "descripcio", widget: "string"},
+                {label: "Descripció", name: "descripcio", required: false, widget: "string"},
                 {label: "Thumbnail", name: "thumbnail", widget: "image"},
-                {label: "Imatges", name: "imatges", widget: "list", field: {label: "Item", name: "item", widget: image}}
+                {label: "Imatges", name: "imatges", widget: "list", field: {label: "Imatge", name: "item", widget: image}}
               ]},
               {label: "Passes", name: "passes", required: false, widget: "list", fields: [
                 {label: "Text", name: "text", widget: "string"},
