@@ -3,6 +3,8 @@ import {mode} from "@chakra-ui/theme-tools"
 function variantCustomLink(props) {
 	const {colorScheme: c} = props
 	const color = mode(`${c}.500`, `${c}.200`)(props)
+	const hoverColor = mode(`${c}.700`, `${c}.200`)(props)
+	const activeColor = mode(`${c}.700`, `${c}.400`)(props)
 
 	return {
 		padding: 0,
@@ -11,7 +13,7 @@ function variantCustomLink(props) {
 		color: color,
 		_hover: {
 			textDecoration: "none",
-			color: mode(`${c}.600`, `${c}.300`)(props),
+			color: hoverColor,
 			bg: "transparent",
 			_disabled: {
 				color: color,
@@ -19,11 +21,11 @@ function variantCustomLink(props) {
 			},
 		},
 		_focus: {
-			outline: 0,
-			color: mode(`${c}.500`, `${c}.400`)(props),
+			boxShadow: "none",
+			color: hoverColor,
 		},
 		_active: {
-			color: mode(`${c}.700`, `${c}.400`)(props),
+			color: activeColor,
 		},
 	}
 }

@@ -1,6 +1,9 @@
 import React from "react"
 import {Link as GatsbyLink} from "gatsby"
 import {Text, Link} from "@chakra-ui/react"
+import {motion} from 'framer-motion'
+
+const MotionText = motion.custom(Text)
 
 const NavLink = (props) => {
 	const {children, onClick, isLast, to = "/", ...rest} = props
@@ -12,10 +15,11 @@ const NavLink = (props) => {
 	}
 
 	return (
-		<Text
+		<MotionText
 			mb={{base: isLast ? 0 : 8, sm: 0}}
 			mr={{base: 0, sm: isLast ? 0 : 8}}
 			display="block"
+			whileTap={{scale: 0.95}}
 			{...rest}
 		>
 			<Link
@@ -28,7 +32,7 @@ const NavLink = (props) => {
 			>
 				{children}
 			</Link>
-		</Text>
+		</MotionText>
 	)
 }
 
