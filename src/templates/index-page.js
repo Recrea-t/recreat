@@ -1,9 +1,8 @@
 import React from "react"
 import {Link as GatsbyLink, graphql} from 'gatsby'
 import PropTypes from 'prop-types'
-import {useInView} from 'react-intersection-observer'
 
-import {SimpleGrid, Container, Text, Heading, Image, VStack, Button, Fade} from '@chakra-ui/react'
+import {SimpleGrid, Container, Text, Heading, Image, VStack, Button, useBreakpointValue} from '@chakra-ui/react'
 
 import Layout from "../components/Layout"
 import Hero from "../components/sections/Hero"
@@ -11,10 +10,15 @@ import Contact from "../components/sections/Contact"
 
 const ServiceItem = (props) => {
 	const {service} = props
-	const {ref, inView} = useInView({triggerOnce: true});
+	const isSmallDevice = useBreakpointValue({base: true, md: false})
 
 	return (
-		<Fade ref={ref} in={inView}>
+		<div
+			data-sal={isSmallDevice ? "slide-right" : "zoom-in"}
+			data-sal-delay="300"
+			data-sal-duration="1200"
+			data-sal-easing="ease-out-back"
+		>
 			<VStack
 				p={4}
 				bg="cultured.500"
@@ -29,7 +33,7 @@ const ServiceItem = (props) => {
 				<Text fontFamily="Playfair Display" fontSize="2xl">{service.descripcio}</Text>
 				<Button to={`/serveis/#${service.id}`} title={service.nom} as={GatsbyLink} variant="custom-link" colorScheme="mangoTango" >Veure'n més</Button>
 			</VStack>
-		</Fade>
+		</div>
 	)
 }
 const IndexPage = (props) => {
