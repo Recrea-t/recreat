@@ -56,8 +56,6 @@
     "build": "cross-env GATSBY_EXPERIMENTAL_PAGE_BUILD_ON_DATA_CHANGES=true gatsby build --log-pages",
     "develop": "gatsby develop",
     "format": "prettier --trailing-comma es5 --no-semi --single-quote --write \"{gatsby-*.js,src/**/*.js}\"",
-    "forestry:preview": "gatsby develop -p 8080 -H 0.0.0.0",
-    "forestry:publish": "gatsby build --prefix-paths",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
