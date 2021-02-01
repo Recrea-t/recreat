@@ -1,26 +1,31 @@
 ---
 templateKey: services-page
 title: Serveis
-description: >-
-  Som un petit estudi pirinenc de disseny gràfic i comunicació que
-  donem resposta a totes aquelles necessitats d'àmbit comunicatiu que li
-  puguin sorgir a una empresa a partir de solucions gràfiques i digitals
+description: Som un petit estudi pirinenc de disseny gràfic i comunicació que
+  donem resposta a totes aquelles necessitats d'àmbit comunicatiu que li puguin
+  sorgir a una empresa a partir de solucions gràfiques i digitals
 serveis:
   - id: disseny-grafic
     nom: DISSENY GRÀFIC
-    descripcio: |-
-     **La imatge i el missatge que una empresa projecta de si mateixa
-     és tan important com l'activitat que desenvolupa**. Des de Recrea't, encarem
-     els projectes sempre de manera personalitzada, oferint un ampli ventall de
-     possibilitats per comunicar-se gràficament.
-    detall: |-
+    descripcio: "**La imatge i el missatge que una empresa projecta de si mateixa és
+      tan important com l'activitat que desenvolupa**. Des de Recrea't, encarem
+      els projectes sempre de manera personalitzada, oferint un ampli ventall de
+      possibilitats per comunicar-se gràficament."
+    detall: >-
       * Disseny de logotips
+
       * Imatge corporativa
+
       * Papereria promocional: cartells, flyers, fulletons, tríptics, calendaris, targetes...
+
       * Disseny editorial: llibres, revistes, catàlegs
+
       * Disseny de producte: packaging i etiquetes
+
       * Felicitacions, invitacions, targetons
+
       * Retolació de vehicles
+
       * Senyalística
     exemples:
       - nom: Bar Els Cremalls
@@ -59,7 +64,7 @@ serveis:
           - /images/05_ETQ_Girola2019.jpg
       - nom: Consorci de Turisme de les Valls d'Àneu
         descripcio: Mapa desplegable
-        any: "2015-2018"
+        any: 2015-2018
         thumbnail: /images/06_MapaNeu.jpg
         imatges:
           - /images/06_MapaNeu.jpg
@@ -76,10 +81,9 @@ serveis:
           - /images/07_cartellGenericSalau.jpg
   - id: disseny-web
     nom: DISSENY WEB
-    descripcio: |-
-      **Qui no és a internet no existeix**. Una pàgina web corporativa ben ideada és
-      la millor carta de presentació. Dissenyem pàgines web a mida de cada client, oferint
-      un servei integral.
+    descripcio: "**Qui no és a internet no existeix**. Una pàgina web corporativa
+      ben ideada és la millor carta de presentació. Dissenyem pàgines web a mida
+      de cada client, oferint un servei integral."
     detall: |-
       * Disseny a mida
       * Disseny *Mobile first*
@@ -110,23 +114,25 @@ serveis:
           - ../images/Mockup_Web_Marc.png
   - id: xarxes-socials
     nom: XARXES SOCIALS
-    descripcio: |-
-      **Actualment, les xarxes socials s'han convertit en un espai virtual en el que
-      és imprescindible que les empreses hi siguin presents**. Els beneficis que obté una marca
-      al disposar de comunitats en línia ben gestionades són múltiples: augmenta i millora la
-      relació amb els membres de la comunitat, obtenint d'ells un *feedback*; n'augmenta el
-      compromís i el vincle (*engagement*); n'incrementa la intenció de compra, la fidelització
-      i la recomanació.
+    descripcio: >-
+      **Actualment, les xarxes socials s'han convertit en un espai virtual en el
+      que és imprescindible que les empreses hi siguin presents**. Els beneficis
+      que obté una marca al disposar de comunitats en línia ben gestionades són
+      múltiples: augmenta i millora la  relació amb els membres de la comunitat,
+      obtenint d'ells un *feedback*; n'augmenta el compromís i el vincle
+      (*engagement*); n'incrementa la intenció de compra, la fidelització i la
+      recomanació.
 
 
-      Tot això s'aconsegueix establint una estratègia sòlida en mitjans socials i augmentant
-      la presència i l'activitat de l'empresa en aquests mitjançant continguts de qualitat,
-      originals i que atreguin al públic objectiu.
 
 
-      Finalment, és bàsic realitzar una escolta
-      activa permanent per tal de recopilar informació que serà clau per a la empresa.
-    detall:
+      Tot això s'aconsegueix establint una estratègia sòlida en mitjans socials i augmentant la presència i l'activitat de l'empresa en aquests mitjançant continguts de qualitat, originals i que atreguin al públic objectiu.
+
+
+
+
+      Finalment, és bàsic realitzar una escolta activa permanent per tal de recopilar informació que serà clau per a la empresa.
+    detall: null
     passes:
       - text: Elaborem l'estratègia de mitjans a mida
         imatge: ../images/Icona_estrategia_mitjans.svg
@@ -138,5 +144,4 @@ serveis:
         imatge: ../images/Icona_Escolta_activa.svg
       - text: Elaborem informes de resultats
         imatge: ../images/Icona_Informe_resultats.svg
-
 ---
