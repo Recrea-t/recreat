@@ -1,5 +1,4 @@
 backend:
-  #name: test-repo
   name: git-gateway
   repo: recrea-t/recreat
   branch: main
@@ -118,3 +117,28 @@ collections:
                 {label: "Imatge", name: "imatge", widget: "image"}
               ]}
             ]}
+      - file: "src/pages/politica-de-proteccio-de-dades.md"
+        label: "Política de protecció de dades"
+        name: "politica-de-proteccio"
+        fields:
+          - {
+            label: "Template Key",
+            name: "templateKey",
+            widget: "hidden",
+            default: "general-page"
+            }
+          - {
+            label: "Títol de la pàgina (SEO)",
+            name: "title",
+            widget: "string"
+            }
+          - {
+            label: "Descripció de la pàgina (SEO)",
+            name: "description",
+            widget: "text"
+            }
+          - {
+            label: "Body",
+            name: "body",
+            widget: "markdown"
+            }
