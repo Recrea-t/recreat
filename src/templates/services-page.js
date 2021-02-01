@@ -139,6 +139,7 @@ const ServiceItem = (props) => {
 									<MotionImage
 										transition={{duration: 0.3}}
 										whileHover={isDissenyWeb ? {opacity: 0.7} : {scale: 1.1}}
+										whileTap={isDissenyWeb ? {opacity: 0.7} : {scale: 1.1}}
 										h="full"
 										w="full"
 										objectFit={isDissenyWeb ? "contain" : "cover"}
