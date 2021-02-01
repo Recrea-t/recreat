@@ -45,8 +45,8 @@ const Contact = () => {
 					<VStack spacing={4} justify="center" textAlign="center">
 						<Icon as={FaMapMarkerAlt} h={12} w={12} />
 						<Text dangerouslySetInnerHTML={{__html: organization.address}} />
-						<Text ><Link to={`tel:${organization.phone.number}`} title="Truca'ns">{organization.phone.title}</Link></Text>
-						<Text ><Link to={`mailto:${organization.email}`} title="Escriu-nos">{organization.email}</Link></Text>
+						<Text ><Link href={`tel:${organization.phone.number}`} title="Truca'ns">{organization.phone.title}</Link></Text>
+						<Text ><Link href={`mailto:${organization.email}`} title="Escriu-nos">{organization.email}</Link></Text>
 						<HStack spacing={4}>
 							<SocialLink item={social.instagram} icon={FaInstagramSquare} />
 							<SocialLink item={social.facebook} icon={FaFacebookSquare} />
