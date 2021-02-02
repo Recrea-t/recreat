@@ -26,7 +26,7 @@ const ServiceItem = (props) => {
 
   return (
     <div
-      data-sal={isSmallDevice ? "slide-right" : "zoom-in"}
+      data-sal="slide-left"
       data-sal-delay="300"
       data-sal-duration="1200"
       data-sal-easing="ease-out-back"

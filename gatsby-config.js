@@ -6,7 +6,12 @@ module.exports = {
   siteMetadata: config,
   plugins: [
     "@chakra-ui/gatsby-plugin",
-    "gatsby-plugin-scroll-reveal",
+    {
+      resolve: `gatsby-plugin-scroll-reveal`,
+      options: {
+        threshold: 0.3,
+      },
+    },
     "gatsby-plugin-sharp",
     "gatsby-transformer-sharp",
     "gatsby-plugin-robots-txt",
