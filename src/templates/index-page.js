@@ -11,7 +11,6 @@ import {
   Image,
   VStack,
   Button,
-  useBreakpointValue,
 } from "@chakra-ui/react";
 
 import Layout from "../components/Layout";
@@ -22,7 +21,6 @@ const MotionButton = motion.custom(Button);
 
 const ServiceItem = (props) => {
   const { service } = props;
-  const isSmallDevice = useBreakpointValue({ base: true, md: false });
 
   return (
     <div
