@@ -17,7 +17,7 @@ const Hero = (props) => {
             fontFamily="Playfair Display"
             fontSize={{ base: "2xl", md: "6xl" }}
           >
-            {frontmatter.description}
+            “{frontmatter.description}”
           </Text>
           <MotionButton
             as={GatsbyLink}
