@@ -97,21 +97,47 @@ collections:
             widget: "text"
             }
           - {
-            label: "Serveis",
-            name: "serveis",
-            widget: "list",
+            label: "Disseny Gràfic",
+            name: "dissenyGrafic",
+            widget: "object",
             fields: [
-              {label: "Id", name: "id", widget: "hidden"},
-              {label: "Nom", name: "nom", widget: "string"},
               {label: "Descripció", name: "descripcio", widget: "markdown"},
               {label: "Detall", name: "detall", required: false, widget: "markdown"},
               {label: "Exemples", name: "exemples", required: false, widget: "list", fields: [
                 {label: "Nom", name: "nom", widget: "string"},
                 {label: "Any", name: "any", widget: "string"},
-                {label: "Descripció", name: "descripcio", required: false, widget: "string"},
+                {label: "Descripció", name: "descripcio", widget: "string"},
                 {label: "Thumbnail", name: "thumbnail", widget: "image"},
-                {label: "Imatges", name: "imatges", widget: "list", field: {label: "Imatge", name: "item", widget: image}}
+                {label: "Imatges", name: "imatges", widget: "list", fields: [
+                  {label: "Imatge", name: "src", widget: image},
+                  {label: "Text imatge", name: "alt", widget: string}
+                ]}
               ]},
+            ]}
+          - {
+            label: "Disseny Web",
+            name: "dissenyWeb",
+            widget: "object",
+            fields: [
+              {label: "Descripció", name: "descripcio", widget: "markdown"},
+              {label: "Detall", name: "detall", required: false, widget: "markdown"},
+              {label: "Exemples", name: "exemples", required: false, widget: "list", fields: [
+                {label: "Nom", name: "nom", widget: "string"},
+                {label: "Any", name: "any", widget: "string"},
+                {label: "Web", name: "url", widget: "string"},
+                {label: "Thumbnail", name: "thumbnail", widget: "image"},
+                {label: "Imatges", name: "imatges", widget: "list", fields: [
+                  {label: "Imatge", name: "src", widget: image},
+                  {label: "Text imatge", name: "alt", widget: string}
+                ]}
+              ]},
+            ]}
+          - {
+            label: "Xarxes Socials",
+            name: "xarxesSocials",
+            widget: "object",
+            fields: [
+              {label: "Descripció", name: "descripcio", widget: "markdown"},
               {label: "Passes", name: "passes", required: false, widget: "list", fields: [
                 {label: "Text", name: "text", widget: "string"},
                 {label: "Imatge", name: "imatge", widget: "image"}
