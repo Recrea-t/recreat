@@ -31,26 +31,26 @@ serveis:
       - nom: Bar Els Cremalls
         descripcio: Papereria promocional
         any: "2020"
-        thumbnail: /images/01_CartellCremalls.jpg
+        thumbnail: /images/01_miniaturacremalls.jpg
         imatges:
           - /images/01_CartellCremalls.jpg
           - /images/01_CartellFlyer.jpg
       - nom: Restaurant El Nabiu
         descripcio: Redisseny identitat corporativa
         any: "2019"
-        thumbnail: /images/02_Nabiu.jpg
+        thumbnail: /images/02_miniaturanabiu.jpg
         imatges:
           - /images/02_Nabiu.jpg
       - nom: Consorci de Turisme de les Valls d'Àneu
         descripcio: Roll up
         any: "2019"
-        thumbnail: /images/03_RollUp_VallsAneu_2019.jpg
+        thumbnail: /images/03_miniaturarollup.jpg
         imatges:
           - /images/03_RollUp_VallsAneu_2019.jpg
       - nom: Formatgeria de Gavàs
         descripcio: Identitat corporativa
         any: "2019"
-        thumbnail: /images/04_TargetesGavasenca.jpg
+        thumbnail: /images/04_miniaturagavas.jpg
         imatges:
           - /images/04_LogoGavasenca.png
           - /images/04_ETQ_Gavasenca.jpg
@@ -58,14 +58,14 @@ serveis:
       - nom: Formatgeria Girola
         descripcio: Disseny de producte
         any: 2016-2019
-        thumbnail: /images/05_ETQ_Girola2016.jpg
+        thumbnail: /images/05_miniaturaetq_girola.jpg
         imatges:
           - /images/05_ETQ_Girola2016.jpg
           - /images/05_ETQ_Girola2019.jpg
       - nom: Consorci de Turisme de les Valls d'Àneu
         descripcio: Mapa desplegable
         any: 2015-2018
-        thumbnail: /images/06_MapaNeu.jpg
+        thumbnail: /images/06_miniaturamapa.jpg
         imatges:
           - /images/06_MapaNeu.jpg
           - /images/06_MapaNeuCara.jpg
@@ -73,12 +73,20 @@ serveis:
       - nom: Plataforma Salvem Salau
         descripcio: Identitat corporativa
         any: "2018"
-        thumbnail: /images/07_papereriaSalau.jpg
+        thumbnail: /images/07_miniaturasalau.jpg
         imatges:
           - /images/07_LogoSalau.jpg
           - /images/07_papereriaSalau.jpg
           - /images/07_cartellNoMinaSalau.jpg
           - /images/07_cartellGenericSalau.jpg
+      - nom: Marc Bruna Fuster
+        any: 2013-2020
+        descripcio: Identitat corporativa
+        thumbnail: /images/08_miniaturamarc.jpg
+        imatges:
+          - /images/08_marc_logo3v.jpg
+          - /images/08_marc_targeta.jpg
+          - /images/08_marc_furgo.jpg
   - id: disseny-web
     nom: DISSENY WEB
     descripcio: "**Qui no és a internet no existeix**. Una pàgina web corporativa
