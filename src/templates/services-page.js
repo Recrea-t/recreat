@@ -30,7 +30,7 @@ const ServiceItem = (props) => {
             <ReactMarkdown source={props.descripcio} />
           </Box>
 
-          {!isXarxesSocials && <ServiceDetail />}
+          {!isXarxesSocials && <ServiceDetail markdown={props.detall} />}
         </GridItem>
 
         <GridItem colSpan={isXarxesSocials ? 3 : 4}>
