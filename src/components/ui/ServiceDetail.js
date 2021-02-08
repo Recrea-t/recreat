@@ -9,6 +9,7 @@ const ServiceDetail = ({ markdown }) => {
       bg="cultured.500"
       textAlign="center"
       fontFamily="Playfair Display"
+      p={4}
     >
       <ReactMarkdown source={markdown} />
     </Box>

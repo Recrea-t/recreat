@@ -15,6 +15,7 @@ const styles = {
     ".markdown-detail": {
       li: {
         listStyle: "none",
+        padding: ".25rem",
       },
       a: {
         _hover: {

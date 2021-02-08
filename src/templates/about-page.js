@@ -67,14 +67,17 @@ const PersonItem = (props) => {
           colSpan={{ md: 2 }}
           bg="cultured.500"
           textAlign="center"
-          fontSize="xl"
+          fontSize="lg"
           p={4}
         >
           <Text textTransform="uppercase" mb={4}>
             {props.detall.titol}
           </Text>
           <Text className="markdown-detail" fontFamily="Playfair Display">
-            <ReactMarkdown source={props.detall.descripcio} />
+            <ReactMarkdown
+              source={props.detall.descripcio}
+              linkTarget="_blank"
+            />
           </Text>
         </GridItem>
       </Grid>
