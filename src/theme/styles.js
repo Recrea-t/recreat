@@ -12,9 +12,14 @@ const styles = {
         margin: "0 !important",
       },
     },
-    ".service-detail": {
+    ".markdown-detail": {
       li: {
         listStyle: "none",
+      },
+      a: {
+        _hover: {
+          textDecoration: "underline",
+        },
       },
     },
   },

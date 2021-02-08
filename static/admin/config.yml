@@ -74,7 +74,7 @@ collections:
               {label: "Subtítol", name: "subtitol", widget: "string"},
               {label: "Descripció", name: "descripcio", widget: "markdown"},
               {label: "Imatge", name: "imatge", widget: "image"},
-              {label: "Formació", name: "formacio", widget: "list", field: {label: "Línia", name: "item", widget: "string"}}
+              {label: "Formació", name: "formacio", required: false, widget: "list", field: {label: "Línia", name: "item", widget: "string"}}
             ]}
       - file: "src/pages/serveis.md"
         label: "Serveis"

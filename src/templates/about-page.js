@@ -35,6 +35,7 @@ const PersonItem = (props) => {
         }}
         rowGap={8}
         columnGap={{ md: "2rem" }}
+        mb={12}
       >
         <GridItem
           pos="relative"
@@ -67,15 +68,14 @@ const PersonItem = (props) => {
           bg="cultured.500"
           textAlign="center"
           fontSize="xl"
+          p={4}
         >
-          <Text textTransform="uppercase">Formació reglada</Text>
-          <Wrap direction="column" fontFamily="Playfair Display">
-            {props.formacio.map((item, index) => (
-              <WrapItem key={index}>
-                <Text>{item}</Text>
-              </WrapItem>
-            ))}
-          </Wrap>
+          <Text textTransform="uppercase" mb={4}>
+            {props.detall.titol}
+          </Text>
+          <Text className="markdown-detail" fontFamily="Playfair Display">
+            <ReactMarkdown source={props.detall.descripcio} />
+          </Text>
         </GridItem>
       </Grid>
     </>
@@ -126,7 +126,10 @@ export const query = graphql`
             }
           }
           descripcio
-          formacio
+          detall {
+            titol
+            descripcio
+          }
         }
       }
     }

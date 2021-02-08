@@ -5,7 +5,7 @@ import ReactMarkdown from "react-markdown";
 const ServiceDetail = ({ markdown }) => {
   return (
     <Box
-      className="service-detail"
+      className="markdown-detail"
       bg="cultured.500"
       textAlign="center"
       fontFamily="Playfair Display"
