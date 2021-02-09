@@ -7,8 +7,6 @@ import {
   Container,
   Text,
   Heading,
-  Wrap,
-  WrapItem,
   GridItem,
   Image,
 } from "@chakra-ui/react";
@@ -123,7 +121,7 @@ export const query = graphql`
           subtitol
           imatge {
             childImageSharp {
-              fluid(maxWidth: 400) {
+              fluid(maxWidth: 350) {
                 ...GatsbyImageSharpFluid
               }
             }
