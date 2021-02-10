@@ -1,5 +1,5 @@
 import React from "react";
-import { motion } from "framer-motion";
+import { GatsbyImage, getImage } from "gatsby-plugin-image";
 
 import {
   Modal,
@@ -14,8 +14,6 @@ import {
   Box,
   Text,
 } from "@chakra-ui/react";
-
-const MotionImage = motion.custom(Image);
 
 const ServiceModal = (props) => {
   const { isOpen, onClose, finalRef, title, example, boxShadow } = props;
@@ -68,14 +66,15 @@ const ServiceModal = (props) => {
             </Link>
             {example.imatges.map((item, index) => (
               <Box py={4}>
-                <MotionImage
+                <Image
                   key={index}
-                  transition={{ duration: 0.3 }}
-                  w="full"
-                  objectFit="contain"
                   boxShadow={boxShadow}
-                  alt={item.alt}
-                  {...item.src.childImageSharp.fluid}
+                  as={GatsbyImage}
+                  imgStyle={{
+                    objectFit: "contain",
+                  }}
+                  alt={item.nom}
+                  image={getImage(item.src)}
                 />
                 {item.alt && <Text>{item.alt}</Text>}
               </Box>

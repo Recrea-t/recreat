@@ -1,24 +1,24 @@
 import React from "react";
 import { graphql } from "gatsby";
 import PropTypes from "prop-types";
+import { GatsbyImage, getImage } from "gatsby-plugin-image";
 
 import {
   Grid,
   Container,
   Text,
+  Image,
   Heading,
   GridItem,
-  Image,
 } from "@chakra-ui/react";
 
 import ReactMarkdown from "react-markdown";
 
 import Layout from "../components/Layout";
 
-import { motion } from "framer-motion";
-const MotionImage = motion.custom(Image);
-
 const PersonItem = (props) => {
+  const image = getImage(props.imatge);
+
   return (
     <>
       <Heading variant="no-margin">{props.nom}</Heading>
@@ -42,18 +42,19 @@ const PersonItem = (props) => {
             display: "block",
             pt: "100%",
           }}
+          shadow="md"
         >
-          <MotionImage
-            shadow="md"
-            transition={{ duration: 0.3 }}
+          <Image
             h="full"
-            w="full"
-            objectFit="cover"
-            objectPosition="top"
             pos="absolute"
             top={0}
+            as={GatsbyImage}
+            imgStyle={{
+              objectFit: "cover",
+              objectPosition: "top",
+            }}
             alt={props.nom}
-            {...props.imatge.childImageSharp.fluid}
+            image={image}
           />
         </GridItem>
 
@@ -121,9 +122,11 @@ export const query = graphql`
           subtitol
           imatge {
             childImageSharp {
-              fluid(maxWidth: 350) {
-                ...GatsbyImageSharpFluid
-              }
+              gatsbyImageData(
+                maxWidth: 350
+                placeholder: BLURRED
+                formats: [AUTO, WEBP, AVIF]
+              )
             }
           }
           descripcio

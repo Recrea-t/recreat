@@ -35,7 +35,6 @@ const Contact = () => {
           align={["center", "center", "center", "center"]}
           justify={["center", "space-between", "flex-end", "flex-end"]}
           direction={["column", "row", "row", "row"]}
-          alignItems="start"
           alignItems={["center", "start", "start", "start"]}
         >
           <VStack
@@ -68,9 +67,17 @@ const Contact = () => {
               </Link>
             </Text>
             <HStack spacing={4}>
-              <SocialLink item={social.instagram} icon={FaInstagramSquare} />
-              <SocialLink item={social.facebook} icon={FaFacebookSquare} />
-              <SocialLink item={social.linkedin} icon={FaLinkedin} />
+              <SocialLink
+                key={1}
+                item={social.instagram}
+                icon={FaInstagramSquare}
+              />
+              <SocialLink
+                key={2}
+                item={social.facebook}
+                icon={FaFacebookSquare}
+              />
+              <SocialLink key={3} item={social.linkedin} icon={FaLinkedin} />
             </HStack>
           </VStack>
         </Flex>

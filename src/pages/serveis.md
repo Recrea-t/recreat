@@ -54,12 +54,12 @@ dissenyGrafic:
       any: "2019"
       thumbnail: /images/04_miniaturagavas.jpg
       imatges:
-        - src: /images/04_LogoGavasenca.png
+        - src: /images/04_LogoGavasenca.jpg
           alt: Logotip
         - src: /images/04_ETQ_Gavasenca.jpg
-          alt: Targetes de visita
-        - src: /images/04_TargetesGavasenca.jpg
           alt: Etiquetatge gamma de formatges
+        - src: /images/04_TargetesGavasenca.jpg
+          alt: Targetes de visita
     - nom: Formatgeria Girola
       descripcio: Disseny de producte
       any: 2016-2019

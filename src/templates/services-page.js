@@ -97,18 +97,22 @@ export const query = graphql`
             any
             thumbnail {
               childImageSharp {
-                fluid(maxWidth: 300) {
-                  ...GatsbyImageSharpFluid
-                }
+                gatsbyImageData(
+                  maxWidth: 350
+                  placeholder: DOMINANT_COLOR
+                  formats: [AUTO, WEBP, AVIF]
+                )
               }
             }
             imatges {
               alt
               src {
                 childImageSharp {
-                  fluid(maxWidth: 400) {
-                    ...GatsbyImageSharpFluid
-                  }
+                  gatsbyImageData(
+                    maxWidth: 385
+                    placeholder: BLURRED
+                    formats: [AUTO, WEBP, AVIF]
+                  )
                 }
               }
             }
@@ -123,18 +127,22 @@ export const query = graphql`
             url
             thumbnail {
               childImageSharp {
-                fluid(maxWidth: 300) {
-                  ...GatsbyImageSharpFluid
-                }
+                gatsbyImageData(
+                  maxWidth: 350
+                  placeholder: TRACED_SVG
+                  formats: [AUTO, WEBP, AVIF]
+                )
               }
             }
             imatges {
               alt
               src {
                 childImageSharp {
-                  fluid(maxWidth: 400) {
-                    ...GatsbyImageSharpFluid
-                  }
+                  gatsbyImageData(
+                    maxWidth: 385
+                    placeholder: TRACED_SVG
+                    formats: [AUTO, WEBP, AVIF]
+                  )
                 }
               }
             }

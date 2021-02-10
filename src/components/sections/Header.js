@@ -14,13 +14,13 @@ const Header = (props) => {
   const MenuItems = ({ onClick }) => {
     return (
       <>
-        <NavLink to="/qui-som/" onClick={onClick}>
+        <NavLink key={1} to="/qui-som/" onClick={onClick}>
           Qui Som
         </NavLink>
-        <NavLink to="/serveis/" onClick={onClick}>
+        <NavLink key={2} to="/serveis/" onClick={onClick}>
           Serveis
         </NavLink>
-        <NavLink to="/#contacte" onClick={onClick} isLast>
+        <NavLink key={3} to="/#contacte" onClick={onClick} isLast>
           Contacte
         </NavLink>
       </>
