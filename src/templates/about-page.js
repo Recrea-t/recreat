@@ -10,11 +10,24 @@ import {
   Image,
   Heading,
   GridItem,
+  forwardRef,
 } from "@chakra-ui/react";
+
+import { motion, isValidMotionProp } from "framer-motion";
 
 import ReactMarkdown from "react-markdown";
 
 import Layout from "../components/Layout";
+
+const MotionGridItem = motion.custom(
+  forwardRef((props, ref) => {
+    const chakraProps = Object.fromEntries(
+      // do not pass framer props to DOM element
+      Object.entries(props).filter(([key]) => !isValidMotionProp(key))
+    );
+    return <GridItem ref={ref} {...chakraProps} />;
+  })
+);
 
 const PersonItem = (props) => {
   const image = getImage(props.imatge);
@@ -35,14 +48,20 @@ const PersonItem = (props) => {
         columnGap={{ md: "2rem" }}
         mb={12}
       >
-        <GridItem
+        <MotionGridItem
           pos="relative"
           _before={{
             content: "''",
             display: "block",
             pt: "100%",
           }}
-          shadow="md"
+          boxShadow="md"
+          whileHover={{
+            x: "-1px",
+            y: "-1px",
+            boxShadow:
+              "0 10px 15px -3px rgb(0 0 0 / 10%), 0 4px 6px -2px rgb(0 0 0 / 5%)",
+          }}
         >
           <Image
             h="full"
@@ -56,7 +75,7 @@ const PersonItem = (props) => {
             alt={props.nom}
             image={image}
           />
-        </GridItem>
+        </MotionGridItem>
 
         <GridItem>
           <ReactMarkdown source={props.descripcio} />

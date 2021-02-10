@@ -1,10 +1,24 @@
 import React from "react";
 import { GatsbyImage, getImage } from "gatsby-plugin-image";
-import { motion } from "framer-motion";
-import { Box, Image, SimpleGrid, useDisclosure } from "@chakra-ui/react";
+import { motion, isValidMotionProp } from "framer-motion";
+import {
+  Box,
+  Image,
+  SimpleGrid,
+  useDisclosure,
+  forwardRef,
+} from "@chakra-ui/react";
 import ServiceModal from "./ServiceModal";
 
-const MotionBox = motion.custom(Box);
+const MotionBox = motion.custom(
+  forwardRef((props, ref) => {
+    const chakraProps = Object.fromEntries(
+      // do not pass framer props to DOM element
+      Object.entries(props).filter(([key]) => !isValidMotionProp(key))
+    );
+    return <Box ref={ref} {...chakraProps} />;
+  })
+);
 
 const Gallery = ({ title, exemples, isDissenyWeb }) => {
   const { isOpen, onOpen, onClose } = useDisclosure();
@@ -19,8 +33,13 @@ const Gallery = ({ title, exemples, isDissenyWeb }) => {
   };
 
   const boxShadow = isDissenyWeb ? "" : "xs";
-  //const animation = isDissenyWeb ? { opacity: 0.7 } : { scale: 1.1 };
-  const animation = { opacity: 0.7 };
+  const animation = isDissenyWeb
+    ? { backgroundColor: "#efeff0" }
+    : {
+        scale: 0.95,
+        boxShadow:
+          "0 10px 15px -3px rgb(0 0 0 / 10%), 0 4px 6px -2px rgb(0 0 0 / 5%)",
+      };
 
   return (
     <>
@@ -38,6 +57,7 @@ const Gallery = ({ title, exemples, isDissenyWeb }) => {
             <Image
               h="full"
               as={GatsbyImage}
+              backgroundColor="transparent"
               imgStyle={{
                 objectFit: isDissenyWeb ? "contain" : "cover",
                 objectPosition: "center",
