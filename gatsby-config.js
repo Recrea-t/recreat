@@ -31,10 +31,18 @@ module.exports = {
         icon_options: {
           purpose: `any maskable`,
         },
+        cache_busting_mode: "none",
       },
     },
     // The offline plugin must be listed after the manifest plugin
-    "gatsby-plugin-offline",
+    {
+      resolve: "gatsby-plugin-offline",
+      options: {
+        workboxConfig: {
+          globPatterns: ["**/icon-path*"],
+        },
+      },
+    },
     {
       // keep as first gatsby-source-filesystem plugin for gatsby image support
       resolve: "gatsby-source-filesystem",
