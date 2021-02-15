@@ -1,6 +1,13 @@
 import React from "react";
 import { Link as GatsbyLink } from "gatsby";
-import { Box, Flex, Image, Link, useBreakpointValue } from "@chakra-ui/react";
+import {
+  Box,
+  Flex,
+  Image,
+  Link,
+  Fade,
+  useBreakpointValue,
+} from "@chakra-ui/react";
 
 import NavLink from "../ui/NavLink";
 import ToggleMenu from "../ui/ToggleMenu";
@@ -51,9 +58,11 @@ const Header = (props) => {
         {...props}
       >
         <Flex align="center">
-          <Link to="/" title="Inici" as={GatsbyLink}>
-            <Image src={logo} alt="Logo Recrea't" />
-          </Link>
+          <Fade in={true}>
+            <Link to="/" title="Inici" as={GatsbyLink}>
+              <Image src={logo} alt="Logo Recrea't" />
+            </Link>
+          </Fade>
         </Flex>
 
         {isSmallDevice ? (

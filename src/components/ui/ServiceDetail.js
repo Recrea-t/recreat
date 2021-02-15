@@ -7,6 +7,7 @@ const ServiceDetail = ({ markdown }) => {
     <Box
       className="markdown-detail"
       bg="cultured.500"
+      boxShadow="sm"
       textAlign="center"
       fontFamily="Playfair Display"
       p={4}

@@ -14,6 +14,7 @@ const SocialNetworks = ({ passes }) => {
             key={index}
             pos="relative"
             bg="cultured.500"
+            boxShadow="sm"
             m={4}
             px={4}
             pb={4}

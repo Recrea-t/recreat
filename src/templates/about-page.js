@@ -84,6 +84,7 @@ const PersonItem = (props) => {
         <GridItem
           colSpan={{ md: 2 }}
           bg="cultured.500"
+          boxShadow="sm"
           textAlign="center"
           fontSize="lg"
           p={4}
