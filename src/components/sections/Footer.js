@@ -19,8 +19,11 @@ const Footer = (props) => {
           <Text>
             &copy; {new Date().getFullYear()} {props.title}
           </Text>
+          <Link to="/avis-legal/" title="Avís legal" as={GatsbyLink}>
+            Avís legal
+          </Link>
           <Link
-            to="/politica-de-proteccio-de-dades"
+            to="/politica-de-proteccio-de-dades/"
             title="Política de protecció de dades personals"
             as={GatsbyLink}
           >
