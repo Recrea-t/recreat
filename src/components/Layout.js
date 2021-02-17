@@ -15,22 +15,23 @@ import Footer from "./sections/Footer";
 import SEO from "./SEO/seo";
 
 const TemplateWrapper = (props) => {
-  const { title, description, image, isBlogPost, datePublished } = props;
+  const { title, description, image } = props;
 
   const { defaultTitle } = useSiteMetadata();
 
   return (
     <React.Fragment>
-      <SEO
-        title={title}
-        description={description}
-        image={image}
-        isBlogPost={isBlogPost}
-        datePublished={datePublished}
-      />
-      <Flex direction="column" align="center" justify="space-between">
+      <SEO title={title} description={description} image={image} />
+      <Flex
+        direction="column"
+        align="center"
+        justify="space-between"
+        overflow="hidden"
+        minH="100vh"
+        pos="relative"
+      >
         <Header />
-        <Flex as="main" pos="relative" w="full" mt={24} direction="column">
+        <Flex as="main" pos="relative" w="full" pt="100px" direction="column">
           {props.children}
         </Flex>
         <Footer title={defaultTitle} />

@@ -1,17 +1,24 @@
 const styles = {
   global: {
     html: {
-      scrollBehavior: "smooth",
-      //scrollMarginTop: "6rem",
+      //scrollBehavior: "smooth",
     },
     body: {
       color: "dimGray.500",
     },
     ".with-zoom-out": {
       _hover: {
+        boxShadow: "inner",
         img: {
           transform: "scale(1) !important",
+          transition: "1s !important",
         },
+      },
+    },
+    ".with-box-shadow": {
+      _hover: {
+        boxShadow: "dark-lg",
+        transform: "scale(0.95)",
       },
     },
     ".markdown": {

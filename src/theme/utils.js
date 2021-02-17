@@ -16,7 +16,35 @@ export const EASINGS = {
   easeIn: [0.4, 0, 1, 1],
   easeOut: [0, 0, 0.2, 1],
   easeInOut: [0.4, 0, 0.2, 1],
+  easeInCubic: [0.32, 0, 0.67, 0],
+  easeOutCubic: [0.33, 1, 0.68, 1],
+  easeInOutCubic: [0.65, 0, 0.35, 1],
   easeInOutBack: [0.34, 1.56, 0.64, 1],
+};
+
+export const revealVariants = (direction = "right") => {
+  const x = direction === "right" ? "-100px" : "100px";
+
+  return {
+    visible: {
+      opacity: 1,
+      x: 0,
+      transition: { duration: 0.6, ease: EASINGS.easeOutCubic },
+    },
+    hidden: { opacity: 0, x: x },
+  };
+};
+
+export const motionConfig = (controls, initial, variants) => {
+  return {
+    animate: controls,
+    initial: initial,
+    variants: variants,
+  };
+};
+
+export const motionRevealConfig = (controls, direction = "right") => {
+  return motionConfig(controls, "hidden", revealVariants(direction));
 };
 
 const MotionBox = motion.custom(

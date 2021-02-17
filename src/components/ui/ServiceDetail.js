@@ -3,16 +3,7 @@ import { useAnimation } from "framer-motion";
 import ReactMarkdown from "react-markdown";
 import { useInView } from "react-intersection-observer";
 
-import MotionBox, { EASINGS } from "../../theme/utils";
-
-const variants = {
-  visible: {
-    opacity: 1,
-    x: 0,
-    transition: { duration: 1, ease: EASINGS.easeInOutBack },
-  },
-  hidden: { opacity: 0, x: -200 },
-};
+import MotionBox, { motionRevealConfig } from "../../theme/utils";
 
 const ServiceDetail = ({ markdown }) => {
   const controls = useAnimation();
@@ -33,9 +24,7 @@ const ServiceDetail = ({ markdown }) => {
       fontFamily="Playfair Display"
       p={4}
       ref={ref}
-      animate={controls}
-      initial="hidden"
-      variants={variants}
+      {...motionRevealConfig(controls)}
     >
       <ReactMarkdown source={markdown} />
     </MotionBox>

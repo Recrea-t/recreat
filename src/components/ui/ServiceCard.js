@@ -4,16 +4,11 @@ import { useInView } from "react-intersection-observer";
 import { Link as GatsbyLink } from "gatsby";
 
 import { Text, Heading, Image } from "@chakra-ui/react";
-import { EASINGS, MotionButton, MotionVStack } from "../../theme/utils";
-
-const variants = {
-  visible: {
-    opacity: 1,
-    x: 0,
-    transition: { duration: 1, ease: EASINGS.easeInOutBack },
-  },
-  hidden: { opacity: 0, x: -150 },
-};
+import {
+  motionRevealConfig,
+  MotionButton,
+  MotionVStack,
+} from "../../theme/utils";
 
 const ServiceCard = (props) => {
   const { service } = props;
@@ -37,9 +32,7 @@ const ServiceCard = (props) => {
       spacing={1}
       textAlign="center"
       justifyContent="space-between"
-      animate={controls}
-      initial="hidden"
-      variants={variants}
+      {...motionRevealConfig(controls)}
     >
       <Image
         boxSize="70px"

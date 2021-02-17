@@ -13,20 +13,11 @@ import {
   GridItem,
   Image,
 } from "@chakra-ui/react";
-import { MotionGridItem, EASINGS } from "../theme/utils";
+import { MotionGridItem, motionRevealConfig } from "../theme/utils";
 
 import ReactMarkdown from "react-markdown";
 
 import Layout from "../components/Layout";
-
-const variants = {
-  visible: {
-    opacity: 1,
-    x: 0,
-    transition: { duration: 1, ease: EASINGS.easeInOutBack },
-  },
-  hidden: { opacity: 0, x: 250 },
-};
 
 const PersonItem = (props) => {
   const image = getImage(props.imatge);
@@ -92,9 +83,7 @@ const PersonItem = (props) => {
           fontSize="lg"
           p={4}
           ref={ref}
-          animate={controls}
-          initial="hidden"
-          variants={variants}
+          {...motionRevealConfig(controls, "left")}
         >
           <Text textTransform="uppercase" mb={4}>
             {props.detall.titol}
