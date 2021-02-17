@@ -1,17 +1,8 @@
 import React from "react";
 import { Link as GatsbyLink } from "gatsby";
-import { motion } from "framer-motion";
 
-import {
-  Flex,
-  Box,
-  Container,
-  Text,
-  Button,
-  ScaleFade,
-} from "@chakra-ui/react";
-
-const MotionButton = motion.custom(Button);
+import { Flex, Box, Container, Text, ScaleFade } from "@chakra-ui/react";
+import { MotionButton } from "../../theme/utils";
 
 const Hero = (props) => {
   const { frontmatter } = props.data.markdownRemark;

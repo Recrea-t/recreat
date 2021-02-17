@@ -1,8 +1,6 @@
 import React from "react";
-import { Link, Icon } from "@chakra-ui/react";
-import { motion } from "framer-motion";
-
-const MotionLink = motion.custom(Link);
+import { Icon } from "@chakra-ui/react";
+import { MotionLink } from "../../theme/utils";
 
 const SocialLink = (props) => {
   const { item, icon } = props;

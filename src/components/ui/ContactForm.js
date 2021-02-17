@@ -1,6 +1,5 @@
 import React from "react";
 import { Link as GatsbyLink } from "gatsby";
-import { motion } from "framer-motion";
 
 import {
   VStack,
@@ -10,12 +9,10 @@ import {
   Input,
   Textarea,
   Checkbox,
-  Button,
 } from "@chakra-ui/react";
+import { MotionButton } from "../../theme/utils";
 import { useToast } from "@chakra-ui/react";
 import { Formik, Form, Field } from "formik";
-
-const MotionButton = motion.custom(Button);
 
 const ContactForm = () => {
   const toast = useToast();

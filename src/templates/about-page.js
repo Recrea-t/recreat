@@ -1,36 +1,43 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { graphql } from "gatsby";
 import PropTypes from "prop-types";
+import { useAnimation } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 import { GatsbyImage, getImage } from "gatsby-plugin-image";
 
 import {
   Grid,
   Container,
   Text,
-  Image,
   Heading,
   GridItem,
-  forwardRef,
+  Image,
 } from "@chakra-ui/react";
-
-import { motion, isValidMotionProp } from "framer-motion";
+import { MotionGridItem, EASINGS } from "../theme/utils";
 
 import ReactMarkdown from "react-markdown";
 
 import Layout from "../components/Layout";
 
-const MotionGridItem = motion.custom(
-  forwardRef((props, ref) => {
-    const chakraProps = Object.fromEntries(
-      // do not pass framer props to DOM element
-      Object.entries(props).filter(([key]) => !isValidMotionProp(key))
-    );
-    return <GridItem ref={ref} {...chakraProps} />;
-  })
-);
+const variants = {
+  visible: {
+    opacity: 1,
+    x: 0,
+    transition: { duration: 1, ease: EASINGS.easeInOutBack },
+  },
+  hidden: { opacity: 0, x: 250 },
+};
 
 const PersonItem = (props) => {
   const image = getImage(props.imatge);
+  const controls = useAnimation();
+  const [ref, inView] = useInView();
+
+  useEffect(() => {
+    if (inView) {
+      controls.start("visible");
+    }
+  }, [controls, inView]);
 
   return (
     <>
@@ -48,7 +55,7 @@ const PersonItem = (props) => {
         columnGap={{ md: "2rem" }}
         mb={12}
       >
-        <MotionGridItem
+        <GridItem
           pos="relative"
           _before={{
             content: "''",
@@ -56,38 +63,38 @@ const PersonItem = (props) => {
             pt: "100%",
           }}
           boxShadow="md"
-          whileHover={{
-            x: "-1px",
-            y: "-1px",
-            boxShadow:
-              "0 10px 15px -3px rgb(0 0 0 / 10%), 0 4px 6px -2px rgb(0 0 0 / 5%)",
-          }}
         >
           <Image
             h="full"
+            w="full"
             pos="absolute"
             top={0}
             as={GatsbyImage}
+            className="with-zoom-out"
             imgStyle={{
-              objectFit: "cover",
               objectPosition: "top",
+              transform: "scale(1.2)",
             }}
             alt={props.nom}
             image={image}
           />
-        </MotionGridItem>
+        </GridItem>
 
         <GridItem>
           <ReactMarkdown source={props.descripcio} />
         </GridItem>
 
-        <GridItem
+        <MotionGridItem
           colSpan={{ md: 2 }}
           bg="cultured.500"
           boxShadow="sm"
           textAlign="center"
           fontSize="lg"
           p={4}
+          ref={ref}
+          animate={controls}
+          initial="hidden"
+          variants={variants}
         >
           <Text textTransform="uppercase" mb={4}>
             {props.detall.titol}
@@ -98,7 +105,7 @@ const PersonItem = (props) => {
               linkTarget="_blank"
             />
           </Text>
-        </GridItem>
+        </MotionGridItem>
       </Grid>
     </>
   );

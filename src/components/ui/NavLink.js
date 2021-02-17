@@ -1,9 +1,7 @@
 import React from "react";
 import { Link as GatsbyLink } from "gatsby";
-import { Text, Link } from "@chakra-ui/react";
-import { motion } from "framer-motion";
-
-const MotionText = motion.custom(Text);
+import { Link } from "@chakra-ui/react";
+import { MotionText } from "../../theme/utils";
 
 const NavLink = (props) => {
   const { children, onClick, isLast, to = "/", ...rest } = props;

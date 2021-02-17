@@ -27,7 +27,7 @@ const Footer = (props) => {
             title="Política de protecció de dades personals"
             as={GatsbyLink}
           >
-            Política de protecció de dades
+            Política de privacitat
           </Link>
         </HStack>
       </Box>

@@ -1,24 +1,9 @@
 import React from "react";
 import { GatsbyImage, getImage } from "gatsby-plugin-image";
-import { motion, isValidMotionProp } from "framer-motion";
-import {
-  Box,
-  Image,
-  SimpleGrid,
-  useDisclosure,
-  forwardRef,
-} from "@chakra-ui/react";
-import ServiceModal from "./ServiceModal";
+import { Image, SimpleGrid, useDisclosure } from "@chakra-ui/react";
 
-const MotionBox = motion.custom(
-  forwardRef((props, ref) => {
-    const chakraProps = Object.fromEntries(
-      // do not pass framer props to DOM element
-      Object.entries(props).filter(([key]) => !isValidMotionProp(key))
-    );
-    return <Box ref={ref} {...chakraProps} />;
-  })
-);
+import ServiceModal from "./ServiceModal";
+import MotionBox from "../../theme/utils";
 
 const Gallery = ({ title, exemples, isDissenyWeb }) => {
   const { isOpen, onOpen, onClose } = useDisclosure();

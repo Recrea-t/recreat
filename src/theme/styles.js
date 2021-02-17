@@ -7,6 +7,13 @@ const styles = {
     body: {
       color: "dimGray.500",
     },
+    ".with-zoom-out": {
+      _hover: {
+        img: {
+          transform: "scale(1) !important",
+        },
+      },
+    },
     ".markdown": {
       li: {
         margin: "0 !important",
