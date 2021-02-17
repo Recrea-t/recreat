@@ -47,38 +47,38 @@ const Header = (props) => {
       borderBottom="1px"
       borderBottomColor="mangoTango.500"
     >
-      <Flex
-        maxW="1200px"
-        mx="auto"
-        align="center"
-        justify="space-between"
-        wrap="wrap"
-        p={4}
-        color="mangoTango.500"
-        {...props}
-      >
-        <Flex align="center">
-          <Fade in={true}>
+      <Fade in={true}>
+        <Flex
+          maxW="1200px"
+          mx="auto"
+          align="center"
+          justify="space-between"
+          wrap="wrap"
+          p={4}
+          color="mangoTango.500"
+          {...props}
+        >
+          <Flex align="center">
             <Link to="/" title="Inici" as={GatsbyLink}>
               <Image src={logo} alt="Logo Recrea't" />
             </Link>
-          </Fade>
-        </Flex>
-
-        {isSmallDevice ? (
-          <ToggleMenu show={show} toggleMenu={toggleMenu}>
-            <MenuItems onClick={toggleMenu} />
-          </ToggleMenu>
-        ) : (
-          <Flex
-            align="center"
-            direction="row"
-            justify={{ md: "space-between", lg: "flex-end" }}
-          >
-            <MenuItems />
           </Flex>
-        )}
-      </Flex>
+
+          {isSmallDevice ? (
+            <ToggleMenu show={show} toggleMenu={toggleMenu}>
+              <MenuItems onClick={toggleMenu} />
+            </ToggleMenu>
+          ) : (
+            <Flex
+              align="center"
+              direction="row"
+              justify={{ md: "space-between", lg: "flex-end" }}
+            >
+              <MenuItems />
+            </Flex>
+          )}
+        </Flex>
+      </Fade>
     </Box>
   );
 };
