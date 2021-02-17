@@ -98,7 +98,7 @@ export const query = graphql`
             thumbnail {
               childImageSharp {
                 gatsbyImageData(
-                  maxWidth: 350
+                  width: 350
                   placeholder: DOMINANT_COLOR
                   formats: [AUTO, WEBP, AVIF]
                 )
@@ -109,7 +109,7 @@ export const query = graphql`
               src {
                 childImageSharp {
                   gatsbyImageData(
-                    maxWidth: 385
+                    width: 385
                     placeholder: BLURRED
                     formats: [AUTO, WEBP, AVIF]
                   )
@@ -128,7 +128,7 @@ export const query = graphql`
             thumbnail {
               childImageSharp {
                 gatsbyImageData(
-                  maxWidth: 350
+                  width: 350
                   placeholder: TRACED_SVG
                   formats: [AUTO, WEBP, AVIF]
                 )
@@ -139,7 +139,7 @@ export const query = graphql`
               src {
                 childImageSharp {
                   gatsbyImageData(
-                    maxWidth: 385
+                    width: 385
                     placeholder: TRACED_SVG
                     formats: [AUTO, WEBP, AVIF]
                   )
