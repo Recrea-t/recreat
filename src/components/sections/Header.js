@@ -1,10 +1,10 @@
 import React from "react";
 import { Link as GatsbyLink } from "gatsby";
-import { Flex, Image, Link, useBreakpointValue } from "@chakra-ui/react";
+import { StaticImage } from "gatsby-plugin-image";
+import { Flex, Link, useBreakpointValue } from "@chakra-ui/react";
 
 import NavLink from "../ui/NavLink";
 import ToggleMenu from "../ui/ToggleMenu";
-import logo from "../../images/LogoRecreat.svg";
 
 const Header = () => {
   const isSmallDevice = useBreakpointValue({ base: true, md: false });
@@ -48,7 +48,14 @@ const Header = () => {
       wrap="wrap"
     >
       <Link to="/" title="Inici" as={GatsbyLink}>
-        <Image src={logo} alt="Logo Recrea't" />
+        <StaticImage
+          src="../../images/LogoRecreat.png"
+          alt="Logotip Recrea't"
+          loading="eager"
+          layout="fixed"
+          placeholder="tracedSVG"
+          width={200}
+        />
       </Link>
 
       {isSmallDevice ? (
