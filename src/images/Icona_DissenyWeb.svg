@@ -1,3 +1,24 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="77" height="51" viewBox="0 0 77 51">
-  <image id="Icona_DissenyWeb.svg" width="77" height="51" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAE0AAAAzCAYAAADSIYUBAAACzklEQVRoge2bTUgUYRjH/+/MO7uzarsliUgkGUYFSRGk1WkhOljRITxEUp27VqegS6eghaAOXToU0aFroFmULBh930LEWsFTSRbauu7XfLyxm4it4xiPH207z+828z4z7/P+mJkX5uERqCCdiLcJI/xaWYXmyrEAoYS5YUDlZ05ELyfdymVLDw+n9e2Hm8yjF4OrzLHE7N0zRwDsADBaOewlLazVN2oi3LA+CVYrhmnDyke8svOSNo87/QXFD48AuxAIT1qsBaHOXkD31eIvrfDiJkQkBq1512rnV5VYH/sgGjbD6Djum57/kzY7BbOzF/rWfbXuq4xKT8CdmVw2TluXbGoMlkaApRFgaQRYGgGWRoClEWBpBFgaAZZGgKURYGkEWBoBlkaApRFgaQRYGgGWRoClEfAvu9QoKvcTyqMWoHLTgF2E+y0FuE7pgdqZTsQXhswCSAVOmj3+HvnHVyEiGxeNKdcGIOCMvwM0aYq6TfdKZ+cDrJyEJp8HT9qnZLm2GTp49m/CzYUHKjuFzJ1T3cH7prkOYHgWzpdHN0ohgjcCAiyNAEsjwNIIsDQCLI0ASyPA0giwNAIsjQBLI8DSCLA0AiyNAEsjINOJeCOA7lKPxtzlHc7XEWUNPxGAgv15CKqQ+a8W5YfK/ACa2ld0DylCdW+1xtYtwoyquXNa6Q+vNTIISBP22CtYqaG1XMf64ljQ27pWNKVUxWx7pOcGqqEXKvvwQvmX8kKMPd0IHTq/anPkB677jqtiFiIUKdcKlkJClzlr+GlEi/77TsWSIFXRhyXMKOzUy1Wbw+/1tEeTyPVdg966H3U9iSXvIeG6PcU3D64ACEbbnVLb9LaumNeQMzlWbipzJxZ1K/6BjF4a7AfQv9a5Vgszt47dV5nv57w2N2PvSQjDhNay23Pz+10rFe7SL26Nkk7ED0CGn8EuLC58LotwRbj+9i+iw8Y38CGgLAAAAABJRU5ErkJggg=="/>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="78.673px" height="52.824px" viewBox="0 0 78.673 52.824" enable-background="new 0 0 78.673 52.824" xml:space="preserve">
+<g>
+	<path fill="#FFFFFF" stroke="#F28C40" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M71.276,45.307
+		c0,0.6-0.486,1.086-1.085,1.086H7.159c-0.598,0-1.084-0.486-1.084-1.086V2.544c0-0.6,0.486-1.084,1.084-1.084h63.032
+		c0.599,0,1.085,0.484,1.085,1.084V45.307z"/>
+	<path fill="#FFFFFF" stroke="#F28C40" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M75.769,47.985
+		c0,0.6-0.484,1.084-1.084,1.084H2.667c-0.6,0-1.085-0.484-1.085-1.084v-0.891c0-0.6,0.485-1.084,1.085-1.084h72.018
+		c0.6,0,1.084,0.484,1.084,1.084V47.985z"/>
+	<path fill="#FFFFFF" stroke="#F28C40" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M68.594,45.079
+		c0,0.549-0.446,0.994-0.995,0.994H9.753c-0.551,0-0.995-0.445-0.995-0.994V5.832c0-0.55,0.444-0.994,0.995-0.994h57.846
+		c0.549,0,0.995,0.444,0.995,0.994V45.079z"/>
+	<path fill="#FFFFFF" stroke="#F28C40" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M77.091,50.28
+		c0,0.6-0.485,1.084-1.084,1.084h-13.32c-0.598,0-1.082-0.484-1.082-1.084V28.355c0-0.599,0.484-1.083,1.082-1.083h13.32
+		c0.599,0,1.084,0.484,1.084,1.083V50.28z"/>
+	
+		<line fill="#FFFFFF" stroke="#F28C40" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="36.381" y1="47.54" x2="40.97" y2="47.54"/>
+	
+		<circle fill="#FFFFFF" stroke="#F28C40" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" cx="69.348" cy="49.069" r="0.765"/>
+</g>
 </svg>
