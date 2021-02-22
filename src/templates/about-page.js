@@ -1,6 +1,8 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { graphql } from "gatsby";
 import PropTypes from "prop-types";
+import { useAnimation } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 import { GatsbyImage, getImage } from "gatsby-plugin-image";
 
 import {
@@ -11,6 +13,7 @@ import {
   GridItem,
   Image,
 } from "@chakra-ui/react";
+import { MotionGridItem, motionRevealConfig } from "../theme/utils";
 
 import ReactMarkdown from "react-markdown";
 
@@ -18,6 +21,14 @@ import Layout from "../components/Layout";
 
 const PersonItem = (props) => {
   const image = getImage(props.imatge);
+  const controls = useAnimation();
+  const [ref, inView] = useInView();
+
+  useEffect(() => {
+    if (inView) {
+      controls.start("visible");
+    }
+  }, [controls, inView]);
 
   return (
     <>
@@ -65,13 +76,15 @@ const PersonItem = (props) => {
           <ReactMarkdown source={props.descripcio} />
         </GridItem>
 
-        <GridItem
+        <MotionGridItem
           colSpan={{ md: 2 }}
           bg="cultured.500"
           boxShadow="sm"
           textAlign="center"
           fontSize="lg"
           p={4}
+          ref={ref}
+          {...motionRevealConfig(controls, "left")}
         >
           <Text textTransform="uppercase" mb={4}>
             {props.detall.titol}
@@ -82,7 +95,7 @@ const PersonItem = (props) => {
               linkTarget="_blank"
             />
           </Text>
-        </GridItem>
+        </MotionGridItem>
       </Grid>
     </>
   );
