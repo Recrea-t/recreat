@@ -5,7 +5,13 @@ console.log(config);
 module.exports = {
   siteMetadata: config,
   plugins: [
-    "@chakra-ui/gatsby-plugin",
+		"gatsby-plugin-preact",
+    {
+      resolve: "@chakra-ui/gatsby-plugin",
+      options: {
+        isUsingColorMode: false,
+      },
+    },
     "gatsby-plugin-image",
     "gatsby-plugin-sharp",
     "gatsby-transformer-sharp",
