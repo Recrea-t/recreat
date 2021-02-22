@@ -1,6 +1,11 @@
 import React from "react";
 import { GatsbyImage, getImage } from "gatsby-plugin-image";
-import { Image, SimpleGrid, useDisclosure } from "@chakra-ui/react";
+import {
+  Image,
+  SimpleGrid,
+  useBreakpointValue,
+  useDisclosure,
+} from "@chakra-ui/react";
 
 import ServiceModal from "./ServiceModal";
 
@@ -18,6 +23,9 @@ const Gallery = ({ title, exemples, isDissenyWeb }) => {
 
   const boxShadow = isDissenyWeb ? "" : "xs";
 
+  const isSmallDevice = useBreakpointValue({ base: true, md: false });
+  const loading = isDissenyWeb || isSmallDevice ? "lazy" : "eager";
+
   return (
     <>
       <SimpleGrid columns={[1, null, 3]} spacing={4} ref={ref}>
@@ -29,6 +37,7 @@ const Gallery = ({ title, exemples, isDissenyWeb }) => {
             boxShadow={isDissenyWeb ? "xs" : "md"}
             onClick={() => handleClick(item, ref)}
             as={GatsbyImage}
+            loading={loading}
             backgroundColor="transparent"
             className="with-box-shadow"
             imgStyle={{

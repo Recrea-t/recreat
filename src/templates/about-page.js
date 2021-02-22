@@ -12,6 +12,7 @@ import {
   Heading,
   GridItem,
   Image,
+  useBreakpointValue,
 } from "@chakra-ui/react";
 import { MotionGridItem, motionRevealConfig } from "../theme/utils";
 
@@ -21,6 +22,9 @@ import Layout from "../components/Layout";
 
 const PersonItem = (props) => {
   const image = getImage(props.imatge);
+  const notSmallDevice = useBreakpointValue({ base: false, md: true });
+  const loading = props.isFirst || notSmallDevice ? "eager" : "lazy";
+
   const controls = useAnimation();
   const [ref, inView] = useInView();
 
@@ -62,7 +66,7 @@ const PersonItem = (props) => {
             top={0}
             as={GatsbyImage}
             className="with-zoom-out"
-            loading={props.isFirst ? "eager" : "lazy"}
+            loading={loading}
             imgStyle={{
               objectPosition: "top",
               transform: "scale(1.2)",
