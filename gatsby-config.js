@@ -5,7 +5,7 @@ console.log(config);
 module.exports = {
   siteMetadata: config,
   plugins: [
-		"gatsby-plugin-preact",
+    "gatsby-plugin-preact",
     {
       resolve: "@chakra-ui/gatsby-plugin",
       options: {

@@ -1,8 +1,6 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { graphql } from "gatsby";
 import PropTypes from "prop-types";
-import { useAnimation } from "framer-motion";
-import { useInView } from "react-intersection-observer";
 import { GatsbyImage, getImage } from "gatsby-plugin-image";
 
 import {
@@ -13,7 +11,6 @@ import {
   GridItem,
   Image,
 } from "@chakra-ui/react";
-import { MotionGridItem, motionRevealConfig } from "../theme/utils";
 
 import ReactMarkdown from "react-markdown";
 
@@ -21,14 +18,6 @@ import Layout from "../components/Layout";
 
 const PersonItem = (props) => {
   const image = getImage(props.imatge);
-  const controls = useAnimation();
-  const [ref, inView] = useInView();
-
-  useEffect(() => {
-    if (inView) {
-      controls.start("visible");
-    }
-  }, [controls, inView]);
 
   return (
     <>
@@ -62,6 +51,7 @@ const PersonItem = (props) => {
             top={0}
             as={GatsbyImage}
             className="with-zoom-out"
+            loading={props.isFirst ? "eager" : "lazy"}
             imgStyle={{
               objectPosition: "top",
               transform: "scale(1.2)",
@@ -75,15 +65,13 @@ const PersonItem = (props) => {
           <ReactMarkdown source={props.descripcio} />
         </GridItem>
 
-        <MotionGridItem
+        <GridItem
           colSpan={{ md: 2 }}
           bg="cultured.500"
           boxShadow="sm"
           textAlign="center"
           fontSize="lg"
           p={4}
-          ref={ref}
-          {...motionRevealConfig(controls, "left")}
         >
           <Text textTransform="uppercase" mb={4}>
             {props.detall.titol}
@@ -94,7 +82,7 @@ const PersonItem = (props) => {
               linkTarget="_blank"
             />
           </Text>
-        </MotionGridItem>
+        </GridItem>
       </Grid>
     </>
   );
@@ -107,7 +95,7 @@ const AboutPage = (props) => {
     <Layout title={frontmatter.title} description={frontmatter.description}>
       <Container variant="with-top-padding">
         {people.map((person, index) => (
-          <PersonItem key={index} {...person} />
+          <PersonItem key={index} isFirst={index === 0} {...person} />
         ))}
       </Container>
     </Layout>
@@ -140,7 +128,7 @@ export const query = graphql`
             childImageSharp {
               gatsbyImageData(
                 width: 350
-                placeholder: BLURRED
+                placeholder: TRACED_SVG
                 formats: [AUTO, WEBP, AVIF]
               )
             }

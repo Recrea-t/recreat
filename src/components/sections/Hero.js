@@ -1,7 +1,7 @@
 import React from "react";
 import { Link as GatsbyLink } from "gatsby";
 
-import { Flex, Box, Container, Text, ScaleFade } from "@chakra-ui/react";
+import { Flex, Box, Container, Text } from "@chakra-ui/react";
 import { MotionButton } from "../../theme/utils";
 
 const Hero = (props) => {
@@ -10,15 +10,13 @@ const Hero = (props) => {
     <Box w="full" mb={8} py={4} bg="mangoTango.500" color="white">
       <Container>
         <Flex direction="column">
-          <ScaleFade in={true} initialScale={0.9}>
-            <Text
-              as="h1"
-              fontFamily="Playfair Display"
-              fontSize={{ base: "2xl", md: "6xl" }}
-            >
-              “{frontmatter.description}”
-            </Text>
-          </ScaleFade>
+          <Text
+            as="h1"
+            fontFamily="Playfair Display"
+            fontSize={{ base: "2xl", md: "6xl" }}
+          >
+            “{frontmatter.description}”
+          </Text>
           <MotionButton
             as={GatsbyLink}
             to="/qui-som"
