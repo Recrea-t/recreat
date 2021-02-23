@@ -41,7 +41,7 @@ dissenyGrafic:
       thumbnail: /images/02_miniaturanabiu.jpg
       imatges:
         - src: /images/02_Nabiu.jpg
-          alt: Targetes de visita, paper de carta i targetó.
+          alt: Targetes de visita a doble cara, paper de carta i targetó.
     - nom: Consorci de Turisme de les Valls d'Àneu
       descripcio: Roll up
       any: "2019"
@@ -56,10 +56,10 @@ dissenyGrafic:
       imatges:
         - src: /images/04_LogoGavasenca.jpg
           alt: Logotip
-        - src: /images/04_ETQ_Gavasenca.jpg
-          alt: Etiquetatge gamma de formatges
         - src: /images/04_TargetesGavasenca.jpg
           alt: Targetes de visita
+        - src: /images/04_ETQ_Gavasenca.jpg
+          alt: Etiquetatge gamma de formatges
     - nom: Formatgeria Girola
       descripcio: Disseny de producte
       any: 2016-2019
@@ -69,6 +69,8 @@ dissenyGrafic:
           alt: Etiquetatge formatges 2016
         - src: /images/05_ETQ_Girola2019.jpg
           alt: Etiquetatge formatges 2019
+        - src: /images/05_etq_girola2021.jpg
+          alt: Etiquetatge iogurt 2021
     - nom: Consorci de Turisme de les Valls d'Àneu
       descripcio: Mapa desplegable
       any: 2015-2018
@@ -80,7 +82,8 @@ dissenyGrafic:
           alt: Cara del mapa desplegat 48x42
         - src: /images/06_MapaNeuDors.jpg
           alt: Dors del mapa desplegat 48x42
-    - nom: Plataforma Salvem Salau
+    - nom: Plataforma Salvem Salau (aquest projecte es va dur a terme de manera
+        altruista, per col·laborar amb la causa)
       descripcio: Identitat corporativa
       any: "2018"
       thumbnail: /images/07_miniaturasalau.jpg
@@ -104,6 +107,17 @@ dissenyGrafic:
           alt: Targeta de visita impresa en polipropilè translúcid
         - src: /images/08_marc_furgo.jpg
           alt: Retolació furgoneta
+    - descripcio: Disseny de logotip
+      nom: AFA, Escola La Clos INS Morelló Esterri d'Àneu
+      any: "2021"
+      thumbnail: /images/09_miniaturaafa.jpg
+      imatges:
+        - src: /images/09_logoafa.jpg
+          alt: Logotip en les seves tres versions
+        - src: /images/09_segell_afa.jpg
+          alt: Segell automàtic de cautxú en tinta morada
+        - src: /images/09_papercartaafa.jpg
+          alt: Paper de carta
 dissenyWeb:
   descripcio: "**Qui no és a internet no existeix**. Una pàgina web corporativa
     ben ideada és la millor carta de presentació. Dissenyem pàgines web a mida
