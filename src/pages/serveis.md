@@ -3,7 +3,7 @@ templateKey: services-page
 title: Serveis
 description: Som un petit estudi pirinenc de disseny gràfic i comunicació que
   donem resposta a totes aquelles necessitats d'àmbit comunicatiu que li puguin
-  sorgir a una empresa a partir de solucions gràfiques i digitals.
+  sorgir a una empresa a partir de solucions gràfiques i digitals
 dissenyGrafic:
   descripcio: "**La imatge i el missatge que una empresa projecta de si mateixa és
     tan important com l'activitat que desenvolupa**. Des de Recrea't, encarem
@@ -48,7 +48,7 @@ dissenyGrafic:
       thumbnail: /images/03_miniaturarollup.jpg
       imatges:
         - src: /images/03_RollUp_VallsAneu_2019.jpg
-          alt: text
+          alt: ""
     - nom: Formatgeria de Gavàs
       descripcio: Identitat corporativa
       any: "2019"
@@ -124,21 +124,21 @@ dissenyWeb:
       thumbnail: /images/PC_Web_Falles.png
       imatges:
         - src: /images/Mockup_Web_Falles.png
-          alt: text
+          alt: ""
     - nom: Els Cremalls
       any: "2020"
       url: elscremalls.paperform.co
       thumbnail: /images/PC_Web_Cremalls.png
       imatges:
         - src: /images/Mockup_Web_Cremalls.png
-          alt: text
+          alt: ""
     - nom: Marc Bruna Fuster
       any: "2021"
       url: marcbrunafuster.cat
       thumbnail: /images/PC_Web_Marc.png
       imatges:
         - src: /images/Mockup_Web_Marc.png
-          alt: text
+          alt: ""
 xarxesSocials:
   descripcio: >-
     **Actualment, les xarxes socials s'han convertit en un espai virtual en el
@@ -149,9 +149,12 @@ xarxesSocials:
     (*engagement*); n'incrementa la intenció de compra, la fidelització i la
     recomanació.
 
-    Tot això s'aconsegueix establint una estratègia sòlida en mitjans socials i augmentant la presència i l'activitat de l'empresa en aquests mitjançant continguts de qualitat, originals i que atreguin al públic objectiu.
+    Tot això s'aconsegueix establint una estratègia sòlida en mitjans socials i augmentant la
+    presència i l'activitat de l'empresa en aquests mitjançant continguts de qualitat, originals
+    i que atreguin al públic objectiu.
 
-    Finalment, és bàsic realitzar una escolta activa permanent per tal de recopilar informació que serà clau per a la empresa.
+    Finalment, és bàsic realitzar una escolta activa permanent per tal de recopilar informació
+    que serà clau per a la empresa.
   passes:
     - text: Elaborem l'estratègia de mitjans a mida
       imatge: ../images/Icona_estrategia_mitjans.svg
