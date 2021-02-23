@@ -112,7 +112,7 @@ dissenyGrafic:
       any: "2021"
       thumbnail: /images/09_miniaturaafa.jpg
       imatges:
-        - src: /images/09_logoafa.jpg
+        - src: /images/09_logoafa-01.jpg
           alt: Logotip en les seves tres versions
         - src: /images/09_segell_afa.jpg
           alt: Segell automàtic de cautxú en tinta morada
