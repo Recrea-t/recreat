@@ -31,10 +31,10 @@ dissenyGrafic:
       any: "2020"
       thumbnail: /images/01_miniaturacremalls.jpg
       imatges:
-        - src: /images/01_CartellFlyer.jpg
-          alt: Flyer DIN A5 doble cara
         - src: /images/01_CartellCremalls.jpg
           alt: Cartell DIN A3
+        - src: /images/01_CartellFlyer.jpg
+          alt: Flyer DIN A5 doble cara
     - nom: Restaurant El Nabiu
       descripcio: Redisseny identitat corporativa
       any: "2019"
