@@ -151,7 +151,7 @@ xarxesSocials:
 
     Tot això s'aconsegueix establint una estratègia sòlida en mitjans socials i augmentant la presència i l'activitat de l'empresa en aquests mitjançant continguts de qualitat, originals i que atreguin al públic objectiu.
 
-    Finalment, és bàsic realitzar una escolta activa permanent per tal de recopilar informació que serà clau per a la empresa
+    Finalment, és bàsic realitzar una escolta activa permanent per tal de recopilar informació que serà clau per a la empresa.
   passes:
     - text: Elaborem l'estratègia de mitjans a mida
       imatge: ../images/Icona_estrategia_mitjans.svg
