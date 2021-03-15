@@ -33,7 +33,7 @@ const ServiceModal = (props) => {
       isCentered
     >
       <ModalOverlay />
-      <ModalContent bg="cultured.500">
+      <ModalContent bg="cultured.500" h="min-content">
         <ModalCloseButton
           colorScheme="dimGray"
           variant="custom-link"
