@@ -73,7 +73,7 @@ const ServiceModal = (props) => {
                   imgStyle={{
                     objectFit: "contain",
                   }}
-                  alt={item.nom}
+                  alt={item.nom || item.alt}
                   image={getImage(item.src)}
                 />
                 {item.alt && <Text>{item.alt}</Text>}

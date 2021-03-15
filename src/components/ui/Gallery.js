@@ -12,12 +12,10 @@ import ServiceModal from "./ServiceModal";
 const Gallery = ({ title, exemples, isDissenyWeb }) => {
   const { isOpen, onOpen, onClose } = useDisclosure();
   const [exampleSelected, setExampleSelected] = React.useState(null);
-  const [finalRef, setFinalRef] = React.useState(null);
   const ref = React.useRef();
 
-  const handleClick = (example, ref) => {
+  const handleClick = (example) => {
     setExampleSelected(example);
-    setFinalRef(ref);
     onOpen();
   };
 
@@ -35,7 +33,7 @@ const Gallery = ({ title, exemples, isDissenyWeb }) => {
             cursor="pointer"
             overflow="hidden"
             boxShadow={isDissenyWeb ? "xs" : "md"}
-            onClick={() => handleClick(item, ref)}
+            onClick={() => handleClick(item)}
             as={GatsbyImage}
             loading={loading}
             backgroundColor="transparent"
@@ -54,7 +52,7 @@ const Gallery = ({ title, exemples, isDissenyWeb }) => {
         isOpen={isOpen}
         title={title}
         example={exampleSelected}
-        finalRef={finalRef}
+        finalRef={ref}
         boxShadow={boxShadow}
         isDissenyWeb
       />

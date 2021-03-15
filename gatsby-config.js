@@ -4,6 +4,7 @@ console.log(config);
 
 module.exports = {
   siteMetadata: config,
+  flags: { PRESERVE_WEBPACK_CACHE: true },
   plugins: [
     "gatsby-plugin-preact",
     {
