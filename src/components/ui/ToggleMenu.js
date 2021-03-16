@@ -7,8 +7,11 @@ const ToggleMenu = (props) => {
 
   return (
     <>
-      <Box display="block" onClick={toggleMenu} aria-label="Toggle navigation">
-        {/* show ? <CloseIcon w={8} h={8} /> : <HamburgerIcon w={8} h={8} />*/}
+      <Box
+        display={{ base: "block", md: "none" }}
+        onClick={toggleMenu}
+        aria-label="Toggle navigation"
+      >
         <HamburgerIcon w={8} h={8} />
       </Box>
 

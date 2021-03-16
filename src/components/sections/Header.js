@@ -1,13 +1,12 @@
 import React from "react";
 import { Link as GatsbyLink } from "gatsby";
 import { StaticImage } from "gatsby-plugin-image";
-import { Flex, Link, useBreakpointValue } from "@chakra-ui/react";
+import { Flex, Link } from "@chakra-ui/react";
 
 import NavLink from "../ui/NavLink";
 import ToggleMenu from "../ui/ToggleMenu";
 
 const Header = () => {
-  const isSmallDevice = useBreakpointValue({ base: true, md: false });
   const [show, setShow] = React.useState(false);
   const toggleMenu = () => setShow(!show);
 
@@ -58,19 +57,18 @@ const Header = () => {
         />
       </Link>
 
-      {isSmallDevice ? (
-        <ToggleMenu show={show} toggleMenu={toggleMenu}>
-          <MenuItems onClick={toggleMenu} />
-        </ToggleMenu>
-      ) : (
-        <Flex
-          align="center"
-          direction="row"
-          justify={{ md: "space-between", lg: "flex-end" }}
-        >
-          <MenuItems />
-        </Flex>
-      )}
+      <ToggleMenu show={show} toggleMenu={toggleMenu}>
+        <MenuItems onClick={toggleMenu} />
+      </ToggleMenu>
+
+      <Flex
+        align="center"
+        direction="row"
+        justify={{ md: "space-between", lg: "flex-end" }}
+        display={{ base: "none", md: "inherit" }}
+      >
+        <MenuItems />
+      </Flex>
     </Flex>
   );
 };
