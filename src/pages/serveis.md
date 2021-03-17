@@ -26,6 +26,17 @@ dissenyGrafic:
 
     * Senyalística
   exemples:
+    - descripcio: Disseny de logotip
+      nom: AFA, Escola La Clos INS Morelló Esterri d'Àneu
+      any: "2021"
+      thumbnail: /images/09_miniaturaafa.jpg
+      imatges:
+        - src: /images/09_logoafa-01.jpg
+          alt: Logotip en les seves tres versions
+        - src: /images/09_segell_afa.jpg
+          alt: Segell automàtic de cautxú en tinta morada
+        - src: /images/09_papercartaafa.jpg
+          alt: Paper de carta
     - nom: Bar Els Cremalls
       descripcio: Papereria promocional
       any: "2020"
@@ -42,13 +53,6 @@ dissenyGrafic:
       imatges:
         - src: /images/02_Nabiu.jpg
           alt: Targetes de visita a doble cara, paper de carta i targetó.
-    - nom: Consorci de Turisme de les Valls d'Àneu
-      descripcio: Roll up
-      any: "2019"
-      thumbnail: /images/03_miniaturarollup.jpg
-      imatges:
-        - src: /images/03_RollUp_VallsAneu_2019.jpg
-          alt: ""
     - nom: Formatgeria de Gavàs
       descripcio: Identitat corporativa
       any: "2019"
@@ -60,6 +64,13 @@ dissenyGrafic:
           alt: Targetes de visita
         - src: /images/04_ETQ_Gavasenca.jpg
           alt: Etiquetatge gamma de formatges
+    - nom: Consorci de Turisme de les Valls d'Àneu
+      descripcio: Roll up
+      any: "2019"
+      thumbnail: /images/03_miniaturarollup.jpg
+      imatges:
+        - src: /images/03_RollUp_VallsAneu_2019.jpg
+          alt: ""
     - nom: Formatgeria Girola
       descripcio: Disseny de producte
       any: 2016-2019
@@ -82,6 +93,17 @@ dissenyGrafic:
           alt: Cara del mapa desplegat 48x42
         - src: /images/06_MapaNeuDors.jpg
           alt: Dors del mapa desplegat 48x42
+    - nom: Marc Bruna Fuster
+      any: 2013-2020
+      descripcio: Identitat corporativa
+      thumbnail: /images/08_miniaturamarc.jpg
+      imatges:
+        - src: /images/08_marc_logo3v.jpg
+          alt: Logotip en les seves tres versions
+        - src: /images/08_marc_targeta.jpg
+          alt: Targeta de visita impresa en polipropilè translúcid
+        - src: /images/08_marc_furgo.jpg
+          alt: Retolació furgoneta
     - nom: Plataforma Salvem Salau (aquest projecte es va dur a terme de manera
         altruista, per col·laborar amb la causa)
       descripcio: Identitat corporativa
@@ -96,28 +118,15 @@ dissenyGrafic:
           alt: Cartell genèric informatiu DIN A3
         - src: /images/07_cartellNoMinaSalau.jpg
           alt: Cartell DIN A3 No a la Mina!
-    - nom: Marc Bruna Fuster
-      any: 2013-2020
-      descripcio: Identitat corporativa
-      thumbnail: /images/08_miniaturamarc.jpg
+    - nom: Casa de l'Ós Bru
+      descripcio: Plafons informatius
+      any: "2018"
+      thumbnail: /images/10_miniaturaos.jpg
       imatges:
-        - src: /images/08_marc_logo3v.jpg
-          alt: Logotip en les seves tres versions
-        - src: /images/08_marc_targeta.jpg
-          alt: Targeta de visita impresa en polipropilè translúcid
-        - src: /images/08_marc_furgo.jpg
-          alt: Retolació furgoneta
-    - descripcio: Disseny de logotip
-      nom: AFA, Escola La Clos INS Morelló Esterri d'Àneu
-      any: "2021"
-      thumbnail: /images/09_miniaturaafa.jpg
-      imatges:
-        - src: /images/09_logoafa-01.jpg
-          alt: Logotip en les seves tres versions
-        - src: /images/09_segell_afa.jpg
-          alt: Segell automàtic de cautxú en tinta morada
-        - src: /images/09_papercartaafa.jpg
-          alt: Paper de carta
+        - src: /images/10_panellcasaos01.jpg
+          alt: Vinil de 100x200cm amb forat per pantalla
+        - src: /images/10_panellcasaos02.jpg
+          alt: Panell imprès sobre tela de 200x200 cm
 dissenyWeb:
   descripcio: "**Qui no és a internet no existeix**. Una pàgina web corporativa
     ben ideada és la millor carta de presentació. Dissenyem pàgines web a mida
