@@ -67,6 +67,7 @@ const PersonItem = (props) => {
             as={GatsbyImage}
             className="with-zoom-out"
             loading={loading}
+            cursor="zoom-out"
             imgStyle={{
               objectPosition: "top",
               transform: "scale(1.2)",
