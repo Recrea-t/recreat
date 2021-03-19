@@ -18,6 +18,7 @@ module.exports = {
     "gatsby-transformer-sharp",
     "gatsby-plugin-robots-txt",
     "gatsby-plugin-react-helmet",
+    "gatsby-plugin-preload-fonts",
     "gatsby-plugin-sitemap",
     {
       resolve: "gatsby-plugin-manifest",
