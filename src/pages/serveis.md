@@ -1,9 +1,10 @@
 ---
 templateKey: services-page
 title: Serveis
-description: Som un petit estudi pirinenc de disseny gràfic i comunicació que
-  donem resposta a totes aquelles necessitats d'àmbit comunicatiu que li puguin
-  sorgir a una empresa a partir de solucions gràfiques i digitals
+description: "La nostra missió com a empresa del Pallars Sobirà és contribuir al
+  desenvolupament de les pimes i autònoms del Pirineu, oferint un servei
+  integral: adaptem l’estratègia al 100% de les necessitats de cadascú fet que
+  ens permet optimitzar costos i resultats. "
 dissenyGrafic:
   descripcio: "**La imatge i el missatge que una empresa projecta de si mateixa és
     tan important com l'activitat que desenvolupa**. Des de Recrea't, encarem
@@ -132,13 +133,12 @@ dissenyWeb:
     ben ideada és la millor carta de presentació. Dissenyem pàgines web a mida
     de cada client, oferint un servei integral."
   detall: |-
-    * Disseny a mida
-    * Disseny *Mobile first*
+    * Disseny únic i personal
+    * Desenvolupament web modern
     * SEO orgànic
-    * Màrqueting digital
-    * Gestor de continguts
-    * Redacció de continguts
-    * Allotjament
+    * Gestor de continguts a mida
+    * Integració d'una botiga *online* (*Shopify*, *Snipcart*, *Stripe*...)
+    * Allotjament i certificats SSL
     * Gestió de domini i web mail
   exemples:
     - nom: Associació Cultural Fallaires d'Isil
