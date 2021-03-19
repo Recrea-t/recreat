@@ -26,6 +26,11 @@ const styles = {
         margin: "0 !important",
       },
     },
+    ".markdown-description": {
+      ul: {
+        paddingLeft: "1rem",
+      },
+    },
     ".markdown-detail": {
       li: {
         listStyle: "none",

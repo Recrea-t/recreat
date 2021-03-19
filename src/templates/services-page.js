@@ -26,7 +26,7 @@ const ServiceItem = (props) => {
         mb={8}
       >
         <GridItem colSpan={isXarxesSocials ? 3 : 2}>
-          <Box mb={4}>
+          <Box mb={4} className="markdown-description">
             <ReactMarkdown source={props.descripcio} />
           </Box>
 

@@ -129,9 +129,12 @@ dissenyGrafic:
         - src: /images/10_panellcasaos02.jpg
           alt: Panell imprès sobre tela de 200x200 cm
 dissenyWeb:
-  descripcio: "**Qui no és a internet no existeix**. Una pàgina web corporativa
-    ben ideada és la millor carta de presentació. Dissenyem pàgines web a mida
-    de cada client, oferint un servei integral."
+  descripcio: |-
+    Analitzem les vostres necessitats partint de la base que volem un lloc web modern que atraurà visitants i serà capaç de transformar-los en clients:
+
+     * Per apropar-los, hem de tenir un bon **SEO** i això vol dir construir una web amb un bon rendiment per garantir bones puntuacions als cercadors.
+
+     * Per transformar-los, una web ha de ser visualment atractiva i ha de ser usable: els visitants hi han de poder accedir des de **qualsevol dispositiu**, de manera **segura** i **ràpida**.
   detall: |-
     * Disseny únic i personal
     * Desenvolupament web modern
@@ -139,7 +142,7 @@ dissenyWeb:
     * Gestor de continguts a mida
     * Integració d'una botiga *online* (*Shopify*, *Snipcart*, *Stripe*...)
     * Allotjament i certificats SSL
-    * Gestió de domini i web mail
+    * Gestió de domini i webmail
   exemples:
     - nom: Associació Cultural Fallaires d'Isil
       any: "2017"
