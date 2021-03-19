@@ -6,7 +6,7 @@ module.exports = {
   siteMetadata: config,
   flags: { PRESERVE_WEBPACK_CACHE: true },
   plugins: [
-    "gatsby-plugin-preact",
+    //"gatsby-plugin-preact",
     {
       resolve: "@chakra-ui/gatsby-plugin",
       options: {
