@@ -52,6 +52,7 @@ export const query = graphql`
       frontmatter {
         title
         description
+        hero
         serveis {
           id
           nom

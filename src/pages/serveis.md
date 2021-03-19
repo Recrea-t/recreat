@@ -2,9 +2,8 @@
 templateKey: services-page
 title: Serveis
 description: "La nostra missió com a empresa del Pallars Sobirà és contribuir al
-  desenvolupament de les pimes i autònoms del Pirineu, oferint un servei
-  integral: adaptem l’estratègia al 100% de les necessitats de cadascú fet que
-  ens permet optimitzar costos i resultats. "
+  desenvolupament rural de les comarques del Pirineu, oferint un servei
+  integral de disseny gràfic, desenvolupament web i comunicació. "
 dissenyGrafic:
   descripcio: "**La imatge i el missatge que una empresa projecta de si mateixa és
     tan important com l'activitat que desenvolupa**. Des de Recrea't, encarem

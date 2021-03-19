@@ -36,6 +36,11 @@ collections:
             widget: "text"
             }
           - {
+            label: "Text de la capcelera",
+            name: "hero",
+            widget: "text"
+            }
+          - {
             label: "Serveis",
             name: "serveis",
             widget: "list",
