@@ -133,12 +133,12 @@ dissenyWeb:
     és la millor carta de presentació. 
 
 
-    Analitzem les necessitats de cada client partint de la base que l'objectiu a assolir és un lloc web modern que atraigui visitants per transformar-los en clients:
+    Analitzem les necessitats de cada client partint de la base que l'objectiu a assolir és un lloc web modern que atraigui visitants per convertir-los en clients:
 
 
     * Per atraure'ls, és necessari un bon **SEO** i això vol dir construir una web amb un bon rendiment per garantir bones puntuacions als cercadors.
 
-    * Per transformar-los, una web ha de ser visualment atractiva i ha de ser usable: els visitants hi han de poder accedir des de **qualsevol dispositiu**, de manera **segura** i **ràpida**.
+    * Per convertir-los, una web ha de ser visualment atractiva i ha de ser usable: els visitants hi han de poder accedir des de **qualsevol dispositiu**, de manera **segura** i **ràpida**.
 
 
     Dissenyem pàgines web a mida de cada client, oferint un servei integral.
