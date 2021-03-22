@@ -2,8 +2,8 @@
 templateKey: services-page
 title: Serveis
 description: "La nostra missió com a empresa del Pallars Sobirà és contribuir al
-  desenvolupament rural de les comarques del Pirineu, oferint un servei
-  integral de disseny gràfic, desenvolupament web i comunicació. "
+  desenvolupament rural de les comarques del Pirineu, oferint un servei integral
+  de disseny gràfic, desenvolupament web i comunicació. "
 dissenyGrafic:
   descripcio: "**La imatge i el missatge que una empresa projecta de si mateixa és
     tan important com l'activitat que desenvolupa**. Des de Recrea't, encarem
@@ -128,14 +128,23 @@ dissenyGrafic:
         - src: /images/10_panellcasaos02.jpg
           alt: Panell imprès sobre tela de 200x200 cm
 dissenyWeb:
-  descripcio: |-
-    Analitzem les vostres necessitats partint de la base que volem un lloc web modern que atraurà visitants i serà capaç de transformar-los en clients:
+  descripcio: >-
+    **Qui no és a internet no existeix**. Una pàgina web corporativa ben ideada
+    és la millor carta de presentació. 
 
-     * Per apropar-los, hem de tenir un bon **SEO** i això vol dir construir una web amb un bon rendiment per garantir bones puntuacions als cercadors.
 
-     * Per transformar-los, una web ha de ser visualment atractiva i ha de ser usable: els visitants hi han de poder accedir des de **qualsevol dispositiu**, de manera **segura** i **ràpida**.
+    Analitzem les necessitats de cada client partint de la base que l'objectiu a assolir és un lloc web modern que atraigui visitants per transformar-los en clients:
+
+
+    * Per atraure'ls, és necessari un bon **SEO** i això vol dir construir una web amb un bon rendiment per garantir bones puntuacions als cercadors.
+
+    * Per transformar-los, una web ha de ser visualment atractiva i ha de ser usable: els visitants hi han de poder accedir des de **qualsevol dispositiu**, de manera **segura** i **ràpida**.
+
+
+    Dissenyem pàgines web a mida de cada client, oferint un servei integral.
   detall: |-
-    * Disseny únic i personal
+    * Disseny a mida
+    * Disseny *Mobile First*
     * Desenvolupament web modern
     * SEO orgànic
     * Gestor de continguts a mida
