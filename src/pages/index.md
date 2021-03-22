@@ -1,10 +1,13 @@
 ---
 templateKey: index-page
 title: Disseny gràfic i comunicació
-description: Petit estudi de disseny gràfic, desenvolupament web i comunicació del Pallars Sobirà. Ajudem tant a la digitalització de les empreses i projectes de l'Alt Pirineu com a satisfer les seves necessitats en l'àmbit comunicatiu.
-hero: Som un petit estudi pirinenc de disseny gràfic i comunicació que
-  donem resposta a totes aquelles necessitats d'àmbit comunicatiu que li puguin
-  sorgir a una empresa a partir de solucions gràfiques i digitals
+description: Petit estudi de disseny gràfic, desenvolupament web i comunicació
+  del Pallars Sobirà. Ajudem tant a la digitalització de les empreses i
+  projectes de l'Alt Pirineu com a satisfer les seves necessitats en l'àmbit
+  comunicatiu.
+hero: Som un petit estudi de disseny gràfic, web i comunicació del Pallars
+  Sobirà que donem resposta a totes aquelles necessitats d'àmbit comunicatiu que
+  li puguin sorgir a una empresa a partir de solucions gràfiques i digitals
 serveis:
   - id: disseny-grafic
     nom: Disseny Gràfic
