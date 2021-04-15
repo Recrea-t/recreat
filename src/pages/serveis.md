@@ -14,7 +14,7 @@ dissenyGrafic:
 
     * Imatge corporativa
 
-    * Papereria promocional: cartells, flyers, fulletons, tríptics, calendaris, targetes, etc.
+    * Papereria promocional: cartells, flyers, fulletons, tríptics, calendaris, targetes...
 
     * Disseny editorial: llibres, revistes, catàlegs
 
