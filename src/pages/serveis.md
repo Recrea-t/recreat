@@ -152,12 +152,18 @@ dissenyWeb:
     * Allotjament i certificats SSL
     * Gestió de domini i webmail
   exemples:
-    - nom: Associació Cultural Fallaires d'Isil
-      any: "2017"
-      url: www.fallesisil.cat
-      thumbnail: /images/PC_Web_Falles.png
+    - nom: Arquengin
+      any: "2021"
+      url: https://www.arquengin.com/
       imatges:
-        - src: /images/Mockup_Web_Falles.png
+        - src: /images/mockup_web_arquengin.png
+      thumbnail: /images/pc_web_arquengin.png
+    - nom: Marc Bruna Fuster
+      any: "2021"
+      url: marcbrunafuster.cat
+      thumbnail: /images/PC_Web_Marc.png
+      imatges:
+        - src: /images/Mockup_Web_Marc.png
           alt: ""
     - nom: Els Cremalls
       any: "2020"
@@ -166,19 +172,13 @@ dissenyWeb:
       imatges:
         - src: /images/Mockup_Web_Cremalls.png
           alt: ""
-    - nom: Marc Bruna Fuster
-      any: "2021"
-      url: marcbrunafuster.cat
-      thumbnail: /images/PC_Web_Marc.png
+    - nom: Associació Cultural Fallaires d'Isil
+      any: "2017"
+      url: www.fallesisil.cat
+      thumbnail: /images/PC_Web_Falles.png
       imatges:
-        - src: /images/Mockup_Web_Marc.png
+        - src: /images/Mockup_Web_Falles.png
           alt: ""
-    - nom: Arquengin
-      any: "2021"
-      url: https://www.arquengin.com/
-      imatges:
-        - src: /images/mockup_web_arquengin.png
-      thumbnail: /images/pc_web_arquengin.png
 xarxesSocials:
   descripcio: >-
     **Actualment, les xarxes socials s'han convertit en un espai virtual en el
