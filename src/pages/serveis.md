@@ -173,6 +173,12 @@ dissenyWeb:
       imatges:
         - src: /images/Mockup_Web_Marc.png
           alt: ""
+    - nom: Arquengin
+      any: "2021"
+      url: https://www.arquengin.com/
+      imatges:
+        - src: /images/mockup_web_arquengin.png
+      thumbnail: /images/pc_web_arquengin.png
 xarxesSocials:
   descripcio: >-
     **Actualment, les xarxes socials s'han convertit en un espai virtual en el
