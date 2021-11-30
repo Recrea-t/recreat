@@ -48,7 +48,7 @@ const Header = () => {
     >
       <Link to="/" title="Inici" as={GatsbyLink}>
         <StaticImage
-          src="../../images/LogoRecreat.png"
+          src="../../images/LogoRecreant.svg"
           alt="Logotip Recrea't"
           loading="eager"
           layout="fixed"
