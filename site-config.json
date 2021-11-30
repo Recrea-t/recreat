@@ -1,38 +1,38 @@
 {
-  "title": "Recrea't",
-  "titleTemplate": "%s · Recrea't",
+  "title": "Recreant",
+  "titleTemplate": "%s · Recreant",
   "description": "Disseny gràfic i comunicació",
-  "siteUrl": "https://recreat.cat",
+  "siteUrl": "https://recreant.cat",
   "image": "/images/Logo.svg",
   "color": "#E8864B",
   "author": {
-    "name": "Recrea't",
-    "url": "https://recreat.cat"
+    "name": "Recreant",
+    "url": "https://recreant.cat"
   },
   "organization": {
-    "name": "Recrea't",
-    "url": "https://recreat.cat",
+    "name": "Recreant",
+    "url": "https://recreant.cat",
     "logo": "/images/icon.png",
     "email": "marta@recreat.cat",
     "phone": {
       "number": 34646429298,
       "title": "646 429 298"
     },
-    "address": "Carrer Major</br>25580 Esterri d'Àneu"
+    "address": "Isil"
   },
   "social": {
     "instagram": {
-      "username": "Recreat_Disseny_Comunicacio",
+      "username": "Recreant_Disseny_Comunicacio",
       "title": "Segueix-nos a Instagram",
       "baseUrl": "https://www.instagram.com/"
     },
     "facebook": {
-      "username": "RecreatDissenyComunicacio",
+      "username": "RecreantDissenyComunicacio",
       "title": "Segueix-nos a Facebook",
       "baseUrl": "https://www.facebook.com/"
     },
     "linkedin": {
-      "username": "marta-bruna-b5847733",
+      "username": "martabruna",
       "title": "Segueix-nos a Twitter",
       "baseUrl": "https://www.linkedin.com/in/"
     }

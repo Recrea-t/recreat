@@ -46,15 +46,20 @@ const Contact = () => {
               <Text>
                 Tens una idea, una necessitat, un dubte, una proposta?
               </Text>
-              <Text>
-                Escriu-nos o visita'ns a l'espai de coworking d'Esterri d'Àneu.
-              </Text>
+              <Text>Escriu-nos.</Text>
             </Box>
             <ContactForm />
           </VStack>
 
           <VStack spacing={4} justify="center" textAlign="center">
-            <Icon as={FaMapMarkerAlt} h={12} w={12} />
+            <Link
+              href="https://www.google.com/maps/place/Recreant,+disseny+gr%C3%A0fic+i+comunicaci%C3%B3/@42.67891,1.08687,15z/data=!4m5!3m4!1s0x0:0x55d2d5c449b4c611!8m2!3d42.67891!4d1.08687"
+              title="Visita'ns"
+              target="_blank"
+              rel="noopener"
+            >
+              <Icon as={FaMapMarkerAlt} h={12} w={12} />
+            </Link>
             <Text dangerouslySetInnerHTML={{ __html: organization.address }} />
             <Text>
               <Link href={`tel:${organization.phone.number}`} title="Truca'ns">
