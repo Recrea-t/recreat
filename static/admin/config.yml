@@ -6,9 +6,9 @@ backend:
 media_folder: static/images
 public_folder: /images
 
-site_url: https://www.recreat.cat
-display_url: https://www.recreat.cat
-logo_url: https://www.recreat.cat/images/logo.svg
+site_url: https://www.recreant.cat
+display_url: https://www.recreant.cat
+logo_url: https://www.recreant.cat/images/Logo.svg
 locale: "ca"
 
 collections:
