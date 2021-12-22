@@ -26,6 +26,19 @@ dissenyGrafic:
 
     * Senyalística
   exemples:
+    - thumbnail: /images/11_miniaturahabitatge.jpg
+      nom: Consell Comarecal Pallars Sobirà
+      any: "2021"
+      descripcio: Campanya prmocional
+      imatges:
+        - src: /images/cartell015_consellhabitatget.jpg
+          alt: Cartell DIN A3
+        - src: /images/flyerdina5habitatge.jpg
+          alt: Flyer DIN A5 a dos cares
+        - src: /images/postal01.jpg
+          alt: Detall d'una postal DIN A6 a dos cares
+        - src: /images/postalshabitatge.jpg
+          alt: Disseny de deu models diferents de postal DIN A6 a dos cares
     - descripcio: Disseny de logotip
       nom: AFA, Escola La Clos INS Morelló Esterri d'Àneu
       any: "2021"
@@ -127,19 +140,6 @@ dissenyGrafic:
           alt: Cartell genèric informatiu DIN A3
         - src: /images/07_cartellNoMinaSalau.jpg
           alt: Cartell DIN A3 No a la Mina!
-    - thumbnail: /images/11_miniaturahabitatge.jpg
-      nom: Consell Comarecal Pallars Sobirà
-      any: "2021"
-      descripcio: Campanya prmocional
-      imatges:
-        - src: /images/cartell015_consellhabitatget.jpg
-          alt: Cartell DIN A3
-        - src: /images/flyerdina5habitatge.jpg
-          alt: Flyer DIN A5 a dos cares
-        - src: /images/postal01.jpg
-          alt: Detall d'una postal DIN A6 a dos cares
-        - src: /images/postalshabitatge.jpg
-          alt: Disseny de deu models diferents de postal DIN A6 a dos cares
 dissenyWeb:
   descripcio: >-
     **Qui no és a internet no existeix**. Una pàgina web corporativa ben ideada
