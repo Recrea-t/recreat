@@ -71,6 +71,15 @@ dissenyGrafic:
       imatges:
         - src: /images/03_RollUp_VallsAneu_2019.jpg
           alt: ""
+    - nom: Casa de l'Ós Bru
+      descripcio: Plafons informatius
+      any: "2018"
+      thumbnail: /images/10_miniaturaos.jpg
+      imatges:
+        - src: /images/10_panellcasaos01.jpg
+          alt: Vinil de 100x200cm amb forat per pantalla
+        - src: /images/10_panellcasaos02.jpg
+          alt: Panell imprès sobre tela de 200x200 cm
     - nom: Formatgeria Girola
       descripcio: Disseny de producte
       any: 2016-2019
@@ -118,15 +127,19 @@ dissenyGrafic:
           alt: Cartell genèric informatiu DIN A3
         - src: /images/07_cartellNoMinaSalau.jpg
           alt: Cartell DIN A3 No a la Mina!
-    - nom: Casa de l'Ós Bru
-      descripcio: Plafons informatius
-      any: "2018"
-      thumbnail: /images/10_miniaturaos.jpg
+    - thumbnail: /images/11_miniaturahabitatge.jpg
+      nom: Consell Comarecal Pallars Sobirà
+      any: "2021"
+      descripcio: Campanya prmocional
       imatges:
-        - src: /images/10_panellcasaos01.jpg
-          alt: Vinil de 100x200cm amb forat per pantalla
-        - src: /images/10_panellcasaos02.jpg
-          alt: Panell imprès sobre tela de 200x200 cm
+        - src: /images/cartell015_consellhabitatget.jpg
+          alt: Cartell DIN A3
+        - src: /images/flyerdina5habitatge.jpg
+          alt: Flyer DIN A5 a dos cares
+        - src: /images/postal01.jpg
+          alt: Detall d'una postal DIN A6 a dos cares
+        - src: /images/postalshabitatge.jpg
+          alt: Disseny de deu models diferents de postal DIN A6 a dos cares
 dissenyWeb:
   descripcio: >-
     **Qui no és a internet no existeix**. Una pàgina web corporativa ben ideada
