@@ -152,6 +152,18 @@ dissenyWeb:
     * Allotjament i certificats SSL
     * Gestió de domini i webmail
   exemples:
+    - nom: Càmping la Mola
+      any: "2021"
+      url: https://campinglamola.com/
+      thumbnail: /images/pc_web_cmpinglamola.png
+      imatges:
+        - src: /images/mockup_web_cmpinglamola.png
+    - nom: Àneu Coworking
+      any: "2021"
+      url: https://www.aneucoworking.cat/
+      thumbnail: /images/pc_web_aneucoworking.png
+      imatges:
+        - src: /images/mockup_web_arneucoworking.png
     - nom: Arquengin
       any: "2021"
       url: https://www.arquengin.com/
