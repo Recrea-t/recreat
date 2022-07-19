@@ -167,39 +167,39 @@ dissenyWeb:
   exemples:
     - nom: Càmping la Mola
       any: "2021"
-      url: https://campinglamola.com/
+      url: https://campinglamola.com
       thumbnail: /images/pc_web_cmpinglamola.png
       imatges:
         - src: /images/mockup_web_cmpinglamola.png
     - nom: Àneu Coworking
       any: "2021"
-      url: https://www.aneucoworking.cat/
+      url: https://www.aneucoworking.cat
       thumbnail: /images/pc_web_aneucoworking.png
       imatges:
         - src: /images/mockup_web_arneucoworking.png
     - nom: Arquengin
       any: "2021"
-      url: https://www.arquengin.com/
+      url: https://www.arquengin.com
       imatges:
         - src: /images/mockup_web_arquengin.png
       thumbnail: /images/pc_web_arquengin.png
     - nom: Marc Bruna Fuster
       any: "2021"
-      url: marcbrunafuster.cat
+      url: https://www.marcbrunafuster.cat
       thumbnail: /images/PC_Web_Marc.png
       imatges:
         - src: /images/Mockup_Web_Marc.png
           alt: ""
     - nom: Els Cremalls
       any: "2020"
-      url: elscremalls.paperform.co
+      url: https://paperform.co
       thumbnail: /images/PC_Web_Cremalls.png
       imatges:
         - src: /images/Mockup_Web_Cremalls.png
           alt: ""
     - nom: Associació Cultural Fallaires d'Isil
       any: "2017"
-      url: www.fallesisil.cat
+      url: http://www.fallesisil.cat
       thumbnail: /images/PC_Web_Falles.png
       imatges:
         - src: /images/Mockup_Web_Falles.png
