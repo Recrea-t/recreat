@@ -3,6 +3,7 @@ import { graphql } from "gatsby";
 import PropTypes from "prop-types";
 
 import ReactMarkdown from "react-markdown";
+import ChakraUIRenderer from "../utils/ChakraUIRenderer";
 
 import { Grid, GridItem, Box, Container, Heading } from "@chakra-ui/react";
 
@@ -27,7 +28,10 @@ const ServiceItem = (props) => {
       >
         <GridItem colSpan={isXarxesSocials ? 3 : 2}>
           <Box mb={4} className="markdown-description">
-            <ReactMarkdown source={props.descripcio} />
+            <ReactMarkdown
+              components={ChakraUIRenderer()}
+              children={props.descripcio}
+            />
           </Box>
 
           {!isXarxesSocials && <ServiceDetail markdown={props.detall} />}

@@ -26,7 +26,7 @@ const ServiceDetail = ({ markdown }) => {
       ref={ref}
       {...motionRevealConfig(controls)}
     >
-      <ReactMarkdown source={markdown} />
+      <ReactMarkdown children={markdown} />
     </MotionBox>
   );
 };

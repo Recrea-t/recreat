@@ -1,6 +1,7 @@
 import React from "react";
 import { GatsbyImage, getImage } from "gatsby-plugin-image";
 import {
+  Box,
   Image,
   SimpleGrid,
   useBreakpointValue,
@@ -15,6 +16,7 @@ const Gallery = ({ title, exemples, isDissenyWeb }) => {
   const ref = React.useRef();
 
   const handleClick = (example) => {
+    console.log("cllick");
     setExampleSelected(example);
     onOpen();
   };
@@ -28,23 +30,23 @@ const Gallery = ({ title, exemples, isDissenyWeb }) => {
     <>
       <SimpleGrid columns={[1, null, 3]} spacing={4} ref={ref}>
         {exemples.map((item, index) => (
-          <Image
-            key={index}
-            cursor="pointer"
-            overflow="hidden"
-            boxShadow={isDissenyWeb ? "xs" : "md"}
-            onClick={() => handleClick(item)}
-            as={GatsbyImage}
-            loading={loading}
-            backgroundColor="transparent"
-            className="with-box-shadow"
-            imgStyle={{
-              objectFit: isDissenyWeb ? "contain" : "cover",
-              objectPosition: "center",
-            }}
-            alt={item.nom}
-            image={getImage(item.thumbnail)}
-          />
+          <Box onClick={() => handleClick(item)} key={index}>
+            <Image
+              cursor="pointer"
+              overflow="hidden"
+              boxShadow={isDissenyWeb ? "xs" : "md"}
+              as={GatsbyImage}
+              loading={loading}
+              backgroundColor="transparent"
+              className="with-box-shadow"
+              imgStyle={{
+                objectFit: isDissenyWeb ? "contain" : "cover",
+                objectPosition: "center",
+              }}
+              alt={item.nom}
+              image={getImage(item.thumbnail)}
+            />
+          </Box>
         ))}
       </SimpleGrid>
       <ServiceModal

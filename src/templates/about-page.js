@@ -17,6 +17,7 @@ import {
 import { MotionGridItem, motionRevealConfig } from "../theme/utils";
 
 import ReactMarkdown from "react-markdown";
+import ChakraUIRenderer from "../utils/ChakraUIRenderer";
 
 import Layout from "../components/Layout";
 
@@ -78,7 +79,10 @@ const PersonItem = (props) => {
         </GridItem>
 
         <GridItem>
-          <ReactMarkdown source={props.descripcio} />
+          <ReactMarkdown
+            components={ChakraUIRenderer()}
+            children={props.descripcio}
+          />
         </GridItem>
 
         <MotionGridItem
@@ -96,7 +100,8 @@ const PersonItem = (props) => {
           </Text>
           <Text className="markdown-detail" fontFamily="Playfair Display">
             <ReactMarkdown
-              source={props.detall.descripcio}
+              components={ChakraUIRenderer()}
+              children={props.detall.descripcio}
               linkTarget="_blank"
             />
           </Text>

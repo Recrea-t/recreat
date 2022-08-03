@@ -56,7 +56,7 @@ const ServiceModal = (props) => {
             </Heading>
             <Link
               variant="in-modal"
-              href={`http://${example.url}`}
+              href={example.url}
               title={example.nom}
               target="_blank"
               rel="noopener"
@@ -65,9 +65,8 @@ const ServiceModal = (props) => {
               {example.url}
             </Link>
             {example.imatges.map((item, index) => (
-              <Box py={4}>
+              <Box py={4} key={index}>
                 <Image
-                  key={index}
                   boxShadow={boxShadow}
                   as={GatsbyImage}
                   imgStyle={{
