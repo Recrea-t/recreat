@@ -1,9 +1,10 @@
 ---
 templateKey: about-page
 title: Qui som?
-description: "Vivim i treballem al Pallars Sobirà. Comptem amb una àmplia
-  experiència professional: hem unit més de 10 anys dissenyant amb més de 16
-  desenvolupant aplicacions web i serveis de Software. "
+description: "Dissenyadora gràfica i community manager al Pallars. Enginyer
+  informàtic i programador al Pallars. Junts comptem amb una àmplia experiència
+  professional: hem unit més de 10 anys dissenyant amb més de 16 desenvolupant
+  aplicacions web i serveis de Software. "
 persones:
   - nom: Marta Bruna
     subtitol: Esterri d'Àneu - 1985
