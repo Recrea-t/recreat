@@ -13,19 +13,20 @@ En qualsevol d'aquests mitjans, podeu consultar informació, i en alguns casos o
 
 #### Qui és el responsable del Tractament de les vostres dades personals?
 
-En compliment del que estableix el Reglament (UE) 2016/679 del Parlament Europeu i del Consell de 27 d'abril del 2016, informem, que les dades de caràcter personal que ens proporcioneu seran tractades per *Comas Bruna SL*, amb domicili social *Plaça Santa Anna 2, 25586 Isil* CIF *B25757246*, Correu electrònic *marta@recreat.cat*
+En compliment del que estableix el Reglament (UE) 2016/679 del Parlament Europeu i del Consell de 27 d'abril del 2016, informem, que les dades de caràcter personal que ens proporcioneu seran tractades per *Comas Bruna SL*, amb domicili social *Plaça Santa Anna 2, 25586 Isil* CIF *B25757246*, Correu electrònic *marta@recreant.cat*
 
 #### Qui és el Delegat de Protecció de Dades Personals?
 
-El Delegat de Protecció de Dades Personals és la persona encarregada de protegir el dret fonamental a la protecció de dades personals a *Comas Bruna SL* i s'encarrega del compliment de la normativa de protecció de dades. Podreu contactar amb el delegat de Protecció de Dades Personals en la següent adreça: *marta@recreat.cat*
+El Delegat de Protecció de Dades Personals és la persona encarregada de protegir el dret fonamental a la protecció de dades personals a *Comas Bruna SL* i s'encarrega del compliment de la normativa de protecció de dades. Podreu contactar amb el delegat de Protecció de Dades Personals en la següent adreça: *marta@recreant.cat*
 
 #### Quines Dades Personals es recullen i finalitat de les mateixes?
 
 Detallem, les dades personals que gestionem, així com les seves finalitats.
 
-- **Formulari de contacte**:
-  - Correu electrònic
-  - Contestar a la vostra pregunta, legitimada en la vostra petició prèvia.
+* **Formulari de contacte**:
+
+  * Correu electrònic
+  * Contestar a la vostra pregunta, legitimada en la vostra petició prèvia.
 
 El vostre consentiment pot ser revocat en qualsevol moment.
 
@@ -40,7 +41,7 @@ A continuació us expliquem la base legal que ens permet tractar les vostres dad
 3. Per interès legítim de *Comas Bruna SL* per mostrar serveis, productes i iniciatives que us puguin interessar.
 4. Compliment d'obligacions imposades per llei.
 
-Us recordem que podeu revocar el vostre consentiment en qualsevol moment a la següent adreça: *marta@recreat.cat*
+Us recordem que podeu revocar el vostre consentiment en qualsevol moment a la següent adreça: *marta@recreant.cat*
 
 #### Publicacions de fotos o vídeos a la pàgina WEB o a les xarxes socials
 
@@ -76,11 +77,12 @@ L'Usuari es compromet a fer un ús diligent i a no posar a la disposició de ter
 * **Supressió**: Podreu demanar la eliminació de les dades de caràcter personal
 * **Oposició**: Podreu demanar que no es tractin les vostres dades de caràcter personal
 * **Limitació del tractament**: Es pot sol·licitar la limitació quan:
+
   * Es comprova la impugnació a l'exactitud de les vostres dades
   * Quan no necessitem tractar les vostres dades, però les necessiteu per l’exercici o defensa de reclamacions
 * **Portabilitat**: Podrà rebre en format electrònic les dades que ens hagi facilitat
 
-Si considereu que no hem tractat les vostres dades personals d’acord amb la normativa, podeu contactar amb el Delegat de Protecció de Dades a l’adreça *marta@recreat.cat*
+Si considereu que no hem tractat les vostres dades personals d’acord amb la normativa, podeu contactar amb el Delegat de Protecció de Dades a l’adreça *marta@recreant.cat*
 
 Si voleu, podreu presentar una reclamació a l'[Agència Espanyola de Protecció de Dades](www.agpd.es).
 
@@ -99,11 +101,9 @@ L'usuari s'ha de comprometre a:
 * No publicar informacions que no responguin als requisits de veracitat, interès públic i respecte a la dignitat de les persones. Especialment, l'usuari haurà d'evitar tota conducta que pugui atemptar contra el principi de no discriminació per raons de sexe, raça, religió, ideologia o qualsevol altre circumstància personal o social, i contra la intimitat, l'honor i la pròpia imatge, sent el responsable final sobre la veracitat i legalitat dels continguts que publiqui
 * No gravar ni publicar imatges, vídeos o qualsevol altre tipus de registre sense el consentiment dels afectats
 
-
 *Comas Bruna SL* no s'identifica amb les opinions expressades per altres ni amb la ideologia dels perfils amb els quals tingui amistat en cap xarxa social.
 
 *Comas Bruna SL* es reserva el dret d'eliminar de les seves xarxes socials qualsevol informació publicada per altres que vulneri la legalitat, inciti a fer-ho, o contingui missatges que atemptin contra la dignitat de persones o institucions. Així com de bloquejar o denunciar el perfil autor d'aquests missatges.
-
 
 Recomanacions als usuaris i usuàries:
 
@@ -114,9 +114,8 @@ Recomanacions als usuaris i usuàries:
 * Aneu amb compte amb la publicació de continguts audiovisuals i gràfics en el seu perfil, especialment si s'allotjaran imatges relatives a terceres persones.
 * No oferiu dades de tercers sense el previ consentiment d'aquests.
 
-
 Les xarxes socials gestionades per *Comas Bruna SL* són:
 
-* **Facebook**: https://www.facebook.com/RecreatDissenyComunicacio
-* **Instagram**: https://www.instagram.com/Recreat_Disseny_Comunicacio
+* **Facebook**: https://www.facebook.com/RecreantDissenyComunicacio
+* **Instagram**: https://www.instagram.com/Recreant_Disseny_Comunicacio
 * **LinkedIn**: https://www.linkedin.com/in/marta-bruna-b5847733
