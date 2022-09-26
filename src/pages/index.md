@@ -1,6 +1,7 @@
 ---
 templateKey: index-page
-title: Disseny gràfic i comunicació al Pallars Sobirà
+title: Disseny gràfic, disseny web, comunicació i gestió de xarxes socials al
+  Pallars Sobirà
 description: Petit estudi de disseny gràfic, desenvolupament web i comunicació
   de les Valls d'Àneu. Ajudem tant a la digitalització de les empreses i
   projectes de l'Alt Pirineu com a satisfer les seves necessitats en l'àmbit
