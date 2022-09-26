@@ -6,7 +6,7 @@ description: "La nostra missió com a empresa del Pallars Sobirà és contribuir
   de disseny gràfic, desenvolupament web i comunicació. "
 dissenyGrafic:
   descripcio: "**La imatge i el missatge que una empresa projecta de si mateixa és
-    tan important com l'activitat que desenvolupa**. Des de Recrea't, encarem
+    tan important com l'activitat que desenvolupa**. Des de Recreant, encarem
     els projectes sempre de manera personalitzada, oferint un ampli ventall de
     possibilitats per comunicar-se gràficament."
   detall: >-
@@ -40,7 +40,7 @@ dissenyGrafic:
         - src: /images/postalshabitatge.jpg
           alt: Disseny de deu models diferents de postal DIN A6 a dos cares
     - descripcio: Disseny de logotip
-      nom: AFA, Escola La Clos INS Morelló Esterri d'Àneu
+      nom: AFA, Escola La Closa INS Morelló Esterri d'Àneu
       any: "2021"
       thumbnail: /images/09_miniaturaafa.jpg
       imatges:
